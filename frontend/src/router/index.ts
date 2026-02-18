@@ -1,13 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView    from '@/views/HomeView.vue'
 import BuilderView from '@/views/BuilderView.vue'
+import SchemaView  from '@/views/SchemaView.vue'
 
 const router = createRouter({
-  // Hash history works on GitHub Pages without server-side config
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/',      name: 'home',    component: HomeView },
-    { path: '/build', name: 'builder', component: BuilderView },
+    { path: '/',       name: 'builder', component: BuilderView },
+    { path: '/schema', name: 'schema',  component: SchemaView  },
+    { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
   scrollBehavior: () => ({ top: 0 }),
 })

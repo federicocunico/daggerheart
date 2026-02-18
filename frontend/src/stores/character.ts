@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import type { CardIndex, Dominio, CharacterSave } from '@/types/card'
-import { CLASS_DOMAIN_MAP } from '@/types/card'
+import { CLASS_DOMAIN_MAP, SUBCLASS_TO_CLASS } from '@/types/card'
 
 export const useCharacterStore = defineStore('character', () => {
   // ── All cards loaded from index.json ────────────────────────────────────────
@@ -24,22 +24,24 @@ export const useCharacterStore = defineStore('character', () => {
   }
 
   // ── Character state ──────────────────────────────────────────────────────────
-  const className       = ref<string | null>(null)
-  const selectedDomains = ref<Dominio[]>([])
+  const className         = ref<string | null>(null)
+  const selectedDomains   = ref<Dominio[]>([])
   const selectedAbilities = ref<Set<string>>(new Set())
+  const selectedOrigin    = ref<string | null>(null)
+  const selectedCommunity = ref<string | null>(null)
 
-  // ── Derived data ─────────────────────────────────────────────────────────────
+  // ── Derived: classes (grouped by Italian class name) ─────────────────────────
   const classes = computed(() => {
-    // Build ClassInfo objects from class cards (tipo_carta = privilegio → base card)
     const map = new Map<string, CardIndex[]>()
     for (const c of allCards.value) {
       if (c.sottocategoria !== 'classi') continue
-      if (!map.has(c.nome)) map.set(c.nome, [])
-      map.get(c.nome)!.push(c)
+      const clsName = SUBCLASS_TO_CLASS[c.nome] ?? c.nome
+      if (!map.has(clsName)) map.set(clsName, [])
+      map.get(clsName)!.push(c)
     }
     return [...map.entries()].map(([nome, cards]) => ({
       nome,
-      dominio: CLASS_DOMAIN_MAP[nome] ?? 'arcano',
+      dominio: (CLASS_DOMAIN_MAP[nome] ?? 'arcano') as Dominio,
       cards: cards.sort((a, b) => a.pagina - b.pagina),
       baseCard: cards.find(c => c.tipo_carta === 'privilegio') ?? cards[0],
     }))
@@ -68,7 +70,9 @@ export const useCharacterStore = defineStore('character', () => {
     return map
   })
 
-  const levels = computed(() => Object.keys(cardsByLevel.value).map(Number).sort((a, b) => a - b))
+  const levels = computed(() =>
+    Object.keys(cardsByLevel.value).map(Number).sort((a, b) => a - b)
+  )
 
   const originCards    = computed(() => allCards.value.filter(c => c.categoria === 'origine'))
   const communityCards = computed(() => allCards.value.filter(c => c.categoria === 'comunità'))
@@ -84,11 +88,11 @@ export const useCharacterStore = defineStore('character', () => {
     const idx = selectedDomains.value.indexOf(dominio)
     if (idx >= 0) {
       selectedDomains.value.splice(idx, 1)
-      // Remove any selected abilities from that domain
       for (const id of selectedAbilities.value) {
         const card = allCards.value.find(c => c.id === id)
         if (card?.dominio === dominio) selectedAbilities.value.delete(id)
       }
+      selectedAbilities.value = new Set(selectedAbilities.value)
     } else {
       selectedDomains.value.push(dominio)
     }
@@ -100,7 +104,6 @@ export const useCharacterStore = defineStore('character', () => {
     } else {
       selectedAbilities.value.add(id)
     }
-    // trigger reactivity
     selectedAbilities.value = new Set(selectedAbilities.value)
   }
 
@@ -108,10 +111,20 @@ export const useCharacterStore = defineStore('character', () => {
     return selectedAbilities.value.has(id)
   }
 
+  function selectOrigin(id: string | null) {
+    selectedOrigin.value = id
+  }
+
+  function selectCommunity(id: string | null) {
+    selectedCommunity.value = id
+  }
+
   function reset() {
     className.value = null
     selectedDomains.value = []
     selectedAbilities.value = new Set()
+    selectedOrigin.value = null
+    selectedCommunity.value = null
   }
 
   // ── Save / Load ───────────────────────────────────────────────────────────────
@@ -123,6 +136,8 @@ export const useCharacterStore = defineStore('character', () => {
       classCardIds: classCards.value.map(c => c.id),
       selectedDomains: [...selectedDomains.value],
       selectedAbilities: [...selectedAbilities.value],
+      selectedOrigin: selectedOrigin.value,
+      selectedCommunity: selectedCommunity.value,
     }
   }
 
@@ -130,14 +145,17 @@ export const useCharacterStore = defineStore('character', () => {
     className.value = save.className
     selectedDomains.value = save.selectedDomains
     selectedAbilities.value = new Set(save.selectedAbilities)
+    selectedOrigin.value = save.selectedOrigin ?? null
+    selectedCommunity.value = save.selectedCommunity ?? null
   }
 
   return {
     allCards, loading, error, loadCards,
     classes, activeClass, classCards, abilityCards, cardsByLevel, levels,
     originCards, communityCards,
-    className, selectedDomains, selectedAbilities,
-    selectClass, toggleDomain, toggleAbility, isSelected, reset,
+    className, selectedDomains, selectedAbilities, selectedOrigin, selectedCommunity,
+    selectClass, toggleDomain, toggleAbility, isSelected,
+    selectOrigin, selectCommunity, reset,
     toSave, fromSave,
   }
 })

@@ -10,6 +10,8 @@ export function useDownload(baseUrl: string = '') {
 
   async function downloadSet(
     save: CharacterSave,
+    originCard: CardIndex | null,
+    communityCard: CardIndex | null,
     classCards: CardIndex[],
     abilities: CardIndex[],
   ) {
@@ -18,20 +20,32 @@ export function useDownload(baseUrl: string = '') {
     // Character metadata
     zip.file('personaggio.json', JSON.stringify(save, null, 2))
 
+    // Origin card
+    if (originCard) {
+      const folder = zip.folder('origine')!
+      const name = originCard.img.split('/').pop()!
+      folder.file(name, await fetchBlob(`${baseUrl}cards/${originCard.img}`))
+    }
+
+    // Community card
+    if (communityCard) {
+      const folder = zip.folder('comunita')!
+      const name = communityCard.img.split('/').pop()!
+      folder.file(name, await fetchBlob(`${baseUrl}cards/${communityCard.img}`))
+    }
+
     // Class cards
     const classFolder = zip.folder('classi')!
     for (const card of classCards) {
       const name = card.img.split('/').pop()!
-      const blob = await fetchBlob(`${baseUrl}cards/${card.img}`)
-      classFolder.file(name, blob)
+      classFolder.file(name, await fetchBlob(`${baseUrl}cards/${card.img}`))
     }
 
     // Selected ability cards, grouped by domain
     for (const card of abilities) {
       const folder = zip.folder(`abilita/${card.dominio ?? 'altro'}`)!
       const name = card.img.split('/').pop()!
-      const blob = await fetchBlob(`${baseUrl}cards/${card.img}`)
-      folder.file(name, blob)
+      folder.file(name, await fetchBlob(`${baseUrl}cards/${card.img}`))
     }
 
     const blob = await zip.generateAsync({ type: 'blob' })
