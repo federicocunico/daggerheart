@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 27,
+  "indice_carta": 4,
+  "sottocategoria": "abilita",
+  "nome": "PLASMARE",
+  "testo": [
+    "5",
+    "1",
+    "Incantesimo",
+    "PLASMARE",
+    "Spendete una Speranza",
+    "per plasmare una quantità",
+    "di materiale naturale che state toccando (come",
+    "pietra, ghiaccio o legno) in base alle vostre esigenze.",
+    "L’area e la massa infl uenzata non può essere più",
+    "grande di voi. Ad esempio, potete forgiare uno",
+    "strumento rudimentale o creare una porta.",
+    "Potete infl uenzare solo il materiale che si trova",
+    "entro distanza Ravvicinata dal punto che state",
+    "toccando.",
+    "DH MB 238/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "238/270",
+  "soglia": "5",
+  "livello": "1",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/splendore/abilita/plasmare_010.png",
+  "json_path": "domini/splendore/abilita/plasmare_010.json"
+}

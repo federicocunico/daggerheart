@@ -25,5 +25,7 @@
   "nome_abilita": [
     "Resistenza",
     "Raggiungere"
-  ]
+  ],
+  "img_path": "origine/giganti_010.png",
+  "json_path": "origine/giganti_010.json"
 }

@@ -1,0 +1,35 @@
+{
+  "categoria": "dominio",
+  "dominio": "mezzanotte",
+  "pagina": 4,
+  "indice_carta": 2,
+  "sottocategoria": "classi",
+  "nome": "LADRO",
+  "testo": [
+    "LADRO",
+    "Specializzazione",
+    "Amici Ovunque:",
+    "Una volta per sessione, è possibile",
+    "chiamare brevemente in aiuto un contatto dalla dubbia",
+    "fama. Scegliete uno dei seguenti benefi ci e descrivete",
+    "cosa lo spinga ad aiutarvi in questo momento:",
+    "• Vi fornisce 1 manciata d’oro, uno strumento unico o",
+    "un oggetto normale che la situazione richiede.",
+    "• Al prossimo tiro azione, il suo aiuto concede bonus",
+    "+3 al risultato del Dado Speranza o Paura.",
+    "• La prossima volta che infl iggete un danno, attaccherà",
+    "a distanza lo stesso bersaglio da una posizione",
+    "nascosta, aggiungendo",
+    "2d8",
+    "al vostro tiro per i danni.",
+    "DH MB 029 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "029/270",
+  "tipo_carta": "azione",
+  "nome_abilita": [
+    "Specializzazione Amici Ovunque"
+  ],
+  "img_path": "domini/mezzanotte/classi/ladro_005.png",
+  "json_path": "domini/mezzanotte/classi/ladro_005.json"
+}

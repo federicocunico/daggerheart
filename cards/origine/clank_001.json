@@ -27,5 +27,7 @@
   "nome_abilita": [
     "Scopo Preciso",
     "Effi ciente"
-  ]
+  ],
+  "img_path": "origine/clank_001.png",
+  "json_path": "origine/clank_001.json"
 }

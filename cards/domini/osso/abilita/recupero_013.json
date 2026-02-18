@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 16,
+  "indice_carta": 1,
+  "sottocategoria": "abilita",
+  "nome": "RECUPERO",
+  "testo": [
+    "6",
+    "1",
+    "Abilità",
+    "RECUPERO",
+    "Durante un riposo breve, potete scegliere invece",
+    "una mossa di interludio di riposo lungo. Potete",
+    "spendere una Speranza",
+    "per consentire a un alleato",
+    "di fare lo stesso.",
+    "DH MB 136/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "136/270",
+  "soglia": "6",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/osso/abilita/recupero_013.png",
+  "json_path": "domini/osso/abilita/recupero_013.json"
+}

@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 16,
+  "indice_carta": 9,
+  "sottocategoria": "abilita",
+  "nome": "PASSO LESTO",
+  "testo": [
+    "10",
+    "2",
+    "Abilità",
+    "PASSO LESTO",
+    "Quando un attacco contro di voi fallisce, rimuovete",
+    "uno Stress. Se non potete rimuovere uno Stress,",
+    "ottenete invece una Speranza.",
+    "DH MB 144/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "144/270",
+  "soglia": "10",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "img_path": "domini/osso/abilita/passo_lesto_021.png",
+  "json_path": "domini/osso/abilita/passo_lesto_021.json"
+}

@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 12,
+  "indice_carta": 8,
+  "sottocategoria": "abilita",
+  "nome": "SPERICOLATO",
+  "testo": [
+    "2",
+    "1",
+    "Abilità",
+    "SPERICOLATO",
+    "Marcate uno Stress",
+    "per ottenere vantaggio su un",
+    "attacco.",
+    "DH MB 107/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "107/270",
+  "soglia": "2",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/lama/abilita/spericolato_005.png",
+  "json_path": "domini/lama/abilita/spericolato_005.json"
+}

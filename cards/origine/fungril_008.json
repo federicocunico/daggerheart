@@ -29,5 +29,7 @@
   "nome_abilita": [
     "Cerchio dei Fungril",
     "Connessione con i Morti"
-  ]
+  ],
+  "img_path": "origine/fungril_008.png",
+  "json_path": "origine/fungril_008.json"
 }

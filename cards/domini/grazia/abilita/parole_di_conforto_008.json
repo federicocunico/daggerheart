@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 20,
+  "indice_carta": 2,
+  "sottocategoria": "abilita",
+  "nome": "PAROLE DI CONFORTO",
+  "testo": [
+    "4",
+    "1",
+    "Abilità",
+    "PAROLE DI CONFORTO",
+    "Durante un riposo breve, quando vi prendete del",
+    "tempo per confortare un altro personaggio mentre",
+    "usate la mossa di interludio Curare Ferite su di lui,",
+    "curate un Punto Ferita aggiuntivo. Quando lo fate,",
+    "anche voi recuperate 2 Punti Ferita.",
+    "DH MB 173/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "173/270",
+  "soglia": "4",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/grazia/abilita/parole_di_conforto_008.png",
+  "json_path": "domini/grazia/abilita/parole_di_conforto_008.json"
+}

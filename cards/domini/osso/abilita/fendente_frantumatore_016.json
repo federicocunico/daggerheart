@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 16,
+  "indice_carta": 4,
+  "sottocategoria": "abilita",
+  "nome": "FENDENTE FRANTUMATORE",
+  "testo": [
+    "8",
+    "3",
+    "Abilità",
+    "FENDENTE FRANTUMATORE",
+    "Quando eff ettuate un attacco con successo,",
+    "potete",
+    "marcare uno Stress",
+    "per fare in modo che",
+    "il prossimo attacco con successo contro lo stesso",
+    "bersaglio infl igga",
+    "2d12",
+    "danni aggiuntivi.",
+    "DH MB 139/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "139/270",
+  "soglia": "8",
+  "livello": "3",
+  "tipo_carta": "abilità",
+  "img_path": "domini/osso/abilita/fendente_frantumatore_016.png",
+  "json_path": "domini/osso/abilita/fendente_frantumatore_016.json"
+}

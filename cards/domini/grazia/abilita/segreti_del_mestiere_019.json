@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 21,
+  "indice_carta": 4,
+  "sottocategoria": "abilita",
+  "nome": "SEGRETI DEL MESTIERE",
+  "testo": [
+    "9",
+    "0",
+    "Abilità",
+    "SEGRETI DEL MESTIERE",
+    "Ottenete bonus +2 permanente a due Esperienze o",
+    "bonus +3 permanente a una Esperienza.",
+    "Spostate questa carta nella riserva permanentemente.",
+    "DH MB 184/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "184/270",
+  "soglia": "9",
+  "livello": "0",
+  "tipo_carta": "abilità",
+  "img_path": "domini/grazia/abilita/segreti_del_mestiere_019.png",
+  "json_path": "domini/grazia/abilita/segreti_del_mestiere_019.json"
+}

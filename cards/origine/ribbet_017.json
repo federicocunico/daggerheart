@@ -27,5 +27,7 @@
   "nome_abilita": [
     "Anfi bio",
     "Lingualunga"
-  ]
+  ],
+  "img_path": "origine/ribbet_017.png",
+  "json_path": "origine/ribbet_017.json"
 }

@@ -25,5 +25,7 @@
   "nome_abilita": [
     "Reazione Istintiva",
     "Dormiveglia"
-  ]
+  ],
+  "img_path": "origine/elfi_004.png",
+  "json_path": "origine/elfi_004.json"
 }

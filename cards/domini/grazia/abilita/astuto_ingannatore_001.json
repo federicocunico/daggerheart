@@ -1,0 +1,26 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 19,
+  "indice_carta": 4,
+  "sottocategoria": "abilita",
+  "nome": "ASTUTO INGANNATORE",
+  "testo": [
+    "1",
+    "0",
+    "Abilità",
+    "ASTUTO INGANNATORE",
+    "Spendete una Speranza",
+    "per ottenere vantaggio su",
+    "un tiro per ingannare o raggirare qualcuno con una",
+    "menzogna.",
+    "DH MB 166/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "166/270",
+  "soglia": "1",
+  "livello": "0",
+  "tipo_carta": "abilità",
+  "img_path": "domini/grazia/abilita/astuto_ingannatore_001.png",
+  "json_path": "domini/grazia/abilita/astuto_ingannatore_001.json"
+}

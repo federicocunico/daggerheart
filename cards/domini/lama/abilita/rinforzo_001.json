@@ -1,0 +1,26 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 12,
+  "indice_carta": 4,
+  "sottocategoria": "abilita",
+  "nome": "RINFORZO",
+  "testo": [
+    "1",
+    "1",
+    "Abilità",
+    "RINFORZO",
+    "Quando subite danno Grave, potete",
+    "marcare uno",
+    "Stress",
+    "per ridurne la gravità di una soglia.",
+    "DH MB 103/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "103/270",
+  "soglia": "1",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/lama/abilita/rinforzo_001.png",
+  "json_path": "domini/lama/abilita/rinforzo_001.json"
+}

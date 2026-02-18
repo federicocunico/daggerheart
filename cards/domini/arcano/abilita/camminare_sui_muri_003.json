@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "arcano",
+  "pagina": 10,
+  "indice_carta": 3,
+  "sottocategoria": "abilita",
+  "nome": "CAMMINARE SUI MURI",
+  "testo": [
+    "1",
+    "1",
+    "Incantesimo",
+    "CAMMINARE SUI MURI",
+    "Spendete una Speranza",
+    "per consentire a una",
+    "creatura che potete toccare di arrampicarsi su",
+    "muri e soffi tti con la stessa facilità con cui cammina",
+    "sul terreno. Questo eff etto dura fi no alla fi ne",
+    "della scena o fi nché non lanciate nuovamente",
+    "Camminare sui Muri.",
+    "DH MB 084/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "084/270",
+  "soglia": "1",
+  "livello": "1",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/arcano/abilita/camminare_sui_muri_003.png",
+  "json_path": "domini/arcano/abilita/camminare_sui_muri_003.json"
+}

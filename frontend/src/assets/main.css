@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-stone-950 text-stone-100 min-h-screen;
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: 0.05em;
+  }
+}
+
+@layer utilities {
+  .card-hover {
+    @apply transition-all duration-200 hover:scale-105 hover:shadow-xl hover:shadow-black/60 cursor-pointer;
+  }
+
+  .glass {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10;
+  }
+
+  .btn-gold {
+    @apply bg-yellow-600 hover:bg-yellow-500 text-stone-900 font-bold px-4 py-2 rounded-lg
+           transition-colors duration-150 disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply border border-stone-600 hover:border-stone-400 text-stone-300 hover:text-white
+           px-4 py-2 rounded-lg transition-colors duration-150;
+  }
+
+  .domain-pill {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold
+           border cursor-pointer select-none transition-all duration-150;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { @apply bg-stone-900; }
+::-webkit-scrollbar-thumb { @apply bg-stone-600 rounded; }
+::-webkit-scrollbar-thumb:hover { @apply bg-stone-400; }

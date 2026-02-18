@@ -22,5 +22,7 @@
   "nome_abilita": [
     "Scalatore Naturale",
     "Scioltezza"
-  ]
+  ],
+  "img_path": "origine/simiah_018.png",
+  "json_path": "origine/simiah_018.json"
 }

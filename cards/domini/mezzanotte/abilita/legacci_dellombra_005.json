@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "mezzanotte",
+  "pagina": 22,
+  "indice_carta": 2,
+  "sottocategoria": "abilita",
+  "nome": "LEGACCI DELL’OMBRA",
+  "testo": [
+    "2",
+    "0",
+    "Incantesimo",
+    "LEGACCI DELL’OMBRA",
+    "Eff ettuate un",
+    "Tiro Incantesimo",
+    "contro tutti gli",
+    "avversari entro distanza Prossima. I bersagli",
+    "contro cui avete successo sono temporaneamente",
+    "Trattenuti",
+    "dalla loro stessa ombra.",
+    "DH MB 191/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "191/270",
+  "soglia": "2",
+  "livello": "0",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/mezzanotte/abilita/legacci_dellombra_005.png",
+  "json_path": "domini/mezzanotte/abilita/legacci_dellombra_005.json"
+}

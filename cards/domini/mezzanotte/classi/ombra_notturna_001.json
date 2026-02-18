@@ -1,0 +1,36 @@
+{
+  "categoria": "dominio",
+  "dominio": "mezzanotte",
+  "pagina": 3,
+  "indice_carta": 7,
+  "sottocategoria": "classi",
+  "nome": "OMBRA NOTTURNA",
+  "testo": [
+    "OMBRA NOTTURNA",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "ASTUZIA",
+    "Potete spostarvi da un’ombra a",
+    "Passo d’Ombra:",
+    "un’altra. Quando vi spostate in un’area di oscurità",
+    "o nell’ombra proiettata da un’altra creatura o",
+    "da un oggetto, potete",
+    "marcare uno Stress",
+    "per",
+    "scomparire dal luogo in cui vi trovate e riapparire",
+    "all’interno di un’altra ombra entro distanza",
+    "Lontana. Quando riapparite, siete",
+    "Ammantati",
+    ".",
+    "DH MB 025 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "025/270",
+  "tipo_carta": "tratto",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Passo d’Ombra"
+  ],
+  "img_path": "domini/mezzanotte/classi/ombra_notturna_001.png",
+  "json_path": "domini/mezzanotte/classi/ombra_notturna_001.json"
+}

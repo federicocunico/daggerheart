@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 14,
+  "indice_carta": 3,
+  "sottocategoria": "abilita",
+  "nome": "SANGUE E GLORIA",
+  "testo": [
+    "9",
+    "2",
+    "Abilità",
+    "SANGUE E GLORIA",
+    "Quando ottenete un successo critico con un attacco",
+    "con un’arma, ottenete una Speranza aggiuntiva o",
+    "rimuovete uno Stress aggiuntivo.",
+    "Inoltre, quando infl iggete danni suffi cienti a",
+    "sconfi ggere un nemico, ottenete una Speranza o",
+    "rimuovete uno Stress.",
+    "DH MB 120/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "120/270",
+  "soglia": "9",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "img_path": "domini/lama/abilita/sangue_e_gloria_018.png",
+  "json_path": "domini/lama/abilita/sangue_e_gloria_018.json"
+}

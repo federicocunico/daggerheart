@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 19,
+  "indice_carta": 6,
+  "sottocategoria": "abilita",
+  "nome": "PAROLE ISPIRATRICI",
+  "testo": [
+    "1",
+    "1",
+    "Abilità",
+    "PAROLE ISPIRATRICI",
+    "Le vostre parole sono intrise di potere. Dopo un",
+    "riposo lungo, mettete su questa carta un numero di",
+    "gettoni pari alla vostra Presenza. Quando parlate",
+    "con un alleato, potete spendere un gettone da",
+    "questa carta per dargli uno dei seguenti benefi ci:",
+    "• L’alleato rimuove uno Stress.",
+    "• L’alleato recupera un Punto Ferita.",
+    "• L’alleato ottiene una Speranza.",
+    "Quando completate un riposo lungo, rimuovete i",
+    "gettoni non spesi.",
+    "DH MB 168/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "168/270",
+  "soglia": "1",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/grazia/abilita/parole_ispiratrici_003.png",
+  "json_path": "domini/grazia/abilita/parole_ispiratrici_003.json"
+}

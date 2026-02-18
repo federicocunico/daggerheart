@@ -31,5 +31,7 @@
   "nome_abilita": [
     "Scaglie",
     "Punto Ferita in meno. Soffi o Elementale"
-  ]
+  ],
+  "img_path": "origine/drakona_002.png",
+  "json_path": "origine/drakona_002.json"
 }

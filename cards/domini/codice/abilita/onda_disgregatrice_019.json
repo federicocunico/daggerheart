@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 19,
+  "indice_carta": 1,
+  "sottocategoria": "abilita",
+  "nome": "ONDA DISGREGATRICE",
+  "testo": [
+    "9",
+    "4",
+    "Incantesimo",
+    "ONDA DISGREGATRICE",
+    "Eff ettuate un",
+    "Tiro Incantesimo (18)",
+    ". In caso di",
+    "successo, una volta per ogni riposo lungo, il GM vi",
+    "dice quali avversari entro distanza Lontana hanno",
+    "una Diffi coltà pari o inferiore a 18. Per ciascuno",
+    "di quelli che desiderate colpire con l’incantesimo,",
+    "marcate uno Stress",
+    ". Essi vengono uccisi e non",
+    "possono tornare in vita in alcun modo.",
+    "DH MB 163/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "163/270",
+  "soglia": "9",
+  "livello": "4",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/codice/abilita/onda_disgregatrice_019.png",
+  "json_path": "domini/codice/abilita/onda_disgregatrice_019.json"
+}

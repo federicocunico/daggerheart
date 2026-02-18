@@ -21,5 +21,7 @@
   "id_carta": "076/270",
   "nome_abilita": [
     "Costanza"
-  ]
+  ],
+  "img_path": "comunità/montanara_004.png",
+  "json_path": "comunità/montanara_004.json"
 }

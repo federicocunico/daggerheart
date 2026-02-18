@@ -23,5 +23,7 @@
   "nome_abilita": [
     "Quadrifoglio",
     "Speranza. Bussola Interna"
-  ]
+  ],
+  "img_path": "origine/halfling_012.png",
+  "json_path": "origine/halfling_012.json"
 }

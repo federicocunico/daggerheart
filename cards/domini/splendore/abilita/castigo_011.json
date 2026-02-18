@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 27,
+  "indice_carta": 5,
+  "sottocategoria": "abilita",
+  "nome": "CASTIGO",
+  "testo": [
+    "5",
+    "2",
+    "Incantesimo",
+    "CASTIGO",
+    "Una volta per riposo,",
+    "spendete 3 Speranze",
+    "per",
+    "invocare un tremendo castigo. Quando attaccate",
+    "con successo con un’arma, raddoppiate il risultato",
+    "del vostro tiro di danno. Questo attacco infl igge",
+    "danni magici indipendentemente dal tipo di danno",
+    "dell’arma.",
+    "DH MB 239/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "239/270",
+  "soglia": "5",
+  "livello": "2",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/splendore/abilita/castigo_011.png",
+  "json_path": "domini/splendore/abilita/castigo_011.json"
+}

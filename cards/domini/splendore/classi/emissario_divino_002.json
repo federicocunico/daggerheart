@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 4,
+  "indice_carta": 5,
+  "sottocategoria": "classi",
+  "nome": "EMISSARIO DIVINO",
+  "testo": [
+    "EMISSARIO DIVINO",
+    "Specializzazione",
+    "Devoto:",
+    "Quando tirate i Dadi Preghiera, potete",
+    "tirare un dado aggiuntivo e scartare il risultato",
+    "più basso. Inoltre, potete usare il privilegio",
+    "“Tocco Ristoratore” due volte invece di una per",
+    "riposo lungo.",
+    "DH MB 032 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "032/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Specializzazione Devoto"
+  ],
+  "img_path": "domini/splendore/classi/emissario_divino_002.png",
+  "json_path": "domini/splendore/classi/emissario_divino_002.json"
+}

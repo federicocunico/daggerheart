@@ -1,0 +1,26 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 2,
+  "indice_carta": 8,
+  "sottocategoria": "classi",
+  "nome": "VENDICATORE",
+  "testo": [
+    "VENDICATORE",
+    "Specializzazione",
+    "Rappresaglia:",
+    "Quando un avversario danneggia un",
+    "alleato entro distanza di Mischia, ottenete bonus",
+    "+1 alla Competenza per il successivo attacco",
+    "riuscito contro quell’avversario.",
+    "DH MB 017 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "017/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Rappresaglia"
+  ],
+  "img_path": "domini/valore/classi/vendicatore_005.png",
+  "json_path": "domini/valore/classi/vendicatore_005.json"
+}

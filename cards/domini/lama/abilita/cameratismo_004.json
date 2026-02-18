@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 12,
+  "indice_carta": 7,
+  "sottocategoria": "abilita",
+  "nome": "CAMERATISMO",
+  "testo": [
+    "2",
+    "1",
+    "Abilità",
+    "CAMERATISMO",
+    "Una volta per ogni riposo lungo, quando vi",
+    "complimentate con qualcuno o discutete di ciò in cui",
+    "eccelle, entrambi potete ottenere 3 Speranze.",
+    "DH MB 106/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "106/270",
+  "soglia": "2",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/lama/abilita/cameratismo_004.png",
+  "json_path": "domini/lama/abilita/cameratismo_004.json"
+}

@@ -1,0 +1,38 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 4,
+  "indice_carta": 4,
+  "sottocategoria": "classi",
+  "nome": "EMISSARIO DIVINO",
+  "testo": [
+    "EMISSARIO DIVINO",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "FORZA",
+    "Arma Animata:",
+    "Quando impugnate un’arma con",
+    "portata Mischia o Prossima, questa può volare dalla",
+    "vostra mano per attaccare un avversario entro",
+    "distanza Ravvicinata e poi tornare nelle vostre mani.",
+    "Potete",
+    "per colpire un altro",
+    "marcare uno Stress",
+    "avversario entro portata con lo stesso tiro attacco.",
+    "Tocco Ristoratore:",
+    "Una volta per riposo lungo,",
+    "toccando una creatura potete curare 2 Punti Ferita",
+    "o rimuovere 2 Stress.",
+    "DH MB 031 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "031/270",
+  "tipo_carta": "tratto",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Arma Animata",
+    "Tocco Ristoratore"
+  ],
+  "img_path": "domini/splendore/classi/emissario_divino_001.png",
+  "json_path": "domini/splendore/classi/emissario_divino_001.json"
+}

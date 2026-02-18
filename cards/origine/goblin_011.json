@@ -26,5 +26,7 @@
   "nome_abilita": [
     "Piè Fermo",
     "Tiri Agilità. Senso del Pericolo"
-  ]
+  ],
+  "img_path": "origine/goblin_011.png",
+  "json_path": "origine/goblin_011.json"
 }

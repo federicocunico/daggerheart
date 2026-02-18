@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 15,
+  "indice_carta": 9,
+  "sottocategoria": "abilita",
+  "nome": "BOTTA E RISPOSTA",
+  "testo": [
+    "6",
+    "0",
+    "Abilità",
+    "BOTTA E RISPOSTA",
+    "Quando un attacco contro di voi eff ettuato entro",
+    "distanza di Mischia fallisce, potete",
+    "marcare uno",
+    "Stress",
+    "e cogliere l’opportunità per infl iggere",
+    "il danno di una delle armi che impugnate",
+    "all’attaccante.",
+    "DH MB 135/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "135/270",
+  "soglia": "6",
+  "livello": "0",
+  "tipo_carta": "abilità",
+  "img_path": "domini/osso/abilita/botta_e_risposta_012.png",
+  "json_path": "domini/osso/abilita/botta_e_risposta_012.json"
+}

@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 29,
+  "indice_carta": 5,
+  "sottocategoria": "abilita",
+  "nome": "PROVOCAZIONE",
+  "testo": [
+    "4",
+    "1",
+    "Abilità",
+    "PROVOCAZIONE",
+    "Descrivete come provocate un bersaglio entro",
+    "distanza Ravvicinata, poi eff ettuate un",
+    "Tiro",
+    "Presenza",
+    "contro di lui. In caso di successo, il",
+    "bersaglio deve marcare uno Stress e, la prossima",
+    "volta che il GM lo rende protagonista, deve",
+    "attaccarvi subendo svantaggio.",
+    "DH MB 257/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "257/270",
+  "soglia": "4",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/valore/abilita/provocazione_008.png",
+  "json_path": "domini/valore/abilita/provocazione_008.json"
+}

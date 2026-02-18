@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 14,
+  "indice_carta": 5,
+  "sottocategoria": "abilita",
+  "nome": "MASTINO DELLA GUERRA",
+  "testo": [
+    "10",
+    "0",
+    "Abilità",
+    "MASTINO DELLA GUERRA",
+    "Quando eff ettuate un attacco con successo",
+    "contro un avversario, potete",
+    "marcare 4 Stress",
+    "per costringere il bersaglio a subire un numero di",
+    "Punti Ferita pari al numero di Punti Ferita che avete",
+    "attualmente subito invece di tirare per i danni.",
+    "DH MB 122/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "122/270",
+  "soglia": "10",
+  "livello": "0",
+  "tipo_carta": "abilità",
+  "img_path": "domini/lama/abilita/mastino_della_guerra_020.png",
+  "json_path": "domini/lama/abilita/mastino_della_guerra_020.json"
+}

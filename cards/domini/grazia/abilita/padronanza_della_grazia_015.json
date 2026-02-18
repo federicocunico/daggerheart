@@ -1,0 +1,34 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 20,
+  "indice_carta": 9,
+  "sottocategoria": "abilita",
+  "nome": "Padronanza della GRAZIA",
+  "testo": [
+    "7",
+    "2",
+    "Abilità",
+    "Padronanza della GRAZIA",
+    "Quando 4 o più carte dominio nella vostra dotazione",
+    "appartengono al dominio della Grazia, ottenete i",
+    "seguenti benefi ci:",
+    "• Potete",
+    "contrassegnare una Casella Armatura",
+    "invece di marcare uno Stress.",
+    "• Quando costringete un bersaglio a subire Punti",
+    "Ferita, potete invece costringerlo a marcare lo",
+    "stesso numero di Stress.",
+    "DH MB 180/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "180/270",
+  "soglia": "7",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "nome_abilita": [
+    "Grazia, ottenete i seguenti benefi ci"
+  ],
+  "img_path": "domini/grazia/abilita/padronanza_della_grazia_015.png",
+  "json_path": "domini/grazia/abilita/padronanza_della_grazia_015.json"
+}

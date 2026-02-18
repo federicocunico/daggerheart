@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 16,
+  "indice_carta": 5,
+  "sottocategoria": "abilita",
+  "nome": "ADUNATA",
+  "testo": [
+    "8",
+    "1",
+    "Abilità",
+    "ADUNATA",
+    "Eff ettuate un Tiro Agilità contro tutti i bersagli entro",
+    "distanza Ravvicinata.",
+    "Spendete una Speranza",
+    "per",
+    "spostare i bersagli contro cui avete successo, e tutti",
+    "gli alleati disposti a farlo entro distanza Ravvicinata,",
+    "in un altro punto entro distanza Ravvicinata.",
+    "DH MB 140/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "140/270",
+  "soglia": "8",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/osso/abilita/adunata_017.png",
+  "json_path": "domini/osso/abilita/adunata_017.json"
+}

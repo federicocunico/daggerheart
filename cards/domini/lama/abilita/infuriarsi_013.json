@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 13,
+  "indice_carta": 7,
+  "sottocategoria": "abilita",
+  "nome": "INFURIARSI",
+  "testo": [
+    "6",
+    "1",
+    "Abilità",
+    "INFURIARSI",
+    "Prima di eff ettuare un attacco, potete",
+    "marcare uno",
+    "Stress",
+    "per ottenere un bonus al tiro di danno pari al",
+    "doppio della Forza.",
+    "Potete Infuriarvi due volte per attacco.",
+    "DH MB 115/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "115/270",
+  "soglia": "6",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/lama/abilita/infuriarsi_013.png",
+  "json_path": "domini/lama/abilita/infuriarsi_013.json"
+}

@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 29,
+  "indice_carta": 2,
+  "sottocategoria": "abilita",
+  "nome": "AUDACIA",
+  "testo": [
+    "2",
+    "0",
+    "Abilità",
+    "AUDACIA",
+    "Quando eff ettuate un Tiro Presenza, potete",
+    "spendere una Speranza",
+    "per aggiungere la vostra",
+    "Forza al tiro.",
+    "Inoltre, una volta per riposo, quando otterreste",
+    "una condizione, potete descrivere come la vostra",
+    "audacia vi aiuta e non subire tale condizione.",
+    "DH MB 254/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "254/270",
+  "soglia": "2",
+  "livello": "0",
+  "tipo_carta": "abilità",
+  "img_path": "domini/valore/abilita/audacia_005.png",
+  "json_path": "domini/valore/abilita/audacia_005.json"
+}

@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 21,
+  "indice_carta": 5,
+  "sottocategoria": "abilita",
+  "nome": "BIS",
+  "testo": [
+    "10",
+    "1",
+    "Incantesimo",
+    "BIS",
+    "Quando un alleato a distanza Ravvicinata infl igge",
+    "danno a un avversario, potete eff ettuare un",
+    "Tiro",
+    "Incantesimo",
+    "contro lo stesso bersaglio. In caso di",
+    "successo, infl iggete al bersaglio lo stesso danno",
+    "infl itto dal vostro alleato. Se il Tiro Incantesimo ha",
+    "successo con Paura, mettete questa carta nella",
+    "riserva.",
+    "DH MB 185/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "185/270",
+  "soglia": "10",
+  "livello": "1",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/grazia/abilita/bis_020.png",
+  "json_path": "domini/grazia/abilita/bis_020.json"
+}

@@ -21,5 +21,7 @@
   "id_carta": "078/270",
   "nome_abilita": [
     "Furfante"
-  ]
+  ],
+  "img_path": "comunità/bassifondi_006.png",
+  "json_path": "comunità/bassifondi_006.json"
 }

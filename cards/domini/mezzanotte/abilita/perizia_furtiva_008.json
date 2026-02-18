@@ -1,0 +1,33 @@
+{
+  "categoria": "dominio",
+  "dominio": "mezzanotte",
+  "pagina": 22,
+  "indice_carta": 5,
+  "sottocategoria": "abilita",
+  "nome": "PERIZIA FURTIVA",
+  "testo": [
+    "4",
+    "0",
+    "Abilità",
+    "PERIZIA FURTIVA",
+    "Quando tirate con Paura mentre tentate di muovervi",
+    "inosservati in un’area pericolosa, potete",
+    "marcare",
+    "uno Stress",
+    "per tirare invece con Speranza.",
+    "Se anche un alleato entro distanza Ravvicinata si",
+    "sta muovendo furtivamente e ottiene un tiro con",
+    "Paura, potete",
+    "marcare uno Stress",
+    "per cambiare il",
+    "suo risultato in un tiro con Speranza.",
+    "DH MB 194/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "194/270",
+  "soglia": "4",
+  "livello": "0",
+  "tipo_carta": "abilità",
+  "img_path": "domini/mezzanotte/abilita/perizia_furtiva_008.png",
+  "json_path": "domini/mezzanotte/abilita/perizia_furtiva_008.json"
+}

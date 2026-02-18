@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 30,
+  "indice_carta": 2,
+  "sottocategoria": "abilita",
+  "nome": "SOLO UN GRAFFIO",
+  "testo": [
+    "7",
+    "1",
+    "Abilità",
+    "SOLO UN GRAFFIO",
+    "Quando subite danno, potete",
+    "marcare uno Stress",
+    "per ridurre la gravità di una soglia. Quando lo fate,",
+    "tirate un",
+    "d6",
+    ". Con un risultato pari o inferiore a 3,",
+    "mettete questa carta nella riserva.",
+    "DH MB 263/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "263/270",
+  "soglia": "7",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/valore/abilita/solo_un_graffio_014.png",
+  "json_path": "domini/valore/abilita/solo_un_graffio_014.json"
+}

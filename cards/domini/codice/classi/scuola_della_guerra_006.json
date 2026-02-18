@@ -1,0 +1,35 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 6,
+  "indice_carta": 9,
+  "sottocategoria": "classi",
+  "nome": "SCUOLA DELLA GUERRA",
+  "testo": [
+    "SCUOLA DELLA GUERRA",
+    "Maestria",
+    "Prosperare nel Caos:",
+    "Quando un attacco va a",
+    "segno, potete",
+    "marcare uno Stress",
+    "dopo aver",
+    "tirato i danni per costringere il bersaglio a subire",
+    "un Punto Ferita aggiuntivo.",
+    "Non Conoscerai la Paura:",
+    "Il danno magico extra",
+    "della caratteristica “Aff ronta la Tua Paura”",
+    "aumenta a",
+    "3d10",
+    ".",
+    "DH MB 054 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "054/270",
+  "tipo_carta": "caratteristica",
+  "nome_abilita": [
+    "Maestria Prosperare nel Caos",
+    "Ferita aggiuntivo. Non Conoscerai la Paura"
+  ],
+  "img_path": "domini/codice/classi/scuola_della_guerra_006.png",
+  "json_path": "domini/codice/classi/scuola_della_guerra_006.json"
+}

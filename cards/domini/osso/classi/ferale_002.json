@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 3,
+  "indice_carta": 2,
+  "sottocategoria": "classi",
+  "nome": "FERALE",
+  "testo": [
+    "FERALE",
+    "Specializzazione",
+    "Addestramento Intensivo:",
+    "Scegliete un’ulteriore",
+    "opzione di aumento di livello per il vostro",
+    "compagno.",
+    "Uniti nella Battaglia:",
+    "Quando un avversario vi",
+    "attacca mentre si trova in Mischia con il vostro",
+    "compagno, guadagnate bonus +2 alla vostra",
+    "Evasione contro l’attacco.",
+    "DH MB 020 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "020/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Addestramento Intensivo",
+    "Uniti nella Battaglia"
+  ],
+  "img_path": "domini/osso/classi/ferale_002.png",
+  "json_path": "domini/osso/classi/ferale_002.json"
+}

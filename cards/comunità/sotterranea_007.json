@@ -20,5 +20,7 @@
   "id_carta": "079/270",
   "nome_abilita": [
     "Vivere nel Crepuscolo"
-  ]
+  ],
+  "img_path": "comunità/sotterranea_007.png",
+  "json_path": "comunità/sotterranea_007.json"
 }

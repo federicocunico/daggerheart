@@ -19,5 +19,7 @@
   "id_carta": "081/270",
   "nome_abilita": [
     "Piè Leggero"
-  ]
+  ],
+  "img_path": "comunità/forestale_009.png",
+  "json_path": "comunità/forestale_009.json"
 }

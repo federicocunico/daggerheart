@@ -1,0 +1,24 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 14,
+  "indice_carta": 9,
+  "sottocategoria": "abilita",
+  "nome": "INTOCCABILE",
+  "testo": [
+    "1",
+    "1",
+    "Abilità",
+    "INTOCCABILE",
+    "Ottenete un bonus alla vostra Evasione pari alla",
+    "metà della vostra Agilità.",
+    "DH MB 126/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "126/270",
+  "soglia": "1",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/osso/abilita/intoccabile_003.png",
+  "json_path": "domini/osso/abilita/intoccabile_003.json"
+}

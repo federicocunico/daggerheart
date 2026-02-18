@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 2,
+  "indice_carta": 6,
+  "sottocategoria": "classi",
+  "nome": "VALOROSO",
+  "testo": [
+    "VALOROSO",
+    "Maestria",
+    "Imperturbabile:",
+    "Guadagnate bonus +3 permanente",
+    "alle soglie di danno.",
+    "Protettore Fedele:",
+    "Quando un alleato entro",
+    "distanza Ravvicinata ha 2 o meno Punti Ferita sta per",
+    "subire un danno, potete",
+    "marcare uno Stress",
+    "per",
+    "correre al suo fi anco e subire il danno al suo posto.",
+    "DH MB 015 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "015/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Maestria Imperturbabile",
+    "Protettore Fedele"
+  ],
+  "img_path": "domini/valore/classi/valoroso_003.png",
+  "json_path": "domini/valore/classi/valoroso_003.json"
+}

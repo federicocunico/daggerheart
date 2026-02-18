@@ -20,5 +20,7 @@
   "id_carta": "074/270",
   "nome_abilita": [
     "Acculturato"
-  ]
+  ],
+  "img_path": "comunità/erudita_002.png",
+  "json_path": "comunità/erudita_002.json"
 }

@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 5,
+  "indice_carta": 7,
+  "sottocategoria": "classi",
+  "nome": "CHIAMATA DEL CORAGGIO",
+  "testo": [
+    "CHIAMATA DEL CORAGGIO",
+    "Privilegio Base",
+    "Coraggio:",
+    "Quando fallite un tiro con Paura,",
+    "guadagnate una Speranza.",
+    "Riti di Battaglia:",
+    "Una volta per riposo lungo, prima",
+    "di tentare qualcosa di incredibilmente pericoloso o",
+    "di aff rontare un nemico che vi supera chiaramente,",
+    "descrivete il rituale che eseguite o i preparativi",
+    "che fate. Quando lo fate, rimuovete 2 Stress e",
+    "guadagnate 2 Speranze.",
+    "DH MB 043 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "043/270",
+  "tipo_carta": "rituale",
+  "nome_abilita": [
+    "Privilegio Base Coraggio",
+    "Speranza. Riti di Battaglia"
+  ],
+  "img_path": "domini/lama/classi/chiamata_del_coraggio_001.png",
+  "json_path": "domini/lama/classi/chiamata_del_coraggio_001.json"
+}

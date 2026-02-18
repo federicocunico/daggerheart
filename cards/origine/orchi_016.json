@@ -31,5 +31,7 @@
   "nome_abilita": [
     "Robusto",
     "Zanne"
-  ]
+  ],
+  "img_path": "origine/orchi_016.png",
+  "json_path": "origine/orchi_016.json"
 }

@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "mezzanotte",
+  "pagina": 23,
+  "indice_carta": 4,
+  "sottocategoria": "abilita",
+  "nome": "CACCIA NOTTURNA",
+  "testo": [
+    "8",
+    "2",
+    "Abilità",
+    "CACCIA NOTTURNA",
+    "La vostra abilità cresce con il buio. Mentre siete",
+    "in penombra o nell’oscurità, ottenete bonus +1",
+    "all’Evasione ed eff ettuate tiri attacco con vantaggio.",
+    "DH MB 202/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "202/270",
+  "soglia": "8",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "img_path": "domini/mezzanotte/abilita/caccia_notturna_016.png",
+  "json_path": "domini/mezzanotte/abilita/caccia_notturna_016.json"
+}

@@ -25,5 +25,7 @@
   "nome_abilita": [
     "Pelle Dura",
     "Punto Ferita. Resistenza Aumentata"
-  ]
+  ],
+  "img_path": "origine/nani_003.png",
+  "json_path": "origine/nani_003.json"
 }

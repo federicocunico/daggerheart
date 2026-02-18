@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 3,
+  "indice_carta": 5,
+  "sottocategoria": "classi",
+  "nome": "APRIPISTA",
+  "testo": [
+    "APRIPISTA",
+    "Specializzazione",
+    "Predatore Furtivo:",
+    "Quando il vostro",
+    "Focus",
+    "compie",
+    "un attacco contro di voi, ottenete bonus +2 alla",
+    "vostra Evasione contro tale attacco.",
+    "DH MB 023 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "023/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Predatore Furtivo"
+  ],
+  "img_path": "domini/osso/classi/apripista_005.png",
+  "json_path": "domini/osso/classi/apripista_005.json"
+}

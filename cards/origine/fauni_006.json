@@ -32,5 +32,7 @@
   "nome_abilita": [
     "Balzo Caprino",
     "Calcio"
-  ]
+  ],
+  "img_path": "origine/fauni_006.png",
+  "json_path": "origine/fauni_006.json"
 }

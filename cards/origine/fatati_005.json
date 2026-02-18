@@ -31,5 +31,7 @@
   "nome_abilita": [
     "Portafortuna",
     "Dadi Dualità. Ali"
-  ]
+  ],
+  "img_path": "origine/fatati_005.png",
+  "json_path": "origine/fatati_005.json"
 }

@@ -1,0 +1,24 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 29,
+  "indice_carta": 9,
+  "sottocategoria": "abilita",
+  "nome": "INELUTTABILE",
+  "testo": [
+    "6",
+    "1",
+    "Abilità",
+    "INELUTTABILE",
+    "Quando fallite un tiro azione, il vostro prossimo tiro",
+    "azione ha vantaggio.",
+    "DH MB 261/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "261/270",
+  "soglia": "6",
+  "livello": "1",
+  "tipo_carta": "azione",
+  "img_path": "domini/valore/abilita/ineluttabile_012.png",
+  "json_path": "domini/valore/abilita/ineluttabile_012.json"
+}

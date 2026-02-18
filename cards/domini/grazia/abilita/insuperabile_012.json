@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 20,
+  "indice_carta": 6,
+  "sottocategoria": "abilita",
+  "nome": "INSUPERABILE",
+  "testo": [
+    "6",
+    "2",
+    "Abilità",
+    "INSUPERABILE",
+    "Quando subite 1 o più Punti Ferita da un attacco,",
+    "potete",
+    "marcare uno Stress",
+    "per collocare un",
+    "numero di gettoni pari al numero di Punti Ferita",
+    "subiti su questa carta. Al vostro prossimo attacco",
+    "riuscito, ottenete bonus +5 al tiro di danno per",
+    "ogni gettone su questa carta, poi rimuovete tutti i",
+    "gettoni.",
+    "DH MB 177/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "177/270",
+  "soglia": "6",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "img_path": "domini/grazia/abilita/insuperabile_012.png",
+  "json_path": "domini/grazia/abilita/insuperabile_012.json"
+}

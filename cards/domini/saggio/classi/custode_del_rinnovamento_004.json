@@ -1,0 +1,39 @@
+{
+  "categoria": "dominio",
+  "dominio": "saggio",
+  "pagina": 2,
+  "indice_carta": 1,
+  "sottocategoria": "classi",
+  "nome": "CUSTODE DEL RINNOVAMENTO",
+  "testo": [
+    "CUSTODE DEL RINNOVAMENTO",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "ISTINTO",
+    "Una volta per riposo",
+    "Illuminazione della Natura:",
+    "lungo, potete creare uno spazio di serenità",
+    "naturale entro distanza Ravvicinata. Quando",
+    "trascorrete alcuni minuti di riposo all’interno dello",
+    "spazio, rimuovete un valore totale di Stress pari al",
+    "vostro Istinto, a scelta tra voi e i vostri alleati.",
+    "Rigenerazione:",
+    "Toccate una creatura e",
+    "spendete 3",
+    ". La creatura recupera",
+    "Punti Ferita.",
+    "Speranze",
+    "1d4",
+    "DH MB 010 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "010/270",
+  "tipo_carta": "tratto",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Illuminazione della Natura",
+    "Rigenerazione"
+  ],
+  "img_path": "domini/saggio/classi/custode_del_rinnovamento_004.png",
+  "json_path": "domini/saggio/classi/custode_del_rinnovamento_004.json"
+}

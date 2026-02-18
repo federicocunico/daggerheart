@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "osso",
+  "pagina": 16,
+  "indice_carta": 3,
+  "sottocategoria": "abilita",
+  "nome": "PRECISIONE CRUDELE",
+  "testo": [
+    "7",
+    "1",
+    "Abilità",
+    "PRECISIONE CRUDELE",
+    "Quando eff ettuate con successo un attacco con",
+    "un’arma, ottenete un bonus al tiro di danno pari al",
+    "vostro bonus di Astuzia o Agilità.",
+    "DH MB 138/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "138/270",
+  "soglia": "7",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "img_path": "domini/osso/abilita/precisione_crudele_015.png",
+  "json_path": "domini/osso/abilita/precisione_crudele_015.json"
+}

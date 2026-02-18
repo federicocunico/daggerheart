@@ -26,5 +26,7 @@
   "tipo_carta": "azione",
   "nome_abilita": [
     "Dedizione"
-  ]
+  ],
+  "img_path": "comunità/austera_003.png",
+  "json_path": "comunità/austera_003.json"
 }

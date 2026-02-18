@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "mezzanotte",
+  "pagina": 22,
+  "indice_carta": 8,
+  "sottocategoria": "abilita",
+  "nome": "RITIRATA FANTASMA",
+  "testo": [
+    "5",
+    "2",
+    "Incantesimo",
+    "RITIRATA FANTASMA",
+    "Spendete una Speranza",
+    "per lanciare Ritirata",
+    "Fantasma nel punto in cui vi trovate.",
+    "Spendete",
+    "un’altra Speranza",
+    "in qualsiasi momento prima del",
+    "prossimo riposo per scomparire da dove vi trovate",
+    "e riapparire nel punto scelto quando avete attivato",
+    "Ritirata Fantasma. Poi l’incantesimo termina.",
+    "DH MB 197/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "197/270",
+  "soglia": "5",
+  "livello": "2",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/mezzanotte/abilita/ritirata_fantasma_011.png",
+  "json_path": "domini/mezzanotte/abilita/ritirata_fantasma_011.json"
+}

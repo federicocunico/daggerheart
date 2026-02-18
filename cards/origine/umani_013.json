@@ -26,5 +26,7 @@
   "nome_abilita": [
     "Vigore",
     "Versatilità"
-  ]
+  ],
+  "img_path": "origine/umani_013.png",
+  "json_path": "origine/umani_013.json"
 }

@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "arcano",
+  "pagina": 12,
+  "indice_carta": 2,
+  "sottocategoria": "abilita",
+  "nome": "PIEGARE LA REALTÀ",
+  "testo": [
+    "10",
+    "1",
+    "Incantesimo",
+    "PIEGARE LA REALTÀ",
+    "Dopo che voi o un alleato consenziente avete",
+    "eff ettuato un tiro, potete",
+    "spendere 5 Speranze",
+    "per",
+    "cambiare il risultato numerico di quel tiro con un",
+    "risultato a scelta. Il risultato deve essere compreso",
+    "tra quelli ottenibili in base al tipo di dado lanciato.",
+    "DH MB 101/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "101/270",
+  "soglia": "10",
+  "livello": "1",
+  "tipo_carta": "incantesimo",
+  "img_path": "domini/arcano/abilita/piegare_la_realta_020.png",
+  "json_path": "domini/arcano/abilita/piegare_la_realta_020.json"
+}

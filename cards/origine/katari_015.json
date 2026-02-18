@@ -29,5 +29,7 @@
   "nome_abilita": [
     "Istinti Felini",
     "Dado Speranza. Artigli Retrattili"
-  ]
+  ],
+  "img_path": "origine/katari_015.png",
+  "json_path": "origine/katari_015.json"
 }

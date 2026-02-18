@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 6,
+  "indice_carta": 5,
+  "sottocategoria": "classi",
+  "nome": "SCUOLA DELLA CONOSCENZA",
+  "testo": [
+    "SCUOLA DELLA CONOSCENZA",
+    "Specializzazione",
+    "Esperto:",
+    "Prendete una carta dominio aggiuntiva",
+    "del vostro livello o di livello inferiore da un dominio",
+    "a cui avete accesso.",
+    "Memoria Perfetta:",
+    "Una volta per riposo, quando",
+    "richiamate una carta dominio nella vostra riserva,",
+    "potete ridurre di 1 il suo Costo di Richiamo.",
+    "DH MB 050 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "050/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Esperto",
+    "Memoria Perfetta"
+  ],
+  "img_path": "domini/codice/classi/scuola_della_conoscenza_002.png",
+  "json_path": "domini/codice/classi/scuola_della_conoscenza_002.json"
+}

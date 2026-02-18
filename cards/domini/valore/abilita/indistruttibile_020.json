@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 30,
+  "indice_carta": 8,
+  "sottocategoria": "abilita",
+  "nome": "INDISTRUTTIBILE",
+  "testo": [
+    "10",
+    "4",
+    "Abilità",
+    "INDISTRUTTIBILE",
+    "Quando subite il vostro ultimo Punto Ferita, invece",
+    "di eff ettuare la mossa fi nale potete tirare un",
+    "d6",
+    "e",
+    "curare un numero di Punti Ferita pari al risultato.",
+    "Quindi mettete questa carta nella riserva.",
+    "DH MB 269/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "269/270",
+  "soglia": "10",
+  "livello": "4",
+  "tipo_carta": "abilità",
+  "img_path": "domini/valore/abilita/indistruttibile_020.png",
+  "json_path": "domini/valore/abilita/indistruttibile_020.json"
+}

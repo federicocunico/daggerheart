@@ -32,5 +32,7 @@
   "nome_abilita": [
     "Tiro Agilità per Carica",
     "Mischia. Irremovibile"
-  ]
+  ],
+  "img_path": "origine/firbolg_007.png",
+  "json_path": "origine/firbolg_007.json"
 }

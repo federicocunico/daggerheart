@@ -26,5 +26,7 @@
   "nome_abilita": [
     "Guscio",
     "Competenza. Rinchiudersi"
-  ]
+  ],
+  "img_path": "origine/galapa_009.png",
+  "json_path": "origine/galapa_009.json"
 }

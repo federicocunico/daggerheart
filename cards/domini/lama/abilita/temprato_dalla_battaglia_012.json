@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 13,
+  "indice_carta": 6,
+  "sottocategoria": "abilita",
+  "nome": "TEMPRATO DALLA BATTAGLIA",
+  "testo": [
+    "6",
+    "2",
+    "Abilità",
+    "TEMPRATO DALLA BATTAGLIA",
+    "Una volta per riposo lungo, quando dovreste",
+    "eff ettuare una Mossa Finale, potete",
+    "spendere una",
+    "Speranza",
+    "per recuperare un Punto Ferita.",
+    "DH MB 114/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "114/270",
+  "soglia": "6",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "img_path": "domini/lama/abilita/temprato_dalla_battaglia_012.png",
+  "json_path": "domini/lama/abilita/temprato_dalla_battaglia_012.json"
+}

@@ -1,0 +1,34 @@
+{
+  "categoria": "dominio",
+  "dominio": "valore",
+  "pagina": 2,
+  "indice_carta": 9,
+  "sottocategoria": "classi",
+  "nome": "VENDICATORE",
+  "testo": [
+    "VENDICATORE",
+    "Maestria",
+    "Nemesi:",
+    "Spendete 2 Speranze",
+    "per",
+    "Dare Priorità",
+    "a un avversario fi no al vostro prossimo riposo.",
+    "Quando eff ettuate un attacco contro l’avversario a",
+    "cui avete",
+    "dato Priorità",
+    ", potete scambiare i risultati",
+    "dei Dadi Speranza e Paura. Potete",
+    "Dare Priorità",
+    "a",
+    "un solo avversario alla volta.",
+    "DH MB 018 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "018/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Maestria Nemesi"
+  ],
+  "img_path": "domini/valore/classi/vendicatore_006.png",
+  "json_path": "domini/valore/classi/vendicatore_006.json"
+}

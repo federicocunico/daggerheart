@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 6,
+  "indice_carta": 2,
+  "sottocategoria": "classi",
+  "nome": "CHIAMATA DELLO STERMINATORE",
+  "testo": [
+    "CHIAMATA DELLO STERMINATORE",
+    "Specializzazione",
+    "Specialista delle Armi:",
+    "Potete maneggiare più",
+    "armi con letale maestria. Quando avete successo",
+    "in un attacco, potete",
+    "spendere una Speranza",
+    "per aggiungere uno dei dadi di danno della vostra",
+    "arma secondaria al tiro di dado. Inoltre, una",
+    "volta per riposo lungo, quando tirate i Dadi dello",
+    "Sterminatore, potete ripetere l’esito di qualsiasi 1.",
+    "DH MB 047 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "047/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Specializzazione Specialista delle Armi"
+  ],
+  "img_path": "domini/lama/classi/chiamata_dello_sterminatore_005.png",
+  "json_path": "domini/lama/classi/chiamata_dello_sterminatore_005.json"
+}

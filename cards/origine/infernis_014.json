@@ -25,5 +25,7 @@
   "nome_abilita": [
     "Cerchie Infere. Senzapaura",
     "Speranza. Volto Spaventoso"
-  ]
+  ],
+  "img_path": "origine/infernis_014.png",
+  "json_path": "origine/infernis_014.json"
 }

@@ -24,5 +24,7 @@
   "id_carta": "080/270",
   "nome_abilita": [
     "Sacca da Viaggio"
-  ]
+  ],
+  "img_path": "comunità/nomade_008.png",
+  "json_path": "comunità/nomade_008.json"
 }

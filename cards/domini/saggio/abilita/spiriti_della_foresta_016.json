@@ -1,0 +1,42 @@
+{
+  "categoria": "dominio",
+  "dominio": "saggio",
+  "pagina": 25,
+  "indice_carta": 7,
+  "sottocategoria": "abilita",
+  "nome": "SPIRITI DELLA FORESTA",
+  "testo": [
+    "8",
+    "2",
+    "Incantesimo",
+    "SPIRITI DELLA FORESTA",
+    "Eff ettuate un",
+    "Tiro Incantesimo (13)",
+    ". In caso di",
+    "successo,",
+    "spendete un numero qualsiasi di Speranze",
+    "per",
+    "creare un numero uguale di piccoli spiriti della foresta",
+    "che appaiono in punti a vostra scelta entro distanza",
+    "Lontana, fornendo i seguenti benefi ci:",
+    "• I vostri alleati ottengono bonus +3 ai tiri attacco",
+    "contro avversari entro distanza di Mischia da uno",
+    "spirito.",
+    "• Un alleato che marca una Casella Armatura mentre",
+    "si trova entro distanza di Mischia da uno spirito può",
+    "marcare una Casella Armatura aggiuntiva.",
+    "Uno spirito svanisce dopo aver concesso un benefi cio o",
+    "subito danni.",
+    "DH MB 223/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "223/270",
+  "soglia": "8",
+  "livello": "2",
+  "tipo_carta": "incantesimo",
+  "nome_abilita": [
+    "Lontana, fornendo i seguenti benefi ci"
+  ],
+  "img_path": "domini/saggio/abilita/spiriti_della_foresta_016.png",
+  "json_path": "domini/saggio/abilita/spiriti_della_foresta_016.json"
+}

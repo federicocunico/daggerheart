@@ -25,5 +25,7 @@
   "tipo_carta": "azione",
   "nome_abilita": [
     "Sentire la Marea"
-  ]
+  ],
+  "img_path": "comunità/marittima_005.png",
+  "json_path": "comunità/marittima_005.json"
 }

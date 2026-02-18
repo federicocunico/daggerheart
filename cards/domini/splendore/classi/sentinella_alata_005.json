@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 4,
+  "indice_carta": 8,
+  "sottocategoria": "classi",
+  "nome": "SENTINELLA ALATA",
+  "testo": [
+    "SENTINELLA ALATA",
+    "Specializzazione",
+    "Volto Celeste:",
+    "Il vostro volto soprannaturale",
+    "incute timore e paura. Quando siete in volo,",
+    "avete vantaggio sui Tiri Presenza. Quando avete",
+    "successo con Speranza in un Tiro Presenza, potete",
+    "rimuovere una Paura dalla riserva di Paura del GM",
+    "invece di guadagnare Speranza.",
+    "DH MB 035 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "035/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Volto Celeste"
+  ],
+  "img_path": "domini/splendore/classi/sentinella_alata_005.png",
+  "json_path": "domini/splendore/classi/sentinella_alata_005.json"
+}

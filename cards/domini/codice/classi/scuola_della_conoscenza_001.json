@@ -1,0 +1,36 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 6,
+  "indice_carta": 4,
+  "sottocategoria": "classi",
+  "nome": "SCUOLA DELLA CONOSCENZA",
+  "testo": [
+    "SCUOLA DELLA CONOSCENZA",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "CONOSCENZA",
+    "Prendete una carta dominio aggiuntiva",
+    "Preparato:",
+    "del vostro livello o di livello inferiore da un dominio",
+    "a cui avete accesso.",
+    "Iniziato:",
+    "Quando Utilizzate un’Esperienza,",
+    "potete",
+    "marcare uno Stress",
+    "invece di spendere",
+    "Speranza. Se lo fate, raddoppiate il modifi catore",
+    "dell’Esperienza per quel tiro.",
+    "DH MB 049 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "049/270",
+  "tipo_carta": "tratto",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Preparato",
+    "Iniziato"
+  ],
+  "img_path": "domini/codice/classi/scuola_della_conoscenza_001.png",
+  "json_path": "domini/codice/classi/scuola_della_conoscenza_001.json"
+}
