@@ -1,0 +1,23 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 1,
+  "indice_carta": 3,
+  "nome": "TROVATORE",
+  "testo": [
+    "TROVATORE",
+    "Maestria",
+    "Virtuoso:",
+    "Siete tra i più grandi musicisti mai vissuti",
+    "e la vostra abilità è illimitata. Potete eseguire ogni",
+    "canzone del privilegio “Musico Eccezionale” due",
+    "volte invece di una sola per riposo lungo.",
+    "DH MB 003 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "003/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Maestria Virtuoso"
+  ]
+}

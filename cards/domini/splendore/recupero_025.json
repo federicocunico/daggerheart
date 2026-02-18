@@ -1,0 +1,24 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 16,
+  "indice_carta": 1,
+  "nome": "RECUPERO",
+  "testo": [
+    "6",
+    "1",
+    "Abilità",
+    "RECUPERO",
+    "Durante un riposo breve, potete scegliere invece",
+    "una mossa di interludio di riposo lungo. Potete",
+    "spendere una Speranza",
+    "per consentire a un alleato",
+    "di fare lo stesso.",
+    "DH MB 136/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "136/270",
+  "soglia": "6",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

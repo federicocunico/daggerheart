@@ -1,0 +1,31 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 1,
+  "nome": "Clank",
+  "testo": [
+    "Clank",
+    "O R I G I N E",
+    "I clank sono esseri meccanici senzienti costruiti con",
+    "O R I G I N E",
+    "O R I G I N E",
+    "diversi materiali, tra cui metallo, legno e pietra.",
+    "Scopo Preciso:",
+    "Decidete chi vi ha creato e per quale",
+    "scopo. Alla creazione del personaggio, scegliete una",
+    "delle vostre Esperienze che meglio si allinea con tale",
+    "fi nalità e guadagnate bonus +1 permanente a essa.",
+    "Effi ciente:",
+    "Quando eff ettuate un riposo breve,",
+    "potete scegliere una mossa di riposo lungo invece",
+    "che una mossa di riposo breve.",
+    "DH MB 056/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "056/270",
+  "nome_abilita": [
+    "Scopo Preciso",
+    "Effi ciente"
+  ]
+}

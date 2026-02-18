@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 15,
+  "indice_carta": 3,
+  "nome": "RISOLUTEZZA",
+  "testo": [
+    "3",
+    "1",
+    "Abilità",
+    "RISOLUTEZZA",
+    "Quando marcate una Casella Armatura per ridurre",
+    "il danno in arrivo, potete",
+    "marcare uno Stress",
+    "per",
+    "marcare una Casella Armatura aggiuntiva.",
+    "DH MB 129/270 |",
+    "Daggerheart © Darrington Press 2025",
+    "▵"
+  ],
+  "id_carta": "129/270",
+  "soglia": "3",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

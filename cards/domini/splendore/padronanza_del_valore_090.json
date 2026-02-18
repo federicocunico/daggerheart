@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 30,
+  "indice_carta": 3,
+  "nome": "Padronanza DEL VALORE",
+  "testo": [
+    "7",
+    "1",
+    "Abilità",
+    "Padronanza DEL VALORE",
+    "Quando 4 o più carte dominio nella vostra dotazione",
+    "appartengono al dominio del Valore, ottenete i",
+    "seguenti benefi ci:",
+    "•",
+    "Bonus +1 al Punteggio di Armatura",
+    "•",
+    "Quando subite 1 o più Punti Ferita senza marcare",
+    "una Casella Armatura, riparate una Casella",
+    "Armatura.",
+    "DH MB 264/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "264/270",
+  "soglia": "7",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "nome_abilita": [
+    "Valore, ottenete i seguenti benefi ci"
+  ]
+}

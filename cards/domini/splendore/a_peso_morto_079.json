@@ -1,0 +1,23 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 29,
+  "indice_carta": 1,
+  "nome": "A PESO MORTO",
+  "testo": [
+    "2",
+    "1",
+    "Abilità",
+    "A PESO MORTO",
+    "Usate tutta la forza del vostro corpo in",
+    "combattimento. In un attacco riuscito con un’arma",
+    "da Mischia, ottenete un bonus al tiro di danno pari",
+    "alla vostra Forza.",
+    "DH MB 253/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "253/270",
+  "soglia": "2",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

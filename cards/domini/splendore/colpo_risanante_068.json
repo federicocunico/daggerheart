@@ -1,0 +1,23 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 27,
+  "indice_carta": 8,
+  "nome": "COLPO RISANANTE",
+  "testo": [
+    "7",
+    "1",
+    "Incantesimo",
+    "COLPO RISANANTE",
+    "Quando infl iggete danno a un avversario, potete",
+    "spendere 2 Speranze",
+    "per curare un Punto Ferita a",
+    "un alleato entro distanza Ravvicinata.",
+    "DH MB 242/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "242/270",
+  "soglia": "7",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

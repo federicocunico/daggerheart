@@ -1,0 +1,35 @@
+{
+  "categoria": "dominio",
+  "dominio": "fungale",
+  "pagina": 3,
+  "indice_carta": 4,
+  "nome": "APRIPISTA",
+  "testo": [
+    "APRIPISTA",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "AGILITÀ",
+    "Quando eff ettuate un tiro",
+    "Predatore Spietato:",
+    "per i danni, potete",
+    "per",
+    "marcare uno Stress",
+    "ottenere bonus +1 alla Competenza. Inoltre,",
+    "quando infl iggete un danno Grave a un avversario,",
+    "quest’ultimo deve marcare uno Stress.",
+    "Quando viaggiate verso un luogo",
+    "La Via Prosegue:",
+    "già visitato o portate con voi un oggetto che è già",
+    "stato in quel luogo, potete individuare il percorso",
+    "più breve e diretto verso tale destinazione.",
+    "DH MB 022 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "022/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Predatore Spietato",
+    "La Via Prosegue"
+  ]
+}

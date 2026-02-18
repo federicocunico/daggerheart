@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 14,
+  "indice_carta": 2,
+  "nome": "FRENESIA",
+  "testo": [
+    "8",
+    "3",
+    "Abilità",
+    "FRENESIA",
+    "Una volta per riposo lungo, potete entrare in uno",
+    "stato di",
+    "Frenesia",
+    "fi nché non ci sono più avversari",
+    "in vista.",
+    "Mentre siete in",
+    "Frenesia",
+    ", non potete marcare le",
+    "Caselle Armatura e ottenete bonus +10 ai tiri di",
+    "danno e bonus +8 alla vostra soglia di danno Grave.",
+    "DH MB 119/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "119/270",
+  "soglia": "8",
+  "livello": "3",
+  "tipo_carta": "abilità"
+}

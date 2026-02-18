@@ -1,0 +1,24 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 12,
+  "indice_carta": 9,
+  "nome": "MISCHIARE LE CARTE",
+  "testo": [
+    "▵",
+    "3",
+    "1",
+    "Abilità",
+    "MISCHIARE LE CARTE",
+    "Una volta per riposo, quando una creatura entro",
+    "distanza di Mischia sta per infl iggervi danno, potete",
+    "evitare l’attacco e muovervi in sicurezza oltre la",
+    "distanza di Mischia del nemico.",
+    "DH MB 108/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "108/270",
+  "soglia": "3",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

@@ -1,0 +1,29 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 4,
+  "nome": "ElfI",
+  "testo": [
+    "ElfI",
+    "O R I G I N E",
+    "Gli elfi sono in genere umanoidi alti, con orecchie a",
+    "punta e sensi molto acuti.",
+    "Reazione Istintiva:",
+    "Marcate uno Stress",
+    "per",
+    "ottenere vantaggio in un tiro reazione.",
+    "Dormiveglia:",
+    "Durante un riposo, potete cadere",
+    "in trance per scegliere una mossa di interludio",
+    "aggiuntiva.",
+    "DH MB 059/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "059/270",
+  "tipo_carta": "reazione",
+  "nome_abilita": [
+    "Reazione Istintiva",
+    "Dormiveglia"
+  ]
+}

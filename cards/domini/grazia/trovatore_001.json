@@ -1,0 +1,41 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 1,
+  "indice_carta": 1,
+  "nome": "TROVATORE",
+  "testo": [
+    "TROVATORE",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "PRESENZA",
+    "Descrivete il modo in cui",
+    "Musico Eccezionale:",
+    "vi esibite per gli altri. È possibile eseguire ogni",
+    "canzone una sola volta per riposo lungo:",
+    "•",
+    "Voi e tutti gli alleati a distanza",
+    "Canzone Popolare:",
+    "Ravvicinata recuperate un Punto Ferita.",
+    "•",
+    "Canto Epico:",
+    "Rendete temporaneamente",
+    "Vulnerabile",
+    "un bersaglio a distanza Ravvicinata.",
+    "•",
+    "Ballata:",
+    "Voi e tutti gli alleati a distanza Ravvicinata",
+    "guadagnate una Speranza.",
+    "DH MB 001 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "001/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Musico Eccezionale",
+    "Canzone Popolare",
+    "Punto Ferita. • Canto Epico",
+    "Ravvicinata. • Ballata"
+  ]
+}

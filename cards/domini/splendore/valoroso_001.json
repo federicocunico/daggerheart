@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 2,
+  "indice_carta": 4,
+  "nome": "VALOROSO",
+  "testo": [
+    "VALOROSO",
+    "Privilegio Base",
+    "Saldo:",
+    "Guadagnate bonus permanente +1 alle",
+    "soglie di danno.",
+    "Volontà di Ferro:",
+    "Quando subite danni fi sici, potete",
+    "marcare",
+    "un’ulteriore Casella Armatura",
+    "per",
+    "ridurne la gravità.",
+    "DH MB 013 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "013/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Privilegio Base Saldo",
+    "Volontà di Ferro"
+  ]
+}

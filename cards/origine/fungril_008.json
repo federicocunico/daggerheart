@@ -1,0 +1,33 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 8,
+  "nome": "FungrIl",
+  "testo": [
+    "▵",
+    "FungrIl",
+    "O R I G I N E",
+    "I fungril assomigliano a funghi umanoidi.",
+    "Cerchio dei Fungril:",
+    "Eff ettuate un",
+    "Tiro Istinto (12)",
+    "per utilizzare la vostra struttura micellare per",
+    "comunicare con altri fungril. In caso di successo,",
+    "potete comunicare a qualsiasi distanza.",
+    "Toccando un cadavere morto",
+    "Connessione con i Morti:",
+    "di recente, potete",
+    "per estrarre",
+    "marcare uno Stress",
+    "dal cadavere un ricordo legato a un’emozione o",
+    "sensazione specifi ca a vostra scelta.",
+    "DH MB 062/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "062/270",
+  "nome_abilita": [
+    "Cerchio dei Fungril",
+    "Connessione con i Morti"
+  ]
+}

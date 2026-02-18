@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 23,
+  "indice_carta": 7,
+  "nome": "RINTOCCO DEL CREPUSCOLO",
+  "testo": [
+    "9",
+    "1",
+    "Abilità",
+    "RINTOCCO DEL CREPUSCOLO",
+    "Scegliete un bersaglio entro distanza Lontana.",
+    "Quando superate un tiro azione contro di esso che",
+    "non causa danno, mettete un gettone su questa",
+    "carta. Quando infl iggete danno a questo bersaglio,",
+    "spendete un numero qualsiasi di gettoni per",
+    "aggiungere un",
+    "d12",
+    "al tiro di danno per ogni gettone",
+    "speso. Potete attivare il Rintocco del Crepuscolo su",
+    "una sola creatura alla volta.",
+    "Quando scegliete un nuovo bersaglio o riposate,",
+    "rimuovete tutti i gettoni non spesi.",
+    "DH MB 205/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "205/270",
+  "soglia": "9",
+  "livello": "1",
+  "tipo_carta": "azione"
+}

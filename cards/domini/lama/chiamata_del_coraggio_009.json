@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 5,
+  "indice_carta": 9,
+  "nome": "CHIAMATA DEL CORAGGIO",
+  "testo": [
+    "CHIAMATA DEL CORAGGIO",
+    "Maestria",
+    "Commilitoni:",
+    "Il vostro saldo coraggio è un punto",
+    "fermo nel caos della battaglia per i vostri alleati.",
+    "Potete eff ettuare un Tiro Combinato una volta in",
+    "più per sessione. Inoltre, quando un alleato inizia",
+    "un Tiro Combinato con voi, deve spendere solo 2",
+    "Speranze per farlo.",
+    "DH MB 045 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "045/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Maestria Commilitoni"
+  ]
+}

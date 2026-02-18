@@ -1,0 +1,26 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 28,
+  "indice_carta": 9,
+  "nome": "SONO IL TUO SCUDO",
+  "testo": [
+    "1",
+    "1",
+    "Abilità",
+    "SONO IL TUO SCUDO",
+    "Quando un alleato a distanza Prossima sta per",
+    "subire danni, potete",
+    "marcare uno Stress",
+    "per",
+    "frapporvi e diventare il bersaglio dell’attacco.",
+    "Quando subite danni da questo attacco, potete",
+    "marcare un numero qualsiasi di Caselle Armatura.",
+    "DH MB 252/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "252/270",
+  "soglia": "1",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

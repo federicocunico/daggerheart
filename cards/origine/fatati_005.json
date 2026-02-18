@@ -1,0 +1,35 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 5,
+  "nome": "FATATI",
+  "testo": [
+    "FATATI",
+    "O R I G I N E",
+    "I fatati sono creature umanoidi alate con tratti da",
+    "insetto.",
+    "Portafortuna:",
+    "Una volta per sessione, dopo che voi o",
+    "un alleato consenziente entro distanza Ravvicinata",
+    "eff ettuate un tiro azione, potete",
+    "spendere 3",
+    "Speranze",
+    "per rilanciare i Dadi Dualità.",
+    "Ali:",
+    "Potete volare. Mentre siete in volo, potete",
+    "marcare uno Stress",
+    "dopo che un avversario ha",
+    "eff ettuato un attacco nei vostri confronti per ottenere",
+    "bonus +2 alla vostra Evasione contro quell’attacco.",
+    "DH MB 060/270 |",
+    "Daggerheart © Darrington Press 2025",
+    "▵"
+  ],
+  "id_carta": "060/270",
+  "tipo_carta": "azione",
+  "nome_abilita": [
+    "Portafortuna",
+    "Dadi Dualità. Ali"
+  ]
+}

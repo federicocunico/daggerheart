@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 12,
+  "indice_carta": 3,
+  "nome": "FRATTURA CELESTE",
+  "testo": [
+    "10",
+    "1",
+    "Incantesimo",
+    "FRATTURA CELESTE",
+    "Eff ettuate un",
+    "Tiro Incantesimo",
+    "contro tutti gli",
+    "avversari a distanza Lontana.",
+    "Marcate un numero",
+    "qualsiasi di Stress",
+    "per far piovere frammenti di",
+    "energia arcana dall’alto. I bersagli contro cui avete",
+    "successo subiscono",
+    "1d20+2",
+    "danni magici per ogni",
+    "Stress marcato.",
+    "DH MB 102/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "102/270",
+  "soglia": "10",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

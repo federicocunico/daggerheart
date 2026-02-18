@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 5,
+  "indice_carta": 2,
+  "nome": "POTERE ELEMENTALE",
+  "testo": [
+    "POTERE ELEMENTALE",
+    "Specializzazione",
+    "Scudo della Natura:",
+    "Potete invocare il vostro",
+    "elemento per proteggervi dai danni. Quando un",
+    "tiro attacco contro di voi ha successo, potete",
+    "marcare uno Stress",
+    "e descrivere come usate il",
+    "vostro elemento per difendervi. Quando lo fate,",
+    "tirate un",
+    "d6",
+    "e aggiungete il risultato alla vostra",
+    "Evasione contro l’attacco.",
+    "DH MB 038 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "038/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Scudo della Natura"
+  ]
+}

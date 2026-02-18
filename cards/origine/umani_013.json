@@ -1,0 +1,30 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 8,
+  "indice_carta": 4,
+  "nome": "umani",
+  "testo": [
+    "umani",
+    "O R I G I N E",
+    "Gli umani sono facilmente riconoscibili per le loro",
+    "mani abili, le orecchie arrotondate e una struttura",
+    "corporea naturalmente adatta a essere resistente.",
+    "Vigore:",
+    "Guadagnate una casella Stress aggiuntiva",
+    "alla creazione del personaggio.",
+    "Versatilità:",
+    "Quando fallite un tiro che utilizza una",
+    "delle vostre Esperienze, potete",
+    "marcare uno",
+    "Stress",
+    "per ripetere il tiro.",
+    "DH MB 068/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "068/270",
+  "nome_abilita": [
+    "Vigore",
+    "Versatilità"
+  ]
+}

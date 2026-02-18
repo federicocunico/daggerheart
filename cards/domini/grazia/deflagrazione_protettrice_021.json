@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 10,
+  "indice_carta": 9,
+  "nome": "DEFLAGRAZIONE PROTETTRICE",
+  "testo": [
+    "4",
+    "2",
+    "Incantesimo",
+    "DEFLAGRAZIONE PROTETTRICE",
+    "Eff ettuate un",
+    "Tiro Incantesimo",
+    "contro tutti i",
+    "bersagli entro distanza di Mischia. I bersagli contro",
+    "cui avete successo vengono respinti a distanza",
+    "Lontana e subiscono",
+    "d8+3",
+    "danni magici usando il",
+    "vostro tratto da Incantatore.",
+    "DH MB 090/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "090/270",
+  "soglia": "4",
+  "livello": "2",
+  "tipo_carta": "incantesimo"
+}

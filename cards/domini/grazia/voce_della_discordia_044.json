@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 20,
+  "indice_carta": 5,
+  "nome": "VOCE DELLA DISCORDIA",
+  "testo": [
+    "5",
+    "1",
+    "Incantesimo",
+    "VOCE DELLA DISCORDIA",
+    "Sussurrate parole di discordia a un avversario",
+    "entro distanza di Mischia ed eff ettuate un",
+    "Tiro",
+    "Incantesimo (13)",
+    ". In caso di successo, il bersaglio",
+    "deve marcare uno Stress e attaccare un altro",
+    "avversario invece che voi o i vostri alleati.",
+    "Una volta terminato l’attacco, il bersaglio si rende",
+    "conto di ciò che è successo. La prossima volta",
+    "che lanciate Voce della Discordia su di lui, subite",
+    "penalità –5 al Tiro Incantesimo.",
+    "DH MB 176/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "176/270",
+  "soglia": "5",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

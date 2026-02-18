@@ -1,0 +1,36 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 6,
+  "nome": "FAUNI",
+  "testo": [
+    "FAUNI",
+    "O R I G I N E",
+    "I fauni assomigliano a capre, pecore, stambecchi",
+    "o camosci umanoidi con corna ricurve, pupille",
+    "O R I G I N E",
+    "O R I G I N E",
+    "quadrate e zoccoli fessi.",
+    "Potete saltare entro qualsiasi punto",
+    "Balzo Caprino:",
+    "a distanza Ravvicinata come se usaste un normale",
+    "movimento, il che vi consente di superare ostacoli, saltare",
+    "attraverso spazi vuoti o scalare barriere con facilità.",
+    "Calcio:",
+    "Quando riuscite a sferrare un attacco contro",
+    "un bersaglio in Mischia, potete",
+    "marcare uno Stress",
+    "per scalciare via il bersaglio o voi stessi, infl iggendo",
+    "2d6",
+    "danni aggiuntivi e spostando voi o il bersaglio in",
+    "qualsiasi punto entro una distanza Prossima.",
+    "DH MB 063/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "063/270",
+  "nome_abilita": [
+    "Balzo Caprino",
+    "Calcio"
+  ]
+}

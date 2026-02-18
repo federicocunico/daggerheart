@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 15,
+  "indice_carta": 6,
+  "nome": "RITORCERE",
+  "testo": [
+    "▵",
+    "4",
+    "1",
+    "Abilità",
+    "RITORCERE",
+    "Quando un attacco contro di voi eff ettuato da una",
+    "distanza superiore alla distanza di Mischia fallisce,",
+    "tirate un numero di",
+    "d6",
+    "pari alla vostra Competenza.",
+    "Se uno qualsiasi dei d6 ottiene un 6, potete",
+    "marcare uno Stress",
+    "per ridirigere l’attacco verso",
+    "un avversario che si trova entro distanza Prossima",
+    "da voi.",
+    "DH MB 132/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "132/270",
+  "soglia": "4",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 13,
+  "indice_carta": 1,
+  "nome": "COMBATTENTE VERSATILE",
+  "testo": [
+    "3",
+    "1",
+    "Abilità",
+    "COMBATTENTE VERSATILE",
+    "Potete usare per un arma equipaggiata un tratto",
+    "del personaggio diverso da quello normalmente",
+    "indicato.",
+    "Quando infl iggete danno, potete",
+    "marcare uno",
+    "Stress",
+    "per ottenere il risultato massimo in uno dei",
+    "dadi di danno invece di tirarlo.",
+    "DH MB 109/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "109/270",
+  "soglia": "3",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

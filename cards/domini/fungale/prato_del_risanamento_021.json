@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "fungale",
+  "pagina": 24,
+  "indice_carta": 9,
+  "nome": "PRATO DEL RISANAMENTO",
+  "testo": [
+    "4",
+    "2",
+    "Incantesimo",
+    "PRATO DEL RISANAMENTO",
+    "Una volta per riposo lungo, potete evocare un",
+    "campo di piante curative intorno a voi. Ovunque",
+    "entro distanza Ravvicinata la natura esplode di vita,",
+    "permettendo a voi e a tutti gli alleati nell’area di",
+    "recuperare un Punto Ferita.",
+    "Spendete 2 Speranze",
+    "per aumentare il recupero a",
+    "2 Punti Ferita.",
+    "DH MB 216/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "216/270",
+  "soglia": "4",
+  "livello": "2",
+  "tipo_carta": "incantesimo"
+}

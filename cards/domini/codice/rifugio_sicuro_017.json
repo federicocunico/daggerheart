@@ -1,0 +1,33 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 18,
+  "indice_carta": 8,
+  "nome": "RIFUGIO SICURO",
+  "testo": [
+    "8",
+    "3",
+    "Incantesimo",
+    "RIFUGIO SICURO",
+    "Quando avete qualche minuto di calma per",
+    "concentrarvi, potete",
+    "spendere 2 Speranze",
+    "per",
+    "evocare il vostro Rifugio Sicuro, una grande dimora",
+    "interdimensionale dove voi e i vostri alleati potete",
+    "rifugiarvi. Quando lo fate, una porta magica appare",
+    "entro distanza Ravvicinata. Solo le creature di",
+    "vostra scelta possono varcarla. Una volta dentro,",
+    "potete rendere invisibile l’ingresso. Voi e chiunque",
+    "altro all’interno potete sempre uscirne. Una volta",
+    "usciti, la porta deve essere evocata nuovamente.",
+    "Quando riposate nel vostro Rifugio Sicuro, potete",
+    "scegliere una mossa aggiuntiva durante l’interludio.",
+    "DH MB 161/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "161/270",
+  "soglia": "8",
+  "livello": "3",
+  "tipo_carta": "incantesimo"
+}

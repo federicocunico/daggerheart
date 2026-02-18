@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "saggio",
+  "pagina": 6,
+  "indice_carta": 6,
+  "nome": "SCUOLA DELLA CONOSCENZA",
+  "testo": [
+    "SCUOLA DELLA CONOSCENZA",
+    "Maestria",
+    "Brillante:",
+    "Prendete una carta dominio aggiuntiva",
+    "del vostro livello o di livello inferiore da un dominio",
+    "a cui avete accesso.",
+    "Padronanza Affi nata:",
+    "Quando Utilizzate",
+    "un’Esperienza, tirate un",
+    "d6",
+    ". Con un risultato di",
+    "5 o superiore, potete utilizzarla senza spendere",
+    "Speranza.",
+    "DH MB 051 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "051/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Maestria Brillante",
+    "Padronanza Affi nata"
+  ]
+}

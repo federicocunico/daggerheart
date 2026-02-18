@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 4,
+  "indice_carta": 9,
+  "nome": "SENTINELLA ALATA",
+  "testo": [
+    "SENTINELLA ALATA",
+    "Maestria",
+    "Ascendente:",
+    "Guadagnate bonus +4 permanente",
+    "alla soglia dei danni Gravi.",
+    "Potere degli Dèi:",
+    "Quando siete in volo grazie al",
+    "privilegio “Ali di Luce”, infl iggete",
+    "1d12",
+    "danni extra",
+    "invece di 1d8.",
+    "DH MB 036 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "036/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Maestria Ascendente",
+    "Gravi. Potere degli Dèi"
+  ]
+}

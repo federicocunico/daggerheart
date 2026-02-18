@@ -1,0 +1,22 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 29,
+  "indice_carta": 4,
+  "nome": "CONTA SU DI ME",
+  "testo": [
+    "3",
+    "1",
+    "Abilità",
+    "CONTA SU DI ME",
+    "Una volta per riposo lungo, quando consolate o",
+    "ispirate un alleato che ha fallito un tiro azione,",
+    "entrambi potete rimuovere 2 Stress.",
+    "DH MB 256/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "256/270",
+  "soglia": "3",
+  "livello": "1",
+  "tipo_carta": "azione"
+}

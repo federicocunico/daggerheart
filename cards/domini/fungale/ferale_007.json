@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "fungale",
+  "pagina": 3,
+  "indice_carta": 1,
+  "nome": "FERALE",
+  "testo": [
+    "FERALE",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "AGILITÀ",
+    "Avete un compagno animale a",
+    "Compagno:",
+    "vostra scelta (a discrezione del GM). Rimane al",
+    "vostro fi anco a meno che non gli ordiniate di fare",
+    "altrimenti.",
+    "Prendete la scheda del Compagno del Ranger.",
+    "Quando fate salire di livello il vostro personaggio,",
+    "scegliete anche un’opzione di aumento di livello",
+    "per il vostro compagno da questa scheda.",
+    "DH MB 019 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "019/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Avete un compagno animale a Compagno"
+  ]
+}

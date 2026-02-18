@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "fungale",
+  "pagina": 3,
+  "indice_carta": 3,
+  "nome": "FERALE",
+  "testo": [
+    "FERALE",
+    "Maestria",
+    "Addestramento Avanzato:",
+    "Scegliete due opzioni di",
+    "aumento di livello aggiuntive per il compagno.",
+    "Amico Fedele:",
+    "Una volta per riposo lungo, quando",
+    "il danno di un attacco marcherebbe l’ultimo Stress",
+    "del vostro compagno oppure subireste il vostro",
+    "ultimo Punto Ferita, ed entrambi siete entro",
+    "distanza Prossima, voi o il vostro compagno potete",
+    "accorrere al fi anco dell’altro e marcare quello",
+    "Stress o subire quel danno.",
+    "DH MB 021 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "021/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Maestria Addestramento Avanzato",
+    "Amico Fedele"
+  ]
+}

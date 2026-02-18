@@ -1,0 +1,29 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 8,
+  "indice_carta": 5,
+  "nome": "Infernis",
+  "testo": [
+    "Infernis",
+    "O R I G I N E",
+    "Gli infernis sono umanoidi che possiedono denti",
+    "canini affi lati, orecchie a punta e corna. Sono i",
+    "discendenti dei demoni delle Cerchie Infere.",
+    "Senzapaura:",
+    "Quando tirate con Paura, potete",
+    "marcare 2 Stress",
+    "per trasformarlo in un tiro con",
+    "Speranza.",
+    "Volto Spaventoso:",
+    "Avete vantaggio ai tiri per",
+    "intimidire le creature ostili.",
+    "DH MB 069/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "069/270",
+  "nome_abilita": [
+    "Cerchie Infere. Senzapaura",
+    "Speranza. Volto Spaventoso"
+  ]
+}

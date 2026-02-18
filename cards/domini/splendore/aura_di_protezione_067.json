@@ -1,0 +1,33 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 27,
+  "indice_carta": 7,
+  "nome": "AURA DI PROTEZIONE",
+  "testo": [
+    "6",
+    "2",
+    "Incantesimo",
+    "AURA DI PROTEZIONE",
+    "Eff ettuate un",
+    "Tiro Incantesimo (16)",
+    ". Una volta",
+    "per ogni riposo lungo, se il tiro ha esito positivo,",
+    "scegliete un punto entro distanza Lontana e create",
+    "un’aura di protezione visibile per tutti gli alleati",
+    "entro distanza Prossima da quel punto. Quando lo",
+    "fate, mettete un",
+    "d6",
+    "su questa carta con il valore",
+    "1 rivolto verso l’alto. Quando un alleato in questa",
+    "zona subisce danni, li riduce del valore del dado.",
+    "Aumentate quindi il valore del dado di uno. Quando",
+    "il valore del dado supera 6, questo eff etto termina.",
+    "DH MB 241/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "241/270",
+  "soglia": "6",
+  "livello": "2",
+  "tipo_carta": "incantesimo"
+}

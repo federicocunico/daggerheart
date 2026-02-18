@@ -1,0 +1,26 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 30,
+  "indice_carta": 7,
+  "nome": "GUIDArLI CON L’ESEMPIO",
+  "testo": [
+    "9",
+    "3",
+    "Abilità",
+    "GUIDArLI CON L’ESEMPIO",
+    "Quando infl iggete danno a un avversario,",
+    "potete",
+    "marcare uno Stress",
+    "e descrivere come",
+    "incoraggiate i vostri alleati. Il prossimo PG ad",
+    "attaccare quell’avversario può rimuovere uno",
+    "Stress o ottenere una Speranza.",
+    "DH MB 268/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "268/270",
+  "soglia": "9",
+  "livello": "3",
+  "tipo_carta": "abilità"
+}

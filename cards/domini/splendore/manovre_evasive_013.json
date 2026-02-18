@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 14,
+  "indice_carta": 7,
+  "nome": "MANOVRE EVASIVE",
+  "testo": [
+    "1",
+    "0",
+    "Abilità",
+    "MANOVRE EVASIVE",
+    "Una volta per riposo,",
+    "marcate uno Stress",
+    "per",
+    "correre ovunque entro la distanza Lontana senza",
+    "eff ettuare un Tiro Agilità.",
+    "Se terminate questo movimento entro la",
+    "distanza di Mischia di un avversario ed eff ettuate",
+    "immediatamente un attacco nei suoi confronti,",
+    "ottenete bonus +1 al tiro attacco.",
+    "DH MB 124/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "124/270",
+  "soglia": "1",
+  "livello": "0",
+  "tipo_carta": "abilità"
+}

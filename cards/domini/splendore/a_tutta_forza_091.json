@@ -1,0 +1,25 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 30,
+  "indice_carta": 4,
+  "nome": "A TUTTA FORZA",
+  "testo": [
+    "8",
+    "1",
+    "Abilità",
+    "A TUTTA FORZA",
+    "Una volta per riposo lungo,",
+    "marcate 3 Stress",
+    "per",
+    "spingere il vostro corpo al limite. Ottenete bonus",
+    "+2 a tutti i tratti del vostro personaggio fi no al",
+    "prossimo riposo.",
+    "DH MB 265/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "265/270",
+  "soglia": "8",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

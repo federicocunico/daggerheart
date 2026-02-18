@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 21,
+  "indice_carta": 6,
+  "nome": "FAMIGERATO",
+  "testo": [
+    "10",
+    "0",
+    "Abilità",
+    "FAMIGERATO",
+    "La gente sa chi siete e conosce le vostre imprese,",
+    "e vi tratta conseguentemente. Quando sfruttate la",
+    "vostra notorietà, potete",
+    "marcare uno Stress",
+    "prima",
+    "di tirare per ottenere bonus +10 al risultato. Il cibo e",
+    "le bevande sono sempre gratis ovunque andiate, e",
+    "tutto ciò che acquistate ha un prezzo ridotto di una",
+    "borsa d’oro (fi no a un minimo di una manciata).",
+    "Questa carta non conta ai fi ni del limite massimo",
+    "di 5 carte dominio nella tua dotazione e non può",
+    "essere messa nella riserva.",
+    "DH MB 186/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "186/270",
+  "soglia": "10",
+  "livello": "0",
+  "tipo_carta": "abilità"
+}

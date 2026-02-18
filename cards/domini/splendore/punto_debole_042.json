@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 22,
+  "indice_carta": 6,
+  "nome": "PUNTO DEBOLE",
+  "testo": [
+    "▵",
+    "4",
+    "1",
+    "Incantesimo",
+    "PUNTO DEBOLE",
+    "Eff ettuate un",
+    "Tiro Incantesimo",
+    "contro un bersaglio",
+    "entro distanza Prossima. In caso di successo,",
+    "spendete una Speranza",
+    "per evocare un glifo",
+    "oscuro sul suo corpo che espone i suoi punti deboli,",
+    "riducendo temporaneamente la Diffi coltà del",
+    "bersaglio di un valore pari alla vostra Conoscenza",
+    "(minimo 1).",
+    "DH MB 195/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "195/270",
+  "soglia": "4",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

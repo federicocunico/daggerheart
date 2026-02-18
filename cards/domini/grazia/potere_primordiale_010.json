@@ -1,0 +1,34 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 5,
+  "indice_carta": 4,
+  "nome": "POTERE PRIMORDIALE",
+  "testo": [
+    "POTERE PRIMORDIALE",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "ISTINTO",
+    "Manipolare la Magia:",
+    "Il vostro potere primordiale vi",
+    "permette di modifi care l’essenza stessa della magia. Dopo",
+    "aver lanciato un incantesimo o aver eff ettuato un attacco",
+    "con un’arma che infl igge danni magici, potete",
+    "marcare",
+    "uno Stress",
+    "per attivare un eff etto a scelta tra i seguenti:",
+    "• Estendere la portata dell’incantesimo o dell’attacco",
+    "di una categoria",
+    "• Ottenere bonus +2 al risultato del tiro azione",
+    "• Raddoppiare un dado danno a scelta",
+    "• Colpire un altro bersaglio entro portata",
+    "DH MB 040 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "040/270",
+  "tipo_carta": "azione",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Manipolare la Magia"
+  ]
+}

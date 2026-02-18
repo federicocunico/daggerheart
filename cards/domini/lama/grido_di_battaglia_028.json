@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 14,
+  "indice_carta": 1,
+  "nome": "GRIDO DI BATTAGLIA",
+  "testo": [
+    "8",
+    "2",
+    "Abilità",
+    "GRIDO DI BATTAGLIA",
+    "Una volta per ogni riposo lungo, mentre caricate",
+    "verso il pericolo, potete lanciare un grido che ispira",
+    "gli alleati. Tutti gli alleati che possono sentirlo",
+    "rimuovono uno Stress e ottengono una Speranza.",
+    "Inoltre, gli alleati ottengono vantaggio sui tiri",
+    "attacco fi nché voi o un alleato non fallite un tiro",
+    "con Paura",
+    ".",
+    "DH MB 118/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "118/270",
+  "soglia": "8",
+  "livello": "2",
+  "tipo_carta": "abilità"
+}

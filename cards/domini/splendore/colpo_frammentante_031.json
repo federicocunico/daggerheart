@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 16,
+  "indice_carta": 7,
+  "nome": "COLPO FRAMMENTANTE",
+  "testo": [
+    "9",
+    "3",
+    "Abilità",
+    "COLPO FRAMMENTANTE",
+    "Spendete una Speranza",
+    "e attaccate tutti gli",
+    "avversari nel raggio d’azione della vostra arma. Una",
+    "volta per ogni riposo lungo, se ottenete un successo",
+    "contro uno qualsiasi dei bersagli, sommate il danno",
+    "infl itto, quindi ridistribuitelo a piacere tra i bersagli",
+    "contro cui avete avuto successo. Quando infl iggete",
+    "danno a un bersaglio, tirate un dado di danno",
+    "aggiuntivo e sommatelo al danno infl itto a quel",
+    "bersaglio.",
+    "DH MB 142/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "142/270",
+  "soglia": "9",
+  "livello": "3",
+  "tipo_carta": "azione"
+}

@@ -1,0 +1,35 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 8,
+  "indice_carta": 7,
+  "nome": "ORCHI",
+  "testo": [
+    "ORCHI",
+    "O R I G I N E",
+    "Gli orchi sono umanoidi facilmente riconoscibili per",
+    "O R I G I N E",
+    "O R I G I N E",
+    "i loro tratti spigolosi e per le zanne simili a quelle di",
+    "un cinghiale che sporgono dalla mascella inferiore.",
+    "Robusto:",
+    "Quando vi resta 1 Punto Ferita, gli attacchi",
+    "nei vostri confronti hanno svantaggio.",
+    "Zanne:",
+    "Quando riuscite in un attacco contro",
+    "un bersaglio in Mischia, potete",
+    "spendere una",
+    "per sventrare il bersaglio con le zanne,",
+    "Speranza",
+    "infl iggendo",
+    "danni extra.",
+    "1d6",
+    "DH MB 071/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "071/270",
+  "nome_abilita": [
+    "Robusto",
+    "Zanne"
+  ]
+}

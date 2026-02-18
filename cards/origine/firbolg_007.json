@@ -1,0 +1,36 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 7,
+  "nome": "Firbolg",
+  "testo": [
+    "Firbolg",
+    "O R I G I N E",
+    "I fi rbolg sono umanoidi dai tratti bovini, riconoscibili",
+    "per il naso largo e le orecchie lunghe e cadenti.",
+    "Quando riuscite in un Tiro Agilità per",
+    "Carica:",
+    "spostarvi da distanza Lontana o Remota a distanza",
+    "di Mischia con uno o più bersagli, potete",
+    "marcare",
+    "uno Stress",
+    "per infl iggere",
+    "1d12",
+    "danni fi sici a tutti i",
+    "bersagli entro distanza di Mischia.",
+    "Irremovibile:",
+    "Quando dovreste marcare uno Stress,",
+    "tirate un",
+    "d6",
+    ". Con un risultato di 6, non dovete",
+    "marcarlo.",
+    "DH MB 061/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "061/270",
+  "nome_abilita": [
+    "Tiro Agilità per Carica",
+    "Mischia. Irremovibile"
+  ]
+}

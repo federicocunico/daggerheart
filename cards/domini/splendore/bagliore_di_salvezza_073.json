@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 28,
+  "indice_carta": 4,
+  "nome": "BAGLIORE DI SALVEZZA",
+  "testo": [
+    "9",
+    "2",
+    "Incantesimo",
+    "BAGLIORE DI SALVEZZA",
+    "Eff ettuate un",
+    "Tiro Incantesimo (16)",
+    ". In caso di",
+    "successo,",
+    "marcate un numero qualsiasi di Stress",
+    "per avere eff etto sugli alleati disposti in linea entro",
+    "distanza Lontana. Potete curare Punti Ferita ai",
+    "bersagli pari al numero di Stress marcati, dividendo",
+    "l’ammontare tra i bersagli come preferite.",
+    "DH MB 247/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "247/270",
+  "soglia": "9",
+  "livello": "2",
+  "tipo_carta": "incantesimo"
+}

@@ -1,0 +1,29 @@
+{
+  "categoria": "comunità",
+  "dominio": null,
+  "pagina": 9,
+  "indice_carta": 5,
+  "nome": "MARITTIMA",
+  "testo": [
+    "C O M U N I TÀ",
+    "MARITTIMA",
+    "Far parte di una comunità marittima signifi ca vivere",
+    "su o vicino a un grande specchio d’acqua.",
+    "Sentire la Marea:",
+    "Potete percepire il fl usso e il rifl usso",
+    "della vita. Quando tirate con Paura, posizionate un",
+    "gettone sulla carta comunità. Potete posizionare",
+    "un numero massimo di gettoni pari al vostro livello.",
+    "Prima di eff ettuare un tiro azione, potete spendere",
+    "un numero qualsiasi di questi gettoni per ottenere",
+    "bonus +1 al tiro per ogni gettone speso. Alla fi ne di ogni",
+    "sessione, rimuovete tutti i gettoni non spesi.",
+    "DH MB 077/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "077/270",
+  "tipo_carta": "azione",
+  "nome_abilita": [
+    "Sentire la Marea"
+  ]
+}

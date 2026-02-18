@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 10,
+  "indice_carta": 8,
+  "nome": "INTERMITTENZA",
+  "testo": [
+    "4",
+    "1",
+    "Incantesimo",
+    "INTERMITTENZA",
+    "Eff ettuate un",
+    "Tiro Incantesimo (12)",
+    ". In caso",
+    "di successo,",
+    "spendete una Speranza",
+    "per",
+    "teletrasportarvi in un altro punto visibile entro",
+    "distanza Lontana. Se altri vogliono seguirvi e si",
+    "trovano entro distanza Prossima,",
+    "spendete una",
+    "Speranza aggiuntiva",
+    "per ciascuna creatura per",
+    "portarla con voi.",
+    "DH MB 089/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "089/270",
+  "soglia": "4",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

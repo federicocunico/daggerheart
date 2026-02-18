@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 28,
+  "indice_carta": 6,
+  "nome": "RESURREZIONE",
+  "testo": [
+    "10",
+    "2",
+    "Incantesimo",
+    "RESURREZIONE",
+    "Eff ettuate un",
+    "Tiro Incantesimo (20)",
+    ". In caso di",
+    "successo, riportate in vita una creatura morta da",
+    "non più di 100 anni. Quindi tirate un",
+    "d6",
+    ". Se ottenete",
+    "un risultato pari o inferiore a 5, spostate questa",
+    "carta nella vostra riserva permanentemente.",
+    "In caso di fallimento, non potrete lanciare",
+    "Resurrezione per una settimana.",
+    "DH MB 249/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "249/270",
+  "soglia": "10",
+  "livello": "2",
+  "tipo_carta": "incantesimo"
+}

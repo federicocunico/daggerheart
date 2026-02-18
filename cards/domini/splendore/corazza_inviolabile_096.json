@@ -1,0 +1,26 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 30,
+  "indice_carta": 9,
+  "nome": "CORAZZA INVIOLABILE",
+  "testo": [
+    "10",
+    "1",
+    "Abilità",
+    "CORAZZA INVIOLABILE",
+    "Quando dovreste marcare una Casella Armatura,",
+    "tirate un numero di",
+    "d6",
+    "pari alla vostra Competenza.",
+    "Se un dado qualsiasi ottiene un 6, riducete la gravità",
+    "del danno di una soglia senza marcare una Casella",
+    "Armatura.",
+    "DH MB 270/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "270/270",
+  "soglia": "10",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

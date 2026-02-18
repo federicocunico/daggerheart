@@ -1,0 +1,29 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 8,
+  "indice_carta": 1,
+  "nome": "giganti",
+  "testo": [
+    "giganti",
+    "O R I G I N E",
+    "I giganti sono umanoidi imponenti con spalle larghe,",
+    "braccia lunghe e da uno a tre occhi.",
+    "Resistenza:",
+    "Guadagnate una casella aggiuntiva nei",
+    "Punti Ferita alla creazione del personaggio.",
+    "Raggiungere:",
+    "Potete considerare qualsiasi arma,",
+    "abilità, incantesimo o altra caratteristica che abbia",
+    "una portata di Mischia come se avesse invece una",
+    "portata Prossima.",
+    "DH MB 065/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "065/270",
+  "tipo_carta": "caratteristica",
+  "nome_abilita": [
+    "Resistenza",
+    "Raggiungere"
+  ]
+}

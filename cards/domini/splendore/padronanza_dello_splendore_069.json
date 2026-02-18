@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 27,
+  "indice_carta": 9,
+  "nome": "Padronanza dello SPLENDORE",
+  "testo": [
+    "7",
+    "2",
+    "Abilità",
+    "Padronanza dello SPLENDORE",
+    "Quando 4 o più carte dominio nella vostra dotazione",
+    "appartengono al dominio dello Splendore, ottenete i",
+    "seguenti benefi ci:",
+    "• Bonus +3 alla soglia di danno Grave.",
+    "• Una volta per ogni riposo lungo, quando subite",
+    "danni che richiedono la perdita di un certo numero",
+    "di Punti Ferita, potete scegliere di marcare lo stesso",
+    "numero di Stress o spendere lo stesso numero di",
+    "Speranza.",
+    "DH MB 243/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "243/270",
+  "soglia": "7",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "nome_abilita": [
+    "Splendore, ottenete i seguenti benefi ci"
+  ]
+}

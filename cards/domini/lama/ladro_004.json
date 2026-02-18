@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 4,
+  "indice_carta": 1,
+  "nome": "LADRO",
+  "testo": [
+    "LADRO",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "ASTUZIA",
+    "Quando arrivate in una città o in un altro",
+    "Legami:",
+    "luogo importante, descrivete una persona che",
+    "avete già conosciuto e che vive qui. Datele un nome,",
+    "annotate in che modo pensate che possa esservi",
+    "utile e scegliete un fatto dalla seguente lista:",
+    "• Mi deve un favore, ma sarà diffi cile trovarla.",
+    "• Chiederà qualcosa in cambio.",
+    "• È sempre in gran diffi coltà.",
+    "• Una volta stavamo insieme. È una lunga storia.",
+    "• Non ci siamo lasciati in buoni rapporti.",
+    "DH MB 028 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "028/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Legami"
+  ]
+}

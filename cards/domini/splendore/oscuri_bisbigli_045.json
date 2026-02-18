@@ -1,0 +1,33 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 22,
+  "indice_carta": 9,
+  "nome": "OSCURI BISBIGLI",
+  "testo": [
+    "6",
+    "0",
+    "Incantesimo",
+    "OSCURI BISBIGLI",
+    "Potete parlare nella mente di qualsiasi persona con",
+    "cui abbiate stabilito un contatto fi sico. Una volta",
+    "aperto un contatto telepatico, può rispondervi nella",
+    "vostra mente. Inoltre, potete",
+    "marcare uno Stress",
+    "per eff ettuare un",
+    "Tiro Incantesimo",
+    "contro di essa.",
+    "In caso di successo, potete porre al GM una delle",
+    "seguenti domande e ricevere una risposta:",
+    "• Dove si trova?",
+    "• Cosa sta facendo?",
+    "• Di cosa ha paura?",
+    "• Cosa ama di più al mondo?",
+    "DH MB 198/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "198/270",
+  "soglia": "6",
+  "livello": "0",
+  "tipo_carta": "incantesimo"
+}

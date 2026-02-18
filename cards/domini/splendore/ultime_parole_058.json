@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 26,
+  "indice_carta": 7,
+  "nome": "ULTIME PAROLE",
+  "testo": [
+    "2",
+    "1",
+    "Incantesimo",
+    "ULTIME PAROLE",
+    "Potete infondere una stilla di vita in un cadavere per",
+    "parlare con esso. Eff ettuate un",
+    "Tiro Incantesimo",
+    "(13)",
+    ". In caso di successo con Speranza, il cadavere",
+    "risponde fi no a tre domande. In caso di successo",
+    "con Paura, il cadavere risponde a una domanda. Il",
+    "cadavere risponde in modo veritiero, ma non può",
+    "fornire informazioni che non conosceva in vita. In",
+    "caso di fallimento, o una volta che il cadavere ha",
+    "fi nito di rispondere, il corpo si trasforma in polvere.",
+    "DH MB 232/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "232/270",
+  "soglia": "2",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

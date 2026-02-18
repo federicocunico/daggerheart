@@ -1,0 +1,21 @@
+Here is the list of the 9 core domains and their symbol descriptions in plain text:
+
+Arcana: A wide, upright eye with radiating lines, representing magical vision.
+
+Blade: A sword pointing downward with a pair of wings extending from the hilt.
+
+Bone: A stylized, geometric skull representing physical grit and mortality.
+
+Codex: An open book with a flame or magical spark rising from the center.
+
+Grace: An elegant, stylized swan or bird in profile, representing poise.
+
+Midnight: A crescent moon partially encircling a dark star or orb.
+
+Sage: A single, detailed leaf with organic veins, representing nature.
+
+Splendor: A radiant sun or a sparkling diamond emitting light.
+
+Valor: A heavy, vertical shield used to symbolize protection and defense.
+
+Additionally, the newer Dread domain is represented by a cracked or shattered mask.

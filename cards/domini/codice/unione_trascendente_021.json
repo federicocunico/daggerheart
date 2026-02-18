@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 19,
+  "indice_carta": 3,
+  "nome": "UNIONE TRASCENDENTE",
+  "testo": [
+    "10",
+    "1",
+    "Incantesimo",
+    "UNIONE TRASCENDENTE",
+    "Una volta per riposo lungo,",
+    "spendete 5 Speranze",
+    "per legare con questo incantesimo due o più",
+    "creature consenzienti. Fino al vostro prossimo",
+    "riposo, quando una creatura legata da questa",
+    "unione marcherebbe Stress o subirebbe Punti",
+    "Ferita, le altre creature così legate possono",
+    "scegliere chi subisce il danno.",
+    "DH MB 165/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "165/270",
+  "soglia": "10",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

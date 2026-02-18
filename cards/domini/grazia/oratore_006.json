@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 1,
+  "indice_carta": 6,
+  "nome": "ORATORE",
+  "testo": [
+    "ORATORE",
+    "Maestria",
+    "Poesia Epica:",
+    "Il Dado A Raccolta aumenta a",
+    "d10",
+    ".",
+    "Inoltre, quando Aiutate un Alleato, potete narrare",
+    "il momento come se steste scrivendo la storia del",
+    "suo eroismo in un libro di memorie. Quando lo fate,",
+    "tirate un",
+    "d10",
+    "come dado vantaggio.",
+    "DH MB 006 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "006/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Maestria Poesia Epica"
+  ]
+}

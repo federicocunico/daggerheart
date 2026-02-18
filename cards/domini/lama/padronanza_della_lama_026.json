@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 13,
+  "indice_carta": 8,
+  "nome": "PADRONANZA DELLA LAMA",
+  "testo": [
+    "7",
+    "1",
+    "Abilità",
+    "PADRONANZA DELLA LAMA",
+    "Quando 4 o più carte dominio nella vostra dotazione",
+    "appartengono al dominio delle Lame, ottenete i",
+    "seguenti benefi ci:",
+    "• Bonus +2 ai tiri attacco",
+    "• Bonus +4 alla soglia di danno Grave",
+    "DH MB 116/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "116/270",
+  "soglia": "7",
+  "livello": "1",
+  "tipo_carta": "abilità",
+  "nome_abilita": [
+    "Lame, ottenete i seguenti benefi ci"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "saggio",
+  "pagina": 6,
+  "indice_carta": 8,
+  "nome": "SCUOLA DELLA GUERRA",
+  "testo": [
+    "SCUOLA DELLA GUERRA",
+    "Specializzazione",
+    "Evoca Scudo:",
+    "Potete evocare una barriera",
+    "protettiva di magia. Finché avete almeno 2",
+    "Speranze, aggiungete la vostra Competenza alla",
+    "vostra Evasione.",
+    "Alimentato dalla Paura:",
+    "Il danno magico",
+    "addizionale della caratteristica “Aff ronta la Tua",
+    "Paura” aumenta a",
+    "2d10",
+    ".",
+    "DH MB 053 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "053/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Evoca Scudo",
+    "Evasione. Alimentato dalla Paura"
+  ]
+}

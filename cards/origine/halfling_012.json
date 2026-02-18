@@ -1,0 +1,27 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 8,
+  "indice_carta": 3,
+  "nome": "Halfling",
+  "testo": [
+    "Halfling",
+    "O R I G I N E",
+    "Gli halfl ing sono umanoidi di piccole dimensioni, con",
+    "grandi piedi pelosi e orecchie prominenti e arrotondate.",
+    "Quadrifoglio:",
+    "All’inizio di ogni sessione, tutti i",
+    "membri del gruppo di cui fate parte (voi compresi)",
+    "ottengono una Speranza.",
+    "Bussola Interna:",
+    "Quando ottenete un 1 sul Dado",
+    "Speranza, potete rilanciarlo.",
+    "DH MB 067/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "067/270",
+  "nome_abilita": [
+    "Quadrifoglio",
+    "Speranza. Bussola Interna"
+  ]
+}

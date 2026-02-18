@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 18,
+  "indice_carta": 1,
+  "nome": "EVOCARE MURAGLIA",
+  "testo": [
+    "5",
+    "2",
+    "Incantesimo",
+    "EVOCARE MURAGLIA",
+    "Eff ettuate un",
+    "Tiro Incantesimo (15)",
+    ". Una volta per",
+    "riposo, in caso di successo,",
+    "spendete una Speranza",
+    "per creare una parete magica temporanea tra due",
+    "punti entro distanza Lontana. Può essere alta fi no",
+    "a 15 metri e disporsi con qualsiasi angolazione. Le",
+    "creature o gli oggetti che si trovano sul suo percorso",
+    "vengono spostati su un lato a vostra scelta. La",
+    "parete rimane in piedi fi no a quando non eff ettuate",
+    "un riposo o lanciate nuovamente Evocare Muraglia.",
+    "DH MB 154/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "154/270",
+  "soglia": "5",
+  "livello": "2",
+  "tipo_carta": "incantesimo"
+}

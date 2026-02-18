@@ -1,0 +1,33 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 8,
+  "indice_carta": 6,
+  "nome": "KatÀri",
+  "testo": [
+    "KatÀri",
+    "O R I G I N E",
+    "I katàri sono umanoidi felini con artigli retrattili,",
+    "pupille a fessura verticale e orecchie alte e triangolari.",
+    "Istinti Felini:",
+    "Quando eff ettuate un Tiro Agilità,",
+    "potete",
+    "spendere 2 Speranze",
+    "per rilanciare il Dado",
+    "Speranza.",
+    "Artigli Retrattili:",
+    "Eff ettuate un",
+    "Tiro Agilità",
+    "per graffi are un bersaglio in Mischia. In caso di",
+    "successo, il bersaglio diventa temporaneamente",
+    ".",
+    "Vulnerabile",
+    "DH MB 070/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "070/270",
+  "nome_abilita": [
+    "Istinti Felini",
+    "Dado Speranza. Artigli Retrattili"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 3,
+  "nome": "NANI",
+  "testo": [
+    "NANI",
+    "O R I G I N E",
+    "I nani sono facilmente riconoscibili come umanoidi",
+    "di bassa statura con ossatura quadrata, muscolatura",
+    "densa e hanno folto pelo corporeo.",
+    "Pelle Dura:",
+    "Quando subite un danno Minore, potete",
+    "marcare 2 Stress",
+    "invece di subire un Punto Ferita.",
+    "Resistenza Aumentata:",
+    "Spendete 3 Speranze",
+    "per",
+    "dimezzare i danni fi sici in arrivo.",
+    "DH MB 058/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "058/270",
+  "nome_abilita": [
+    "Pelle Dura",
+    "Punto Ferita. Resistenza Aumentata"
+  ]
+}

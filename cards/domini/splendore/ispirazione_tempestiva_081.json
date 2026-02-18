@@ -1,0 +1,23 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 29,
+  "indice_carta": 3,
+  "nome": "ISPIRAZIONE TEMPESTIVA",
+  "testo": [
+    "3",
+    "1",
+    "Abilità",
+    "ISPIRAZIONE TEMPESTIVA",
+    "Una volta per riposo, quando ottenete un successo",
+    "critico in un attacco, tutti gli alleati entro distanza",
+    "Prossima possono rimuovere uno Stress o ottenere",
+    "una Speranza.",
+    "DH MB 255/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "255/270",
+  "soglia": "3",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

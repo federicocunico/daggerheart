@@ -1,0 +1,42 @@
+{
+  "categoria": "dominio",
+  "dominio": "codice",
+  "pagina": 17,
+  "indice_carta": 8,
+  "nome": "TOMO DI EXOTA",
+  "testo": [
+    "4",
+    "3",
+    "Grimorio",
+    "TOMO DI EXOTA",
+    "Ripudiare:",
+    "Potete interrompere un eff etto magico",
+    "in atto. Eff ettuate un tiro reazione usando il vostro",
+    "tratto da Incantatore. Una volta per riposo, in",
+    "caso di successo, l’eff etto si interrompe e tutte le",
+    "conseguenze vengono evitate.",
+    "Creare Costrutto:",
+    "Spendete una Speranza",
+    "per",
+    "scegliere un gruppo di oggetti intorno a voi e creare",
+    "un costrutto animato che obbedisce a comandi di",
+    "base. Eff ettuate un",
+    "Tiro Incantesimo",
+    "per dargli",
+    "ordini. Se necessario, condivide la vostra Evasione",
+    "e i vostri tratti e i suoi attacchi infl iggono",
+    "2d10+3",
+    "danni fi sici. Potete mantenere solo un costrutto alla",
+    "volta e questo si disintegra quando subisce danni.",
+    "DH MB 152/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "152/270",
+  "soglia": "4",
+  "livello": "3",
+  "tipo_carta": "incantesimo",
+  "nome_abilita": [
+    "Grimorio TOMO DI EXOTA Ripudiare",
+    "Creare Costrutto"
+  ]
+}

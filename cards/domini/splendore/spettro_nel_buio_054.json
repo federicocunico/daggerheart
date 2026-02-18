@@ -1,0 +1,30 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 23,
+  "indice_carta": 9,
+  "nome": "SPETTRO NEL BUIO",
+  "testo": [
+    "10",
+    "1",
+    "Incantesimo",
+    "SPETTRO NEL BUIO",
+    "Marcate uno Stress",
+    "per diventare",
+    "Spettrali",
+    "fi no a",
+    "quando non eff ettuate un tiro azione contro un’altra",
+    "creatura. Mentre siete",
+    "Spettrali",
+    ", siete immuni ai",
+    "danni fi sici, potete fl uttuare e oltrepassare oggetti",
+    "solidi. Le altre creature possono comunque vedervi",
+    "mentre siete in questa forma.",
+    "DH MB 207/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "207/270",
+  "soglia": "10",
+  "livello": "1",
+  "tipo_carta": "azione"
+}

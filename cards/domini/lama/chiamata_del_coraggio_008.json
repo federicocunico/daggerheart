@@ -1,0 +1,24 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 5,
+  "indice_carta": 8,
+  "nome": "CHIAMATA DEL CORAGGIO",
+  "testo": [
+    "CHIAMATA DEL CORAGGIO",
+    "Specializzazione",
+    "Raccogliere la Sfi da:",
+    "Siete vigili di fronte al pericolo",
+    "crescente. Quando avete 2 o meno Punti Ferita,",
+    "potete tirare un",
+    "d20",
+    "come Dado Speranza.",
+    "DH MB 044 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "044/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Raccogliere la Sfi da"
+  ]
+}

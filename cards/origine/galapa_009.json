@@ -1,0 +1,30 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 9,
+  "nome": "Galapa",
+  "testo": [
+    "Galapa",
+    "O R I G I N E",
+    "I galapa assomigliano a tartarughe antropomorfe con",
+    "grandi gusci a cupola in cui possono rinchiudersi.",
+    "Guscio:",
+    "Guadagnate un bonus alle soglie di danno pari",
+    "alla vostra Competenza.",
+    "Rinchiudersi:",
+    "Marcate uno Stress",
+    "per ritrarvi nel",
+    "vostro guscio. Quando siete nel guscio, guadagnate",
+    "resistenza ai danni fi sici, ma avete svantaggio ai tiri",
+    "azione e non potete muovervi.",
+    "DH MB 064/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "064/270",
+  "tipo_carta": "azione",
+  "nome_abilita": [
+    "Guscio",
+    "Competenza. Rinchiudersi"
+  ]
+}

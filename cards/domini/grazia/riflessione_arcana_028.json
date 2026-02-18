@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 11,
+  "indice_carta": 7,
+  "nome": "RIFLESSIONE ARCANA",
+  "testo": [
+    "8",
+    "1",
+    "Incantesimo",
+    "RIFLESSIONE ARCANA",
+    "Quando subite danni magici, potete",
+    "spendere un",
+    "numero qualsiasi di Speranze",
+    "per tirare altrettanti",
+    "d6",
+    ". Se uno qualsiasi ottiene un 6, l’attacco viene",
+    "rifl esso contro il lanciatore, infl iggendo invece i",
+    "danni a lui.",
+    "DH MB 097/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "097/270",
+  "soglia": "8",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

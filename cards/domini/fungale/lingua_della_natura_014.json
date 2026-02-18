@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "fungale",
+  "pagina": 24,
+  "indice_carta": 2,
+  "nome": "LINGUA DELLA NATURA",
+  "testo": [
+    "1",
+    "0",
+    "Abilità",
+    "LINGUA DELLA NATURA",
+    "Potete parlare la lingua del mondo naturale. Quando",
+    "volete parlare con le piante e gli animali intorno",
+    "a voi, eff ettuate un",
+    "Tiro Istinto (12)",
+    ". In caso di",
+    "successo, vi daranno le informazioni che conoscono.",
+    "Con un tiro Paura, la loro conoscenza potrebbe",
+    "essere limitata o avere un costo.",
+    "Inoltre, prima di eff ettuare un Tiro Incantesimo",
+    "mentre vi trovate in un ambiente naturale, potete",
+    "spendere una Speranza",
+    "per ottenere bonus +2",
+    "al tiro.",
+    "DH MB 209/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "209/270",
+  "soglia": "1",
+  "livello": "0",
+  "tipo_carta": "incantesimo"
+}

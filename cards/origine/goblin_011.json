@@ -1,0 +1,30 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 8,
+  "indice_carta": 2,
+  "nome": "GOBLIN",
+  "testo": [
+    "GOBLIN",
+    "O R I G I N E",
+    "I goblin sono piccoli umanoidi facilmente",
+    "riconoscibili per i loro grandi occhi e le ampie",
+    "orecchie membranose.",
+    "Piè Fermo:",
+    "Ignorate qualsiasi svantaggio sui Tiri Agilità.",
+    "Senso del Pericolo:",
+    "Una volta per riposo,",
+    "marcate",
+    "uno Stress",
+    "per costringere un avversario a ripetere",
+    "un attacco contro di voi o contro un alleato entro",
+    "una distanza Prossima.",
+    "DH MB 066/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "066/270",
+  "nome_abilita": [
+    "Piè Fermo",
+    "Tiri Agilità. Senso del Pericolo"
+  ]
+}

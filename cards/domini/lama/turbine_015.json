@@ -1,0 +1,28 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 12,
+  "indice_carta": 6,
+  "nome": "TURBINE",
+  "testo": [
+    "1",
+    "0",
+    "Abilità",
+    "TURBINE",
+    "Eff ettuate un attacco contro un bersaglio entro",
+    "distanza Prossima. In caso di successo,",
+    "spendete",
+    "una Speranza",
+    "per attaccare con lo stesso risultato",
+    "tutti gli altri bersagli entro distanza Prossima. Tutti",
+    "gli avversari aggiuntivi contro cui avete successo",
+    "con questa abilità subiscono metà dei danni.",
+    "DH MB 105/270 |",
+    "Daggerheart © Darrington Press 2025",
+    "▵"
+  ],
+  "id_carta": "105/270",
+  "soglia": "1",
+  "livello": "0",
+  "tipo_carta": "abilità"
+}

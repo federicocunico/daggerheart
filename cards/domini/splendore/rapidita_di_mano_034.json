@@ -1,0 +1,23 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 21,
+  "indice_carta": 7,
+  "nome": "RAPIDITÀ DI MANO",
+  "testo": [
+    "1",
+    "0",
+    "Abilità",
+    "RAPIDITÀ DI MANO",
+    "Avete vantaggio sui tiri azione per scassinare",
+    "serrature non magiche, disinnescare trappole non",
+    "magiche o rubare oggetti da un bersaglio (sia con",
+    "furtività che con la forza).",
+    "DH MB 187/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "187/270",
+  "soglia": "1",
+  "livello": "0",
+  "tipo_carta": "azione"
+}

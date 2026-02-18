@@ -1,0 +1,26 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 13,
+  "indice_carta": 5,
+  "nome": "VITALITÀ",
+  "testo": [
+    "5",
+    "0",
+    "Abilità",
+    "VITALITÀ",
+    "Quando selezionate questa carta, ottenete",
+    "permanentemente due dei seguenti vantaggi:",
+    "• Una casella Stress",
+    "• Una casella Punti Ferita",
+    "• Bonus +2 alla soglia di danno",
+    "Quindi mettete questa carta nella riserva in modo",
+    "permanente.",
+    "DH MB 113/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "113/270",
+  "soglia": "5",
+  "livello": "0",
+  "tipo_carta": "abilità"
+}

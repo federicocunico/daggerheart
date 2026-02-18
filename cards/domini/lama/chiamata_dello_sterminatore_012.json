@@ -1,0 +1,32 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 6,
+  "indice_carta": 3,
+  "nome": "CHIAMATA DELLO STERMINATORE",
+  "testo": [
+    "CHIAMATA DELLO STERMINATORE",
+    "Maestria",
+    "Addestramento Marziale:",
+    "Siete un guerriero che",
+    "ispira tutti coloro che viaggiano con voi. Il vostro",
+    "gruppo ha accesso alla mossa Addestramento",
+    "Marziale durante il riposo. Per usare questa mossa",
+    "durante un riposo, descrivete come istruite e",
+    "vi allenate con il gruppo. Voi e ogni alleato che",
+    "sceglie questa mossa di interludio guadagnate",
+    "un",
+    "di Dado dello Sterminatore. Un PG con un",
+    "d6",
+    "Dado dello Sterminatore può spenderlo per tirare il",
+    "dado e aggiungere il risultato a un tiro attacco o di",
+    "danno a sua scelta.",
+    "DH MB 048 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "048/270",
+  "tipo_carta": "maestria",
+  "nome_abilita": [
+    "Maestria Addestramento Marziale"
+  ]
+}

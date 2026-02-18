@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 16,
+  "indice_carta": 2,
+  "nome": "PADRONANZA DELLE OSSA",
+  "testo": [
+    "7",
+    "2",
+    "Abilità",
+    "PADRONANZA DELLE OSSA",
+    "Quando 4 o più carte dominio nella vostra dotazione",
+    "appartengono al dominio delle Ossa, ottenete i",
+    "seguenti benefi ci:",
+    "• Bonus +1 all’Agilità",
+    "• Una volta per riposo, potete",
+    "spendere 3 Speranze",
+    "per far fallire un attacco che vi avrebbe colpito.",
+    "DH MB 137/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "137/270",
+  "soglia": "7",
+  "livello": "2",
+  "tipo_carta": "abilità",
+  "nome_abilita": [
+    "Ossa, ottenete i seguenti benefi ci"
+  ]
+}

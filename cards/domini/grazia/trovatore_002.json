@@ -1,0 +1,23 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 1,
+  "indice_carta": 2,
+  "nome": "TROVATORE",
+  "testo": [
+    "TROVATORE",
+    "Specializzazione",
+    "Maestro:",
+    "Le vostre canzoni accendono il coraggio",
+    "di chi le ascolta. Quando assegnate un Dado A",
+    "Raccolta a un alleato, questo può guadagnare una",
+    "Speranza o rimuovere uno Stress.",
+    "DH MB 002 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "002/270",
+  "tipo_carta": "specializzazione",
+  "nome_abilita": [
+    "Specializzazione Maestro"
+  ]
+}

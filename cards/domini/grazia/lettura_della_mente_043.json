@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 20,
+  "indice_carta": 4,
+  "nome": "LETTURA DELLA MENTE",
+  "testo": [
+    "5",
+    "2",
+    "Incantesimo",
+    "LETTURA DELLA MENTE",
+    "Potete sbirciare nella mente altrui.",
+    "Spendete una",
+    "Speranza",
+    "per leggere i pensieri vaghi e superfi ciali",
+    "di un bersaglio entro distanza Lontana. Eff ettuate",
+    "un",
+    "Tiro Incantesimo",
+    "contro il bersaglio per scavare",
+    "più a fondo e trovare pensieri più nascosti.",
+    "Con un tiro Paura, il bersaglio potrebbe, a",
+    "discrezione del GM, rendersi conto che state",
+    "leggendo la sua mente.",
+    "DH MB 175/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "175/270",
+  "soglia": "5",
+  "livello": "2",
+  "tipo_carta": "incantesimo"
+}

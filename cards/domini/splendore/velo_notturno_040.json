@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 22,
+  "indice_carta": 4,
+  "nome": "VELO NOTTURNO",
+  "testo": [
+    "3",
+    "1",
+    "Incantesimo",
+    "VELO NOTTURNO",
+    "Eff ettuate un",
+    "Tiro Incantesimo (13)",
+    ". In caso",
+    "di successo, create una cortina temporanea di",
+    "oscurità tra due punti entro distanza Lontana.",
+    "Solo voi potete vedere attraverso questa oscurità.",
+    "Siete considerati",
+    "Nascosti",
+    "agli avversari dall’altra",
+    "parte del velo e avete vantaggio sugli attacchi che",
+    "eff ettuate attraverso l’oscurità. Il velo rimane fi no a",
+    "quando non lanciate un altro incantesimo.",
+    "DH MB 193/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "193/270",
+  "soglia": "3",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

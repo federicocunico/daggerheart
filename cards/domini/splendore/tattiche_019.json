@@ -1,0 +1,27 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 15,
+  "indice_carta": 4,
+  "nome": "TATTICHE",
+  "testo": [
+    "3",
+    "1",
+    "Abilità",
+    "TATTICHE",
+    "Quando Aiutate un Alleato, questi può spendere",
+    "una Speranza per aggiungere una delle vostre",
+    "Esperienze al suo tiro insieme al vostro dado",
+    "vantaggio.",
+    "Quando eff ettuate un Tiro Combinato, potete tirare",
+    "un",
+    "d20",
+    "come Dado Speranza.",
+    "DH MB 130/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "130/270",
+  "soglia": "3",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

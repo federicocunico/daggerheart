@@ -1,0 +1,21 @@
+{
+  "categoria": "dominio",
+  "dominio": "lama",
+  "pagina": 13,
+  "indice_carta": 3,
+  "nome": "ARMATURA RINFORZATA",
+  "testo": [
+    "4",
+    "0",
+    "Abilità",
+    "ARMATURA RINFORZATA",
+    "Mentre indossate un’armatura, ottenete bonus +2",
+    "alla soglia di danno.",
+    "DH MB 111/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "111/270",
+  "soglia": "4",
+  "livello": "0",
+  "tipo_carta": "abilità"
+}

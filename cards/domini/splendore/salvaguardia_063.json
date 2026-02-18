@@ -1,0 +1,29 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 27,
+  "indice_carta": 3,
+  "nome": "SALVAGUARDIA",
+  "testo": [
+    "4",
+    "1",
+    "Incantesimo",
+    "SALVAGUARDIA",
+    "Spendete 3 Speranze",
+    "e scegliete un alleato entro",
+    "distanza Ravvicinata. Questi viene contrassegnato",
+    "con un sigillo protettivo luminoso. Quando l’alleato",
+    "dovrebbe compiere una mossa fi nale, cura invece",
+    "un Punto Ferita.",
+    "Questo eff etto termina quando evita al bersaglio",
+    "una mossa fi nale, quando lanciate Salvaguardia",
+    "su un altro bersaglio o quando completate un",
+    "riposo lungo.",
+    "DH MB 237/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "237/270",
+  "soglia": "4",
+  "livello": "1",
+  "tipo_carta": "incantesimo"
+}

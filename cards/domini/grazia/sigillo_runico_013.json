@@ -1,0 +1,31 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 10,
+  "indice_carta": 1,
+  "nome": "SIGILLO RUNICO",
+  "testo": [
+    "1",
+    "0",
+    "incantesimo",
+    "SIGILLO RUNICO",
+    "Possedete un oggetto personale molto importante",
+    "che può essere infuso di magia protettrice e",
+    "utilizzato come protezione da voi o da un alleato.",
+    "Descrivete cos’è e perché è importante. Il",
+    "possessore della protezione può spendere una",
+    "Speranza per ridurre i danni subiti di",
+    "1d8",
+    ".",
+    "Se il risultato del dado è 8, il potere dell’amuleto",
+    "termina dopo aver ridotto il danno in questo turno.",
+    "Può essere ricaricato gratuitamente al prossimo",
+    "riposo.",
+    "DH MB 082/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "082/270",
+  "soglia": "1",
+  "livello": "0",
+  "tipo_carta": "incantesimo"
+}

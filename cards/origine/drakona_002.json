@@ -1,0 +1,35 @@
+{
+  "categoria": "origine",
+  "dominio": null,
+  "pagina": 7,
+  "indice_carta": 2,
+  "nome": "Drakona",
+  "testo": [
+    "Drakona",
+    "O R I G I N E",
+    "I drakona assomigliano a draghi senza ali in forma",
+    "umanoide e possiedono un potente soffi o elementale.",
+    "Scaglie:",
+    "Le scaglie fungono da protezione naturale.",
+    "Quando subite danni Gravi, potete",
+    "marcare uno",
+    "Stress",
+    "per subire 1 Punto Ferita in meno.",
+    "Soffi o Elementale:",
+    "Scegliete un elemento per il vostro",
+    "Soffi o Elementale (come elettricità, fuoco o ghiaccio).",
+    "Potete rivolgere il vostro soffi o contro un bersaglio o un",
+    "gruppo di bersagli entro distanza Prossima, trattandolo",
+    "come un’arma basata sull’Istinto che infl igge",
+    "d8",
+    "danni",
+    "magici applicando la vostra Competenza.",
+    "DH MB 057/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "057/270",
+  "nome_abilita": [
+    "Scaglie",
+    "Punto Ferita in meno. Soffi o Elementale"
+  ]
+}

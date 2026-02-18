@@ -1,0 +1,15 @@
+[project]
+name = "daggerheart"
+version = "0.1.0"
+description = "Daggerheart card extractor from printable Italian PDF"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pymupdf>=1.27.1",
+    "pillow>=10.0.0",
+    "numpy>=1.26.0",
+    "opencv-python>=4.8.0",
+]
+
+[project.scripts]
+extract = "main:main"

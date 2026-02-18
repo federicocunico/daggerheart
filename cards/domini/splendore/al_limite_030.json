@@ -1,0 +1,21 @@
+{
+  "categoria": "dominio",
+  "dominio": "splendore",
+  "pagina": 16,
+  "indice_carta": 6,
+  "nome": "AL LIMITE",
+  "testo": [
+    "9",
+    "1",
+    "Abilità",
+    "AL LIMITE",
+    "Quando vi rimangono 2 o meno Punti Ferita, non",
+    "subite danni Minori.",
+    "DH MB 141/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "141/270",
+  "soglia": "9",
+  "livello": "1",
+  "tipo_carta": "abilità"
+}

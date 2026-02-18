@@ -1,0 +1,36 @@
+{
+  "categoria": "dominio",
+  "dominio": "grazia",
+  "pagina": 1,
+  "indice_carta": 4,
+  "nome": "ORATORE",
+  "testo": [
+    "ORATORE",
+    "Privilegio Base",
+    "TRATTO DA INCANTATORE:",
+    "PRESENZA",
+    "Una volta per riposo lungo,",
+    "Discorso Ispiratore:",
+    "potete pronunciare un discorso accorato e",
+    "ispiratore. Tutti gli alleati entro distanza Lontana",
+    "rimuovono 2 Stress.",
+    "Cuore di Poeta:",
+    "Dopo aver eff ettuato un tiro",
+    "azione per impressionare, persuadere o off endere",
+    "qualcuno, potete",
+    "spendere una Speranza",
+    "per",
+    "aggiungere un",
+    "al tiro.",
+    "d4",
+    "DH MB 004 /270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "004/270",
+  "tipo_carta": "azione",
+  "nome_abilita": [
+    "Privilegio Base TRATTO DA INCANTATORE",
+    "Discorso Ispiratore",
+    "Lontana rimuovono 2 Stress. Cuore di Poeta"
+  ]
+}

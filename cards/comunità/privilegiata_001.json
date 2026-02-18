@@ -1,0 +1,25 @@
+{
+  "categoria": "comunità",
+  "dominio": null,
+  "pagina": 9,
+  "indice_carta": 1,
+  "nome": "PRIVILEGIATA",
+  "testo": [
+    "C O M U N I TÀ",
+    "PRIVILEGIATA",
+    "Far parte di una comunità privilegiata signifi ca",
+    "essere abituati a una vita di eleganza, opulenza e",
+    "prestigio all’interno delle alte sfere della società.",
+    "Privilegio:",
+    "Avete vantaggio nei tiri per interagire",
+    "con la nobiltà, contrattare un prezzo o sfruttare la",
+    "vostra reputazione per ottenere ciò che volete.",
+    "DH MB 073/270 |",
+    "Daggerheart © Darrington Press 2025"
+  ],
+  "id_carta": "073/270",
+  "tipo_carta": "privilegio",
+  "nome_abilita": [
+    "Privilegio"
+  ]
+}
