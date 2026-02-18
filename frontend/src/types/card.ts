@@ -79,7 +79,7 @@ export const SUBCLASS_TO_CLASS: Record<string, string> = {
   'LADRO':                      'Ladro',
 }
 
-// Italian class name → domain
+// Italian class name → primary domain
 export const CLASS_DOMAIN_MAP: Record<string, Dominio> = {
   'Bardo':     'grazia',
   'Mago':      'codice',
@@ -92,11 +92,27 @@ export const CLASS_DOMAIN_MAP: Record<string, Dominio> = {
   'Ladro':     'mezzanotte',
 }
 
+// The 2 domains each class has access to (they form a circular chain).
+// Source: official Daggerheart SRD — each domain appears in exactly 2 adjacent classes.
+export const CLASS_DOMAINS: Record<string, [Dominio, Dominio]> = {
+  'Bardo':     ['grazia',     'codice'],
+  'Mago':      ['codice',     'splendore'],
+  'Serafino':  ['splendore',  'valore'],
+  'Guardiano': ['valore',     'lama'],
+  'Guerriero': ['lama',       'osso'],
+  'Ranger':    ['osso',       'saggio'],
+  'Druido':    ['saggio',     'arcano'],
+  'Stregone':  ['arcano',     'mezzanotte'],
+  'Ladro':     ['mezzanotte', 'grazia'],
+}
+
 // Saved character format (for upload/download)
 export interface CharacterSave {
   version: 1
   exportDate: string
+  characterName: string
   className: string
+  selectedSubclass: string | null
   classCardIds: string[]
   selectedDomains: Dominio[]
   selectedAbilities: string[]   // card IDs

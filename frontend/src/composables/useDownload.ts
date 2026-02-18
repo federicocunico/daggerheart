@@ -1,6 +1,11 @@
 import JSZip from 'jszip'
 import type { CardIndex, CharacterSave } from '@/types/card'
 
+function fileSlug(save: CharacterSave): string {
+  const raw = save.characterName?.trim() || save.className || 'personaggio'
+  return 'daggerheart_' + raw.toLowerCase().replace(/\s+/g, '_').replace(/[^a-z0-9_àèéìòù]/g, '')
+}
+
 export function useDownload(baseUrl: string = '') {
   async function fetchBlob(url: string): Promise<Blob> {
     const res = await fetch(url)
@@ -52,7 +57,7 @@ export function useDownload(baseUrl: string = '') {
     const url  = URL.createObjectURL(blob)
     const a    = document.createElement('a')
     a.href     = url
-    a.download = `daggerheart_${save.className.toLowerCase().replace(/\s+/g, '_')}.zip`
+    a.download = `${fileSlug(save)}.zip`
     a.click()
     URL.revokeObjectURL(url)
   }
@@ -62,7 +67,7 @@ export function useDownload(baseUrl: string = '') {
     const url  = URL.createObjectURL(blob)
     const a    = document.createElement('a')
     a.href     = url
-    a.download = `daggerheart_${save.className.toLowerCase().replace(/\s+/g, '_')}.json`
+    a.download = `${fileSlug(save)}.json`
     a.click()
     URL.revokeObjectURL(url)
   }

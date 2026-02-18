@@ -35,16 +35,30 @@ function onClassChange(e: Event) {
   }
 }
 
-// ── Domain selection ──────────────────────────────────────────────────────────
-const MAX_DOMAINS = 2
-
-function toggleDomain(d: Dominio) {
-  if (store.selectedDomains.includes(d)) {
-    store.toggleDomain(d)
-  } else if (store.selectedDomains.length < MAX_DOMAINS) {
-    store.toggleDomain(d)
-  }
+// ── Subclass hierarchy ────────────────────────────────────────────────────────
+// Card-type display order within each subclass: base → specialisation → mastery
+const TIPO_TIER: Record<string, number> = {
+  tratto: 0, privilegio: 0, caratteristica: 0,
+  specializzazione: 1, azione: 1, incantesimo: 1,
+  maestria: 2,
 }
+
+const TIPO_LABEL: Record<string, string> = {
+  tratto: 'Tratto', privilegio: 'Privilegio', caratteristica: 'Caratteristica',
+  specializzazione: 'Specializzazione', azione: 'Azione', incantesimo: 'Incantesimo',
+  maestria: 'Maestria',
+}
+
+const subclassData = computed(() => {
+  if (!store.activeClass) return []
+  return store.subclasses.map(subName => ({
+    name: subName,
+    cards: store.activeClass!.cards
+      .filter(c => c.nome === subName)
+      .sort((a, b) => (TIPO_TIER[a.tipo_carta ?? ''] ?? 99) - (TIPO_TIER[b.tipo_carta ?? ''] ?? 99)),
+    selected: store.selectedSubclass === subName,
+  }))
+})
 
 // ── Card modal with navigation context ───────────────────────────────────────
 const previewCard    = ref<CardIndex | null>(null)
@@ -137,13 +151,17 @@ function onPrint() {
 function domainDividerStyle(d: Dominio) {
   return `background: linear-gradient(90deg, transparent, ${DOMAIN_META[d].hex}80, transparent)`
 }
+
+function domainHex(d: Dominio) {
+  return DOMAIN_META[d].hex
+}
 </script>
 
 <template>
   <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 pb-32 space-y-12">
 
     <!-- Hero text before any selection -->
-    <div v-if="!store.className" class="text-center py-2">
+    <div v-if="!store.className && !store.selectedOrigin && !store.selectedCommunity" class="text-center py-2">
       <p class="text-[var(--text-dim)] text-lg italic max-w-lg mx-auto leading-relaxed">
         Forgia il tuo destino. Scegli una classe per costruire il mazzo del tuo personaggio.
       </p>
@@ -172,12 +190,36 @@ function domainDividerStyle(d: Dominio) {
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         II · CLASSE
+         II · COMUNITÀ
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="space-y-4">
-      <div class="ornament">II · Classe</div>
+      <div class="ornament">II · Comunità</div>
+      <p class="text-[var(--text-dim)] text-sm">
+        Scegli la tua carta Comunità (facoltativa).
+        <span v-if="store.selectedCommunity" class="text-[var(--gold)] ml-1">✓ Selezionata</span>
+      </p>
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
+        <CardThumbnail
+          v-for="card in store.communityCards"
+          :key="card.id"
+          :card="card"
+          :selected="store.selectedCommunity === card.id"
+          :selectable="true"
+          @click="store.selectCommunity(store.selectedCommunity === card.id ? null : card.id)"
+          @preview="openCard(card, store.communityCards)"
+        />
+      </div>
+    </section>
 
-      <div class="panel-gold p-5 sm:p-6 space-y-5">
+    <!-- ══════════════════════════════════════════════════════════════════════
+         III · CLASSE
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="space-y-4">
+      <div class="ornament">III · Classe</div>
+
+      <div class="panel-gold p-5 sm:p-6 space-y-6">
+
+        <!-- Class selector dropdown -->
         <div class="space-y-2">
           <label
             class="block text-[var(--text-dim)] text-xs uppercase tracking-[0.15em]"
@@ -201,64 +243,116 @@ function domainDividerStyle(d: Dominio) {
           </select>
         </div>
 
-        <!-- Class feature cards (6 cards, 2 subclasses × 3) -->
-        <template v-if="store.classCards.length">
+        <!-- Subclass selection + card hierarchy -->
+        <template v-if="store.activeClass">
           <div class="h-px bg-[var(--border)]" />
-          <p
-            class="text-[var(--text-dim)] text-xs uppercase tracking-[0.15em]"
-            style="font-family: 'Cinzel', serif"
-          >
-            Carte di classe
-          </p>
-          <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
-            <CardThumbnail
-              v-for="card in store.classCards"
-              :key="card.id"
-              :card="card"
-              :selectable="false"
-              @click="openCard(card, store.classCards)"
-              @preview="openCard(card, store.classCards)"
-            />
+
+          <div>
+            <p
+              class="text-[var(--text-dim)] text-xs uppercase tracking-[0.15em] mb-3"
+              style="font-family: 'Cinzel', serif"
+            >
+              Scegli la tua sottoclasse
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div
+                v-for="sub in subclassData"
+                :key="sub.name"
+                class="rounded-lg border-2 cursor-pointer transition-all duration-200 overflow-hidden"
+                :class="sub.selected
+                  ? 'border-[var(--gold)] bg-[var(--gold-glow)]'
+                  : 'border-[var(--border)] hover:border-[var(--gold-dim)] bg-[var(--bg-card)]'"
+                @click="store.selectSubclass(sub.selected ? null : sub.name)"
+              >
+                <!-- Subclass header -->
+                <div
+                  class="px-3 py-2 flex items-center justify-between border-b border-[var(--border)]"
+                  :style="`background: ${domainHex(store.activeClass!.dominio)}18`"
+                >
+                  <span
+                    class="text-xs font-bold tracking-wider truncate"
+                    :style="`font-family:'Cinzel',serif; color: ${domainHex(store.activeClass!.dominio)}`"
+                  >{{ sub.name }}</span>
+                  <span
+                    v-if="sub.selected"
+                    class="text-[var(--gold)] text-xs ml-2 flex-shrink-0"
+                  >✓</span>
+                </div>
+
+                <!-- Cards in tier order -->
+                <div class="p-3 space-y-2">
+                  <div
+                    v-for="card in sub.cards"
+                    :key="card.id"
+                    class="flex items-center gap-2"
+                    @click.stop="openCard(card, sub.cards)"
+                  >
+                    <CardThumbnail
+                      :card="card"
+                      :selectable="false"
+                      class="w-12 flex-shrink-0 pointer-events-none"
+                    />
+                    <div class="min-w-0">
+                      <p
+                        class="text-[10px] uppercase tracking-wider font-semibold"
+                        :style="`color: ${domainHex(store.activeClass!.dominio)}; font-family:'Cinzel',serif`"
+                      >{{ TIPO_LABEL[card.tipo_carta ?? ''] ?? card.tipo_carta }}</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Select button -->
+                <div class="px-3 pb-3">
+                  <div
+                    class="w-full text-center text-xs py-1.5 rounded border transition-all"
+                    :class="sub.selected
+                      ? 'border-[var(--gold)] text-[var(--gold)] bg-[var(--gold-glow)]'
+                      : 'border-[var(--border)] text-[var(--text-dim)]'"
+                    style="font-family:'Cinzel',serif; letter-spacing:0.08em; text-transform:uppercase"
+                  >
+                    {{ sub.selected ? '✓ Selezionata' : 'Scegli' }}
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </template>
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         III · DOMINI
+         IV · DOMINI  (auto-selected from class, shown as info)
          ══════════════════════════════════════════════════════════════════════ -->
     <section v-if="store.className" class="space-y-4">
-      <div class="ornament">III · Domini</div>
+      <div class="ornament">IV · Domini</div>
 
       <div class="panel p-5 space-y-4">
         <p class="text-[var(--text)] text-sm">
-          Scegli <strong class="text-[var(--gold)]">2 domini</strong>
-          per le tue carte abilità.
-          <span class="text-[var(--text-dim)]">({{ store.selectedDomains.length }}/{{ MAX_DOMAINS }})</span>
+          La classe <strong class="text-[var(--gold)]">{{ store.className }}</strong>
+          ha accesso a questi due domini:
         </p>
-        <div class="flex flex-wrap gap-2">
-          <button
-            v-for="d in allDomains"
+        <div class="flex flex-wrap gap-3">
+          <div
+            v-for="d in store.classDomains"
             :key="d"
-            class="domain-chip"
-            :class="{ active: store.selectedDomains.includes(d) }"
-            :style="store.selectedDomains.includes(d)
-              ? `border-color: ${DOMAIN_META[d].hex}; color: ${DOMAIN_META[d].hex}; background: ${DOMAIN_META[d].hex}22`
-              : ''"
-            :disabled="!store.selectedDomains.includes(d) && store.selectedDomains.length >= MAX_DOMAINS"
-            @click="toggleDomain(d)"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg border-2 text-sm font-bold"
+            :style="`border-color: ${DOMAIN_META[d].hex}; color: ${DOMAIN_META[d].hex}; background: ${DOMAIN_META[d].hex}18; font-family:'Cinzel',serif`"
           >
             {{ DOMAIN_META[d].icon }} {{ DOMAIN_META[d].label }}
-          </button>
+          </div>
         </div>
+        <p class="text-[var(--text-dim)] text-xs italic">
+          Le carte abilità disponibili qui sotto provengono da questi due domini.
+        </p>
       </div>
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         IV · ABILITÀ
+         V · ABILITÀ
          ══════════════════════════════════════════════════════════════════════ -->
     <section v-if="store.selectedDomains.length" class="space-y-4">
-      <div class="ornament">IV · Abilità</div>
+      <div class="ornament">V · Abilità</div>
 
       <!-- Level filter pills -->
       <div class="flex flex-wrap gap-2 items-center">
@@ -317,58 +411,70 @@ function domainDividerStyle(d: Dominio) {
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         V · COMUNITÀ
+         VI · NOME PERSONAGGIO
          ══════════════════════════════════════════════════════════════════════ -->
-    <section v-if="store.className" class="space-y-4">
-      <div class="ornament">V · Comunità</div>
-      <p class="text-[var(--text-dim)] text-sm">
-        Scegli la tua carta Comunità (facoltativa).
-        <span v-if="store.selectedCommunity" class="text-[var(--gold)] ml-1">✓ Selezionata</span>
-      </p>
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
-        <CardThumbnail
-          v-for="card in store.communityCards"
-          :key="card.id"
-          :card="card"
-          :selected="store.selectedCommunity === card.id"
-          :selectable="true"
-          @click="store.selectCommunity(store.selectedCommunity === card.id ? null : card.id)"
-          @preview="openCard(card, store.communityCards)"
+    <section class="space-y-4">
+      <div class="ornament">Nome del personaggio</div>
+      <div class="panel p-4 space-y-2">
+        <input
+          type="text"
+          :value="store.characterName"
+          @input="store.setCharacterName(($event.target as HTMLInputElement).value)"
+          placeholder="Inserisci il nome del personaggio…"
+          class="w-full bg-transparent border border-[var(--border)] rounded-lg px-3 py-2.5
+                 text-[var(--text)] placeholder-[var(--text-dim)]
+                 focus:border-[var(--gold)] focus:outline-none transition-colors"
+          style="font-family:'Cinzel',serif"
         />
+        <p class="text-[var(--text-dim)] text-xs">
+          Usato come nome del file al salvataggio e download.
+        </p>
       </div>
     </section>
 
     <div class="h-2" />
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         STICKY BOTTOM BAR
+         STICKY BOTTOM BAR  (always visible — Carica è sempre accessibile)
          ══════════════════════════════════════════════════════════════════════ -->
     <Teleport to="body">
       <div
-        v-if="store.className || store.selectedOrigin"
         class="fixed bottom-0 left-0 right-0 z-30 border-t border-[var(--border)] bg-[var(--bg-panel)]/97 backdrop-blur-sm"
       >
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center gap-3">
+          <!-- Character summary (shown when there's something to summarise) -->
           <div class="text-xs text-[var(--text-dim)] flex-1 min-w-0 leading-relaxed">
+            <template v-if="store.characterName">
+              <span
+                class="text-[var(--gold)] font-semibold"
+                style="font-family:'Cinzel',serif"
+              >{{ store.characterName }}</span>
+              <span v-if="store.className" class="mx-1 opacity-50">·</span>
+            </template>
             <span
               v-if="store.className"
               class="text-[var(--gold)] font-semibold"
               style="font-family: 'Cinzel', serif"
             >{{ store.className }}</span>
+            <template v-if="store.selectedSubclass">
+              <span class="mx-1 opacity-50">·</span>
+              <span class="text-[var(--text-dim)]">{{ store.selectedSubclass }}</span>
+            </template>
             <template v-if="store.selectedDomains.length">
               <span class="mx-1">·</span>
               <span
                 v-for="(d, i) in store.selectedDomains"
                 :key="d"
                 :style="`color: ${DOMAIN_META[d].hex}`"
-              >{{ i ? ' · ' : '' }}{{ DOMAIN_META[d].icon }} {{ DOMAIN_META[d].label }}</span>
+              >{{ i ? ' · ' : '' }}{{ DOMAIN_META[d].icon }}</span>
             </template>
             <template v-if="store.selectedAbilities.size">
               <span class="mx-1">·</span>
-              <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span> abilità
+              <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span>
+              <span class="hidden sm:inline"> abilità</span>
             </template>
-            <span v-if="store.selectedOrigin"> · Origine ✓</span>
-            <span v-if="store.selectedCommunity"> · Comunità ✓</span>
+            <span v-if="!store.className && !store.selectedOrigin && !store.characterName"
+                  class="italic opacity-60">Nessun personaggio — carica un file o inizia a costruire</span>
           </div>
 
           <div class="flex gap-2 flex-shrink-0 flex-wrap">

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, watch, nextTick } from 'vue'
 import type { CardIndex } from '@/types/card'
 import { DOMAIN_META } from '@/types/card'
 
@@ -69,6 +69,17 @@ function onKeyDown(e: KeyboardEvent) {
 function onBackdrop(e: MouseEvent) {
   if (e.target === e.currentTarget) emit('close')
 }
+
+// ── Auto-focus ────────────────────────────────────────────────────────────────
+// The backdrop needs focus to capture keyboard events (ArrowLeft/Right/Escape)
+const backdropRef = ref<HTMLDivElement | null>(null)
+
+watch(() => props.card, async (newCard) => {
+  if (newCard) {
+    await nextTick()
+    backdropRef.value?.focus()
+  }
+})
 </script>
 
 <template>
@@ -80,8 +91,9 @@ function onBackdrop(e: MouseEvent) {
       leave-to-class="opacity-0"
     >
       <div
+        ref="backdropRef"
         v-if="card"
-        class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6"
+        class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 outline-none"
         @click="onBackdrop"
         @keydown="onKeyDown"
         @touchstart.passive="onTouchStart"

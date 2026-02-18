@@ -48,14 +48,14 @@ const levelLabel = computed(() => {
       loading="lazy"
     />
 
-    <!-- Selection indicator -->
+    <!-- Selection indicator — bottom-left, away from card cost (top area) -->
     <div
       v-if="selectable"
       :class="[
-        'absolute top-2 right-2 w-6 h-6 rounded-full border-2 flex items-center justify-center text-xs font-bold transition-all',
+        'absolute bottom-2 left-2 w-5 h-5 rounded-full border-2 flex items-center justify-center text-xs font-bold transition-all',
         selected
           ? 'bg-yellow-400 border-yellow-400 text-stone-900'
-          : 'bg-stone-900/70 border-stone-500 text-transparent',
+          : 'bg-stone-900/70 border-stone-600 text-transparent group-hover:border-stone-400',
       ]"
     >
       ✓

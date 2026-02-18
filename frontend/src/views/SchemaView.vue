@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted, nextTick } from 'vue'
 import { useRouter } from 'vue-router'
 import { useCharacterStore } from '@/stores/character'
-import { DOMAIN_META, CLASS_DOMAIN_MAP, SUBCLASS_TO_CLASS } from '@/types/card'
+import { DOMAIN_META, CLASS_DOMAIN_MAP, CLASS_DOMAINS, SUBCLASS_TO_CLASS } from '@/types/card'
 import type { Dominio, CardIndex } from '@/types/card'
 import CardThumbnail from '@/components/CardThumbnail.vue'
 import CardModal from '@/components/CardModal.vue'
@@ -52,20 +52,42 @@ function pickClass() {
 }
 
 // ── ECharts layout ────────────────────────────────────────────────────────────
-// Domain order clockwise from top, matching the schema image
 const DOMAIN_ORDER: Dominio[] = [
   'codice', 'splendore', 'valore', 'lama', 'osso', 'saggio', 'arcano', 'mezzanotte', 'grazia',
 ]
 
-// Logical canvas 900×900; node symbolSize is in screen-pixels (does not scale)
-const CX = 450, CY = 450, R_DOM = 165, R_CLS = 293, R_SUB = 422
+// Canvas 1400×1400 — 3-ring layout: domains inner, classes middle, subclasses outer
+// Gap domain→class is doubled; outer ring further out to avoid overlap
+const CX = 700, CY = 700
+const R_DOM = 165   // inner ring
+const R_CLS = 430   // middle ring  (gap ~265 vs previous ~140)
+const R_SUB = 660   // outer ring   (gap ~230)
 
 function polar(deg: number, r: number): [number, number] {
   const rad = (deg - 90) * Math.PI / 180
   return [CX + r * Math.cos(rad), CY + r * Math.sin(rad)]
 }
 
-// Subclass→class grouping (deduplicated)
+// Angular midpoint between two degree values (handles 0°/360° wraparound correctly)
+function circularMidpoint(deg1: number, deg2: number): number {
+  const r1 = deg1 * Math.PI / 180
+  const r2 = deg2 * Math.PI / 180
+  const x = Math.cos(r1) + Math.cos(r2)
+  const y = Math.sin(r1) + Math.sin(r2)
+  const mid = Math.atan2(y, x) * 180 / Math.PI
+  return ((mid % 360) + 360) % 360
+}
+
+// Label position radially outward from the canvas centre
+function radialLabelPos(angleDeg: number): string {
+  const a = ((angleDeg % 360) + 360) % 360
+  if (a <= 45 || a > 315) return 'top'
+  if (a > 45 && a <= 135) return 'right'
+  if (a > 135 && a <= 225) return 'bottom'
+  return 'left'
+}
+
+// Subclass→class grouping (for tooltip)
 const subclassByClass: Record<string, string[]> = {}
 for (const [sub, cls] of Object.entries(SUBCLASS_TO_CLASS)) {
   if (!subclassByClass[cls]) subclassByClass[cls] = []
@@ -81,7 +103,7 @@ function buildOption() {
   const nodes: Record<string, unknown>[] = []
   const links: Record<string, unknown>[] = []
 
-  // ── Domain nodes (inner ring) ───────────────────────────────────────────────
+  // ── Domain nodes (inner ring) ─────────────────────────────────────────────
   DOMAIN_ORDER.forEach((d, i) => {
     const [x, y] = polar((i * 360) / DOMAIN_ORDER.length, R_DOM)
     nodes.push({
@@ -89,88 +111,108 @@ function buildOption() {
       name: DOMAIN_META[d].label,
       x, y,
       _type: 'domain', _key: d,
-      symbolSize: 80,
+      symbolSize: 56,
       itemStyle: {
         color: DOMAIN_META[d].hex,
         shadowColor: DOMAIN_META[d].hex,
-        shadowBlur: 22,
+        shadowBlur: 18,
       },
       label: {
         show: true,
         formatter: `{ico|${DOMAIN_META[d].icon}}\n{lbl|${DOMAIN_META[d].label.toUpperCase()}}`,
         rich: {
-          ico: { fontSize: 22, lineHeight: 26, color: '#fff' },
-          lbl: { fontSize: 10, fontFamily: 'Cinzel, serif', fontWeight: 'bold', color: '#fff', lineHeight: 14 },
+          ico: { fontSize: 20, lineHeight: 24, color: '#fff' },
+          lbl: { fontSize: 9, fontFamily: 'Cinzel, serif', fontWeight: 'bold', color: '#fff', lineHeight: 12 },
         },
       },
     })
   })
 
-  // ── Class nodes (middle ring) ────────────────────────────────────────────────
+  // ── Class nodes (middle ring) — positioned at midpoint between their 2 domains ──
   CLASS_NAMES.forEach(c => {
-    const dom = (CLASS_DOMAIN_MAP[c] ?? 'arcano') as Dominio
-    const di  = DOMAIN_ORDER.indexOf(dom)
-    const [x, y] = polar((di * 360) / DOMAIN_ORDER.length, R_CLS)
+    const [dom1, dom2] = (CLASS_DOMAINS[c] ?? [CLASS_DOMAIN_MAP[c] ?? 'arcano', CLASS_DOMAIN_MAP[c] ?? 'arcano']) as [Dominio, Dominio]
+    const di1   = DOMAIN_ORDER.indexOf(dom1)
+    const di2   = DOMAIN_ORDER.indexOf(dom2)
+    const ang1  = (di1 * 360) / DOMAIN_ORDER.length
+    const ang2  = (di2 * 360) / DOMAIN_ORDER.length
+    const angle = circularMidpoint(ang1, ang2)
+    const [x, y] = polar(angle, R_CLS)
+    const dom   = dom1  // primary domain for border colour
     nodes.push({
       id: `c:${c}`,
       name: c,
       x, y,
       _type: 'class', _key: c,
-      symbolSize: 66,
+      symbolSize: 74,
       itemStyle: {
         color: '#0e0e18',
         borderColor: DOMAIN_META[dom].hex,
         borderWidth: 3,
         shadowColor: DOMAIN_META[dom].hex,
-        shadowBlur: 12,
+        shadowBlur: 16,
       },
       label: {
         show: true,
-        fontSize: 12,
+        // position default = 'inside' (centered in symbol)
+        fontSize: 10,
         fontFamily: 'Cinzel, serif',
         fontWeight: 'bold',
         color: DOMAIN_META[dom].hex,
+        overflow: 'breakAll',
+        width: 62,
+        lineHeight: 14,
+        align: 'center',
       },
     })
+    // Each class connects to BOTH its domains
     links.push({
-      source: `d:${dom}`,
+      source: `d:${dom1}`,
       target: `c:${c}`,
-      lineStyle: { color: DOMAIN_META[dom].hex, opacity: 0.55, width: 2 },
+      lineStyle: { color: DOMAIN_META[dom1].hex, opacity: 0.55, width: 2 },
+    })
+    links.push({
+      source: `d:${dom2}`,
+      target: `c:${c}`,
+      lineStyle: { color: DOMAIN_META[dom2].hex, opacity: 0.55, width: 2 },
     })
   })
 
-  // ── Subclass nodes (outer ring) — label placed outside below the circle ──────
+  // ── Subclass nodes (outer ring) — ±9° around the class midpoint angle ─────
   CLASS_NAMES.forEach(c => {
-    const dom   = (CLASS_DOMAIN_MAP[c] ?? 'arcano') as Dominio
-    const di    = DOMAIN_ORDER.indexOf(dom)
-    const baseA = (di * 360) / DOMAIN_ORDER.length
+    const [dom1, dom2] = (CLASS_DOMAINS[c] ?? [CLASS_DOMAIN_MAP[c] ?? 'arcano', CLASS_DOMAIN_MAP[c] ?? 'arcano']) as [Dominio, Dominio]
+    const di1   = DOMAIN_ORDER.indexOf(dom1)
+    const di2   = DOMAIN_ORDER.indexOf(dom2)
+    const ang1  = (di1 * 360) / DOMAIN_ORDER.length
+    const ang2  = (di2 * 360) / DOMAIN_ORDER.length
+    const baseA = circularMidpoint(ang1, ang2)
+    const dom   = dom1 as Dominio
     const subs  = subclassByClass[c] ?? []
     subs.forEach((s, i) => {
-      const offset = subs.length === 1 ? 0 : (i === 0 ? -17 : 17)
-      const [x, y] = polar(baseA + offset, R_SUB)
+      const offset = subs.length === 1 ? 0 : (i === 0 ? -9 : 9)
+      const angle  = baseA + offset
+      const [x, y] = polar(angle, R_SUB)
       nodes.push({
         id: `s:${s}`,
-        name: s,           // full name, no truncation
+        name: s,
         x, y,
         _type: 'subclass', _key: s, _class: c,
-        symbolSize: 44,
+        symbolSize: 52,
         itemStyle: {
-          color: DOMAIN_META[dom].hex + '30',
+          color: DOMAIN_META[dom].hex + '28',
           borderColor: DOMAIN_META[dom].hex,
           borderWidth: 2,
           shadowColor: DOMAIN_META[dom].hex,
-          shadowBlur: 5,
+          shadowBlur: 6,
         },
-        // Label OUTSIDE the circle: offset downward from node centre
         label: {
           show: true,
-          position: [0, 30],   // 30px below node centre → sits just outside the 44px node
-          fontSize: 9,
+          // position default = 'inside'
+          fontSize: 7,
           fontFamily: 'Cinzel, serif',
           color: '#c9a84c',
-          width: 84,
-          overflow: 'break',
-          lineHeight: 13,
+          overflow: 'breakAll',
+          width: 42,
+          lineHeight: 10,
           align: 'center',
         },
       })
@@ -184,6 +226,27 @@ function buildOption() {
 
   return {
     backgroundColor: 'transparent',
+    tooltip: {
+      trigger: 'item',
+      backgroundColor: '#12121f',
+      borderColor: '#c9a84c55',
+      padding: [8, 12],
+      textStyle: { color: '#e8d5a3', fontFamily: 'Cinzel, serif', fontSize: 12 },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      formatter: (params: any) => {
+        const data = params.data as { _type: string; name: string; _key: string; _class?: string }
+        if (data._type === 'class') {
+          const subs = (subclassByClass[data._key] ?? [])
+            .map((s: string) => `<span style="color:#c9a84c">◆</span> ${s}`)
+            .join('<br/>')
+          return `<b style="color:#e8d5a3">${data.name}</b><br/><span style="font-size:11px;opacity:.8">${subs}</span>`
+        }
+        if (data._type === 'subclass') {
+          return `<b style="color:#e8d5a3">${data.name}</b><br/><span style="color:#c9a84c;font-size:11px">→ ${data._class ?? ''}</span>`
+        }
+        return `<b>${data.name}</b>`
+      },
+    },
     series: [{
       type: 'graph',
       layout: 'none',
@@ -192,12 +255,12 @@ function buildOption() {
       data: nodes,
       links,
       roam: true,
-      zoom: 1,
-      scaleLimit: { min: 0.35, max: 4 },
+      zoom: 0.88,
+      scaleLimit: { min: 0.3, max: 4 },
       emphasis: {
         focus: 'adjacency',
         scale: true,
-        scaleSize: 10,
+        scaleSize: 6,
         lineStyle: { width: 2.5 },
       },
       edgeSymbol: ['none', 'none'],
@@ -215,7 +278,9 @@ onMounted(async () => {
   echarts = await import('echarts')
   if (!chartRef.value) return
 
-  chart = echarts.init(chartRef.value, null, { renderer: 'svg' })
+  // canvas renderer: pointer events are captured over the full canvas area,
+  // not just on individual SVG elements — fixes pan/zoom dead zones
+  chart = echarts.init(chartRef.value, null, { renderer: 'canvas' })
   chart.setOption(buildOption() as never)
 
   chart.on('click', 'series.graph.data', (params: Record<string, unknown>) => {
@@ -229,6 +294,12 @@ onMounted(async () => {
 
   resizeHandler = () => chart?.resize()
   window.addEventListener('resize', resizeHandler)
+
+  // Resize chart when side panel opens/closes (it changes the container width)
+  watch(selectedClass, async () => {
+    await nextTick()
+    chart?.resize()
+  })
 })
 
 onUnmounted(() => {
@@ -248,7 +319,7 @@ onUnmounted(() => {
           class="text-[var(--gold)] text-xs uppercase tracking-[0.2em]"
           style="font-family:'Cinzel',serif"
         >
-          Domini &amp; Classi · Clicca una classe
+          Domini &amp; Classi · Clicca una classe o sottoclasse
         </p>
       </div>
 
@@ -353,6 +424,7 @@ onUnmounted(() => {
       <p class="text-[var(--text-dim)] text-sm italic leading-relaxed">
         Clicca su una delle
         <strong class="text-[var(--gold)]">classi</strong>
+        o <strong class="text-[var(--gold)]">sottoclassi</strong>
         nel grafico per vederne le carte.
       </p>
     </div>

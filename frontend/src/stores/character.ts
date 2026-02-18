@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import type { CardIndex, Dominio, CharacterSave } from '@/types/card'
-import { CLASS_DOMAIN_MAP, SUBCLASS_TO_CLASS } from '@/types/card'
+import { CLASS_DOMAIN_MAP, CLASS_DOMAINS, SUBCLASS_TO_CLASS } from '@/types/card'
 
 export const useCharacterStore = defineStore('character', () => {
   // ── All cards loaded from index.json ────────────────────────────────────────
@@ -24,7 +24,9 @@ export const useCharacterStore = defineStore('character', () => {
   }
 
   // ── Character state ──────────────────────────────────────────────────────────
+  const characterName     = ref<string>('')
   const className         = ref<string | null>(null)
+  const selectedSubclass  = ref<string | null>(null)
   const selectedDomains   = ref<Dominio[]>([])
   const selectedAbilities = ref<Set<string>>(new Set())
   const selectedOrigin    = ref<string | null>(null)
@@ -51,7 +53,28 @@ export const useCharacterStore = defineStore('character', () => {
     classes.value.find(c => c.nome === className.value) ?? null
   )
 
-  const classCards = computed(() => activeClass.value?.cards ?? [])
+  // The 2 subclass names for the active class (in page order)
+  const subclasses = computed((): string[] => {
+    if (!activeClass.value) return []
+    const seen = new Set<string>()
+    const result: string[] = []
+    for (const c of activeClass.value.cards) {
+      if (!seen.has(c.nome)) {
+        seen.add(c.nome)
+        result.push(c.nome)
+      }
+    }
+    return result
+  })
+
+  // All class cards; if a subclass is selected, filtered to its 3 cards only
+  const classCards = computed(() => {
+    const all = activeClass.value?.cards ?? []
+    if (selectedSubclass.value) {
+      return all.filter(c => c.nome === selectedSubclass.value)
+    }
+    return all
+  })
 
   const abilityCards = computed(() =>
     allCards.value.filter(
@@ -77,11 +100,22 @@ export const useCharacterStore = defineStore('character', () => {
   const originCards    = computed(() => allCards.value.filter(c => c.categoria === 'origine'))
   const communityCards = computed(() => allCards.value.filter(c => c.categoria === 'comunità'))
 
+  // The 2 domains compatible with the chosen class (or empty if no class)
+  const classDomains = computed((): [Dominio, Dominio] | [] =>
+    className.value ? (CLASS_DOMAINS[className.value] ?? []) : []
+  )
+
   // ── Actions ──────────────────────────────────────────────────────────────────
   function selectClass(nome: string) {
-    className.value = nome
-    selectedDomains.value = []
+    className.value     = nome
+    selectedSubclass.value = null
     selectedAbilities.value = new Set()
+    // Auto-select the 2 domains for this class
+    selectedDomains.value = [...(CLASS_DOMAINS[nome] ?? [])]
+  }
+
+  function selectSubclass(nome: string | null) {
+    selectedSubclass.value = nome
   }
 
   function toggleDomain(dominio: Dominio) {
@@ -119,8 +153,14 @@ export const useCharacterStore = defineStore('character', () => {
     selectedCommunity.value = id
   }
 
+  function setCharacterName(name: string) {
+    characterName.value = name
+  }
+
   function reset() {
+    characterName.value = ''
     className.value = null
+    selectedSubclass.value = null
     selectedDomains.value = []
     selectedAbilities.value = new Set()
     selectedOrigin.value = null
@@ -132,7 +172,9 @@ export const useCharacterStore = defineStore('character', () => {
     return {
       version: 1,
       exportDate: new Date().toISOString(),
+      characterName: characterName.value,
       className: className.value ?? '',
+      selectedSubclass: selectedSubclass.value,
       classCardIds: classCards.value.map(c => c.id),
       selectedDomains: [...selectedDomains.value],
       selectedAbilities: [...selectedAbilities.value],
@@ -142,7 +184,9 @@ export const useCharacterStore = defineStore('character', () => {
   }
 
   function fromSave(save: CharacterSave) {
+    characterName.value = save.characterName ?? ''
     className.value = save.className
+    selectedSubclass.value = save.selectedSubclass ?? null
     selectedDomains.value = save.selectedDomains
     selectedAbilities.value = new Set(save.selectedAbilities)
     selectedOrigin.value = save.selectedOrigin ?? null
@@ -151,11 +195,13 @@ export const useCharacterStore = defineStore('character', () => {
 
   return {
     allCards, loading, error, loadCards,
-    classes, activeClass, classCards, abilityCards, cardsByLevel, levels,
-    originCards, communityCards,
-    className, selectedDomains, selectedAbilities, selectedOrigin, selectedCommunity,
-    selectClass, toggleDomain, toggleAbility, isSelected,
-    selectOrigin, selectCommunity, reset,
+    classes, activeClass, subclasses, classCards, abilityCards, cardsByLevel, levels,
+    originCards, communityCards, classDomains,
+    characterName,
+    className, selectedSubclass, selectedDomains, selectedAbilities,
+    selectedOrigin, selectedCommunity,
+    selectClass, selectSubclass, toggleDomain, toggleAbility, isSelected,
+    selectOrigin, selectCommunity, setCharacterName, reset,
     toSave, fromSave,
   }
 })
