@@ -29,7 +29,7 @@
   "id_carta": "217/270",
   "soglia": "5",
   "livello": "1",
-  "tipo_carta": "tratto",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/saggio/abilita/pelle_di_spine_010.png",
   "json_path": "domini/saggio/abilita/pelle_di_spine_010.json"
 }

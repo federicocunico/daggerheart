@@ -27,7 +27,7 @@
   "id_carta": "225/270",
   "soglia": "9",
   "livello": "2",
-  "tipo_carta": "abilità",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/saggio/abilita/santuario_della_natura_018.png",
   "json_path": "domini/saggio/abilita/santuario_della_natura_018.json"
 }

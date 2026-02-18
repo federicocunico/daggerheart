@@ -54,7 +54,7 @@ from PIL import Image
 # ── Configuration ─────────────────────────────────────────────────────────────
 PDF_PATH   = Path("sources/carte_stampabili.pdf")
 OUTPUT_DIR = Path("cards")
-DPI        = 200
+DPI        = 300
 
 ART_W, ART_H, ART_TOL = 201.9, 110.4, 0.12   # art-box dimensions ± 12 %
 

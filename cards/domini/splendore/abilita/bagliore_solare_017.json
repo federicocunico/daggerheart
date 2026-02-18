@@ -37,7 +37,7 @@
   "id_carta": "245/270",
   "soglia": "8",
   "livello": "2",
-  "tipo_carta": "reazione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/splendore/abilita/bagliore_solare_017.png",
   "json_path": "domini/splendore/abilita/bagliore_solare_017.json"
 }

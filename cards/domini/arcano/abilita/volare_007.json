@@ -25,7 +25,7 @@
   "id_carta": "088/270",
   "soglia": "3",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/arcano/abilita/volare_007.png",
   "json_path": "domini/arcano/abilita/volare_007.json"
 }

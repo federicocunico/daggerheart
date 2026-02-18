@@ -21,7 +21,7 @@
   "id_carta": "231/270",
   "soglia": "1",
   "livello": "0",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/splendore/abilita/rassicurare_003.png",
   "json_path": "domini/splendore/abilita/rassicurare_003.json"
 }

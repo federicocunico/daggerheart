@@ -26,7 +26,7 @@
   "id_carta": "201/270",
   "soglia": "7",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/mezzanotte/abilita/schivata_evanescente_015.png",
   "json_path": "domini/mezzanotte/abilita/schivata_evanescente_015.json"
 }

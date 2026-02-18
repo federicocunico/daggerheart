@@ -22,7 +22,7 @@
   "id_carta": "179/270",
   "soglia": "7",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/grazia/abilita/carisma_infinito_014.png",
   "json_path": "domini/grazia/abilita/carisma_infinito_014.json"
 }

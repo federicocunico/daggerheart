@@ -50,10 +50,12 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  // Use './' so asset paths are relative — works on GitHub Pages at any URL depth.
-  // If deploying to https://user.github.io/daggerheart/ change to '/daggerheart/'
-  base: './',
+  // './' = relative paths, works for local preview.
+  // GitHub Actions overrides this via --base flag with the correct Pages path.
+  base: process.env.VITE_BASE_URL ?? './',
   server: {
+    host: '127.0.0.1',   // explicit IPv4 — fixes "unable to connect" on Windows
+    port: 5173,
     fs: { allow: ['..'] },
   },
 })

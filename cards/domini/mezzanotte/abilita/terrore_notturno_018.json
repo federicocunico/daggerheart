@@ -36,7 +36,7 @@
   "id_carta": "204/270",
   "soglia": "9",
   "livello": "2",
-  "tipo_carta": "reazione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/mezzanotte/abilita/terrore_notturno_018.png",
   "json_path": "domini/mezzanotte/abilita/terrore_notturno_018.json"
 }

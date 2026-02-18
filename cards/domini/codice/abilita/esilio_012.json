@@ -31,7 +31,7 @@
   "id_carta": "156/270",
   "soglia": "6",
   "livello": "0",
-  "tipo_carta": "reazione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/codice/abilita/esilio_012.png",
   "json_path": "domini/codice/abilita/esilio_012.json"
 }

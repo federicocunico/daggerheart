@@ -32,7 +32,7 @@
   "id_carta": "227/270",
   "soglia": "10",
   "livello": "2",
-  "tipo_carta": "azione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/saggio/abilita/forza_della_natura_020.png",
   "json_path": "domini/saggio/abilita/forza_della_natura_020.json"
 }

@@ -34,7 +34,7 @@
   "id_carta": "091/270",
   "soglia": "5",
   "livello": "1",
-  "tipo_carta": "reazione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/arcano/abilita/fulmine_a_catena_010.png",
   "json_path": "domini/arcano/abilita/fulmine_a_catena_010.json"
 }

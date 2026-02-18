@@ -29,7 +29,7 @@
   "id_carta": "209/270",
   "soglia": "1",
   "livello": "0",
-  "tipo_carta": "abilità",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/saggio/abilita/lingua_della_natura_002.png",
   "json_path": "domini/saggio/abilita/lingua_della_natura_002.json"
 }

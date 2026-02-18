@@ -26,7 +26,7 @@
   "id_carta": "142/270",
   "soglia": "9",
   "livello": "3",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/osso/abilita/colpo_frammentante_019.png",
   "json_path": "domini/osso/abilita/colpo_frammentante_019.json"
 }

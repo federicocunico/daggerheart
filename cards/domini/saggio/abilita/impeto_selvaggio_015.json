@@ -32,7 +32,7 @@
   "id_carta": "222/270",
   "soglia": "7",
   "livello": "2",
-  "tipo_carta": "azione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/saggio/abilita/impeto_selvaggio_015.png",
   "json_path": "domini/saggio/abilita/impeto_selvaggio_015.json"
 }

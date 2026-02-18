@@ -25,7 +25,7 @@
   "id_carta": "090/270",
   "soglia": "4",
   "livello": "2",
-  "tipo_carta": "tratto",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/arcano/abilita/deflagrazione_protettrice_009.png",
   "json_path": "domini/arcano/abilita/deflagrazione_protettrice_009.json"
 }

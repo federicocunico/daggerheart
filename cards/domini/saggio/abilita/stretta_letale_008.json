@@ -34,7 +34,7 @@
   "id_carta": "215/270",
   "soglia": "4",
   "livello": "1",
-  "tipo_carta": "reazione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/saggio/abilita/stretta_letale_008.png",
   "json_path": "domini/saggio/abilita/stretta_letale_008.json"
 }

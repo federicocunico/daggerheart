@@ -29,7 +29,7 @@
   "id_carta": "266/270",
   "soglia": "8",
   "livello": "2",
-  "tipo_carta": "reazione",
+  "tipo_carta": "abilità",
   "img_path": "domini/valore/abilita/schianto_tellurico_017.png",
   "json_path": "domini/valore/abilita/schianto_tellurico_017.json"
 }

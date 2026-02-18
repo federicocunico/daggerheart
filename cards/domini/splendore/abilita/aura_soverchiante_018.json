@@ -27,7 +27,7 @@
   "id_carta": "246/270",
   "soglia": "9",
   "livello": "2",
-  "tipo_carta": "tratto",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/splendore/abilita/aura_soverchiante_018.png",
   "json_path": "domini/splendore/abilita/aura_soverchiante_018.json"
 }

@@ -28,7 +28,7 @@
   "id_carta": "123/270",
   "soglia": "10",
   "livello": "3",
-  "tipo_carta": "reazione",
+  "tipo_carta": "abilità",
   "img_path": "domini/lama/abilita/massacro_021.png",
   "json_path": "domini/lama/abilita/massacro_021.json"
 }

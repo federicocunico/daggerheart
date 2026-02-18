@@ -23,7 +23,7 @@
   "id_carta": "134/270",
   "soglia": "5",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/osso/abilita/mossa_distintiva_011.png",
   "json_path": "domini/osso/abilita/mossa_distintiva_011.json"
 }

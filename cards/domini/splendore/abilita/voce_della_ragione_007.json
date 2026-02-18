@@ -23,7 +23,7 @@
   "id_carta": "235/270",
   "soglia": "3",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/splendore/abilita/voce_della_ragione_007.png",
   "json_path": "domini/splendore/abilita/voce_della_ragione_007.json"
 }

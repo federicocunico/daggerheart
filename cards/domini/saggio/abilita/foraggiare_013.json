@@ -43,7 +43,7 @@
   "id_carta": "220/270",
   "soglia": "6",
   "livello": "1",
-  "tipo_carta": "abilità",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/saggio/abilita/foraggiare_013.png",
   "json_path": "domini/saggio/abilita/foraggiare_013.json"
 }

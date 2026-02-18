@@ -27,7 +27,7 @@
   "id_carta": "207/270",
   "soglia": "10",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/mezzanotte/abilita/spettro_nel_buio_021.png",
   "json_path": "domini/mezzanotte/abilita/spettro_nel_buio_021.json"
 }

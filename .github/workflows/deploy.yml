@@ -21,6 +21,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Configure Pages FIRST — this enables the GitHub Pages environment
+      # automatically and outputs the correct base_url for the site.
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -45,7 +51,11 @@ jobs:
 
       - name: Build frontend
         working-directory: frontend
-        run: npm run build
+        # Pass the Pages base URL so asset paths are correct for subdirectory deploys
+        # e.g. https://user.github.io/daggerheart/ → base = /daggerheart/
+        run: npm run build -- --base="${{ steps.pages.outputs.base_path }}/"
+        env:
+          NODE_ENV: production
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

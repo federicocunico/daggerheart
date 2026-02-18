@@ -28,7 +28,7 @@
   "id_carta": "205/270",
   "soglia": "9",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/mezzanotte/abilita/rintocco_del_crepuscolo_019.png",
   "json_path": "domini/mezzanotte/abilita/rintocco_del_crepuscolo_019.json"
 }

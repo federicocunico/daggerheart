@@ -35,7 +35,7 @@
   "id_carta": "085/270",
   "soglia": "2",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/arcano/abilita/tocco_delle_braci_004.png",
   "json_path": "domini/arcano/abilita/tocco_delle_braci_004.json"
 }

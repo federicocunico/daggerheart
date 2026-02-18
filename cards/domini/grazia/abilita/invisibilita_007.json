@@ -38,7 +38,7 @@
   "id_carta": "172/270",
   "soglia": "3",
   "livello": "1",
-  "tipo_carta": "tratto",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/grazia/abilita/invisibilita_007.png",
   "json_path": "domini/grazia/abilita/invisibilita_007.json"
 }

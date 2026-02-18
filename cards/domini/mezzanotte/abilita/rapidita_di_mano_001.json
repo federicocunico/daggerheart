@@ -20,7 +20,7 @@
   "id_carta": "187/270",
   "soglia": "1",
   "livello": "0",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/mezzanotte/abilita/rapidita_di_mano_001.png",
   "json_path": "domini/mezzanotte/abilita/rapidita_di_mano_001.json"
 }

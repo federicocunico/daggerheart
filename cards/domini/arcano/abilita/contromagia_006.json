@@ -21,7 +21,7 @@
   "id_carta": "087/270",
   "soglia": "3",
   "livello": "2",
-  "tipo_carta": "reazione",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/arcano/abilita/contromagia_006.png",
   "json_path": "domini/arcano/abilita/contromagia_006.json"
 }

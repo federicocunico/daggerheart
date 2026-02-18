@@ -27,7 +27,7 @@
   "id_carta": "248/270",
   "soglia": "10",
   "livello": "3",
-  "tipo_carta": "privilegio",
+  "tipo_carta": "incantesimo",
   "img_path": "domini/splendore/abilita/ravvivare_020.png",
   "json_path": "domini/splendore/abilita/ravvivare_020.json"
 }

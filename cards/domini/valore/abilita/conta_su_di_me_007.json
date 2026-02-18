@@ -19,7 +19,7 @@
   "id_carta": "256/270",
   "soglia": "3",
   "livello": "1",
-  "tipo_carta": "azione",
+  "tipo_carta": "abilità",
   "img_path": "domini/valore/abilita/conta_su_di_me_007.png",
   "json_path": "domini/valore/abilita/conta_su_di_me_007.json"
 }
