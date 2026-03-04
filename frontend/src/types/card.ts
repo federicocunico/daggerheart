@@ -12,7 +12,7 @@ export interface CardIndex {
   sottocategoria: Sottocategoria
   tipo_carta: string | null
   livello: number | null
-  soglia: number | null
+  costo: number | null
   pagina: number
   img: string
   json: string

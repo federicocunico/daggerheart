@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
+import { onBeforeRouteLeave } from 'vue-router'
 import { useCharacterStore } from '@/stores/character'
 import { DOMAIN_META } from '@/types/card'
 import type { Dominio, CardIndex } from '@/types/card'
@@ -155,6 +156,65 @@ function domainDividerStyle(d: Dominio) {
 function domainHex(d: Dominio) {
   return DOMAIN_META[d].hex
 }
+
+// ── Reusable confirmation dialog ─────────────────────────────────────────────
+const confirmVisible = ref(false)
+const confirmTitle   = ref('')
+const confirmMessage = ref('')
+const confirmYes     = ref('')
+const confirmNo      = ref('')
+let confirmResolve: ((ok: boolean) => void) | null = null
+
+function showConfirm(opts: { title: string; message: string; yes?: string; no?: string }): Promise<boolean> {
+  confirmTitle.value   = opts.title
+  confirmMessage.value = opts.message
+  confirmYes.value     = opts.yes ?? 'Conferma'
+  confirmNo.value      = opts.no  ?? 'Annulla'
+  confirmVisible.value = true
+  return new Promise(resolve => { confirmResolve = resolve })
+}
+
+function onConfirmAnswer(ok: boolean) {
+  confirmVisible.value = false
+  confirmResolve?.(ok)
+  confirmResolve = null
+}
+
+// ── Reset ────────────────────────────────────────────────────────────────────
+async function onReset() {
+  const ok = await showConfirm({
+    title: 'Conferma Reset',
+    message: 'Tutte le selezioni e i dati del personaggio verranno cancellati. Vuoi continuare?',
+  })
+  if (ok) {
+    store.reset()
+    filterLevel.value = 'all'
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+}
+
+// ── Warn before leaving if dirty ─────────────────────────────────────────────
+// Browser tab close / refresh (only native prompt possible here)
+function onBeforeUnload(e: BeforeUnloadEvent) {
+  if (store.isDirty) {
+    e.preventDefault()
+  }
+}
+onMounted(() => window.addEventListener('beforeunload', onBeforeUnload))
+onUnmounted(() => window.removeEventListener('beforeunload', onBeforeUnload))
+
+// Vue Router navigation (back button, links to other pages)
+onBeforeRouteLeave(async () => {
+  if (store.isDirty) {
+    const ok = await showConfirm({
+      title: 'Uscire dalla pagina?',
+      message: 'Hai delle selezioni non salvate. Se esci perderai tutte le modifiche.',
+      yes: 'Esci',
+      no: 'Resta',
+    })
+    if (!ok) return false
+  }
+})
 </script>
 
 <template>
@@ -486,6 +546,12 @@ function domainHex(d: Dominio) {
             <button
               class="btn-secondary"
               style="font-size:0.75rem; padding:0.4rem 1rem"
+              @click="onReset"
+              :disabled="!store.isDirty"
+            >Reset</button>
+            <button
+              class="btn-secondary"
+              style="font-size:0.75rem; padding:0.4rem 1rem"
               @click="onDownloadJson"
               :disabled="!store.className"
             >Salva</button>
@@ -523,5 +589,43 @@ function domainHex(d: Dominio) {
       @toggle="card => store.toggleAbility(card.id)"
       @navigate="card => { previewCard = card }"
     />
+
+    <!-- ── Reusable confirmation dialog ───────────────────────────────────── -->
+    <Teleport to="body">
+      <Transition
+        enter-active-class="transition-opacity duration-200"
+        enter-from-class="opacity-0"
+        leave-active-class="transition-opacity duration-200"
+        leave-to-class="opacity-0"
+      >
+        <div
+          v-if="confirmVisible"
+          class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4"
+          @click.self="onConfirmAnswer(false)"
+        >
+          <div class="panel-gold max-w-sm w-full p-6 space-y-4 text-center">
+            <p
+              class="text-[var(--gold)] text-lg font-bold"
+              style="font-family:'Cinzel',serif"
+            >{{ confirmTitle }}</p>
+            <p class="text-[var(--text)] text-sm leading-relaxed">
+              {{ confirmMessage }}
+            </p>
+            <div class="flex gap-3 justify-center pt-2">
+              <button
+                class="btn-secondary"
+                style="font-size:0.8rem; padding:0.5rem 1.5rem"
+                @click="onConfirmAnswer(false)"
+              >{{ confirmNo }}</button>
+              <button
+                class="btn-primary"
+                style="font-size:0.8rem; padding:0.5rem 1.5rem"
+                @click="onConfirmAnswer(true)"
+              >{{ confirmYes }}</button>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
   </div>
 </template>

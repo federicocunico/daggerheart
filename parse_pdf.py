@@ -54,7 +54,7 @@ from PIL import Image
 # ── Configuration ─────────────────────────────────────────────────────────────
 PDF_PATH   = Path("sources/carte_stampabili.pdf")
 OUTPUT_DIR = Path("cards")
-DPI        = 300
+DPI        = 600
 
 ART_W, ART_H, ART_TOL = 201.9, 110.4, 0.12   # art-box dimensions ± 12 %
 
@@ -394,7 +394,7 @@ def build_metadata(
     if cost_spans:
         nums = [s["text"] for s in sorted(cost_spans, key=lambda s: s["x"])]
         if len(nums) >= 2:
-            meta["soglia"], meta["livello"] = nums[0], nums[1]
+            meta["livello"], meta["costo"] = nums[0], nums[1]
         elif nums:
             meta["costo"] = nums[0]
 
@@ -558,7 +558,7 @@ def process_pdf(
                 "sottocategoria":  subcat,
                 "tipo_carta":      meta.get("tipo_carta"),
                 "livello":         _to_int(meta.get("livello")),
-                "soglia":          _to_int(meta.get("soglia")),
+                "costo":           _to_int(meta.get("costo")),
                 "pagina":          page_num + 1,
                 "img":             rel_png,
                 "json":            rel_json,

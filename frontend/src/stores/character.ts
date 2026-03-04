@@ -105,6 +105,12 @@ export const useCharacterStore = defineStore('character', () => {
     className.value ? (CLASS_DOMAINS[className.value] ?? []) : []
   )
 
+  // ── Dirty flag (any selection or input made) ────────────────────────────────
+  const isDirty = computed(() =>
+    !!(characterName.value || className.value || selectedOrigin.value ||
+       selectedCommunity.value || selectedAbilities.value.size)
+  )
+
   // ── Actions ──────────────────────────────────────────────────────────────────
   function selectClass(nome: string) {
     className.value     = nome
@@ -196,7 +202,7 @@ export const useCharacterStore = defineStore('character', () => {
   return {
     allCards, loading, error, loadCards,
     classes, activeClass, subclasses, classCards, abilityCards, cardsByLevel, levels,
-    originCards, communityCards, classDomains,
+    originCards, communityCards, classDomains, isDirty,
     characterName,
     className, selectedSubclass, selectedDomains, selectedAbilities,
     selectedOrigin, selectedCommunity,

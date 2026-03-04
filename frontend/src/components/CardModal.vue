@@ -76,8 +76,11 @@ const backdropRef = ref<HTMLDivElement | null>(null)
 
 watch(() => props.card, async (newCard) => {
   if (newCard) {
+    document.body.style.overflow = 'hidden'
     await nextTick()
     backdropRef.value?.focus()
+  } else {
+    document.body.style.overflow = ''
   }
 })
 </script>
@@ -151,7 +154,7 @@ watch(() => props.card, async (newCard) => {
                 <p class="text-[var(--text-dim)] text-sm">
                   {{ card.tipo_carta }}
                   <span v-if="card.livello != null"> · Livello {{ card.livello }}</span>
-                  <span v-if="card.soglia != null"> · Soglia {{ card.soglia }}</span>
+                  <span v-if="card.costo != null"> · Costo {{ card.costo }}</span>
                 </p>
               </div>
             </div>

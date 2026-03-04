@@ -25,8 +25,7 @@ const domainMeta = computed(() =>
 
 const levelLabel = computed(() => {
   if (props.card.livello == null) return null
-  const labels: Record<number, string> = { 0: 'Liv 0', 1: 'Liv 1', 2: 'Liv 2', 3: 'Liv 3' }
-  return labels[props.card.livello] ?? `Liv ${props.card.livello}`
+  return `Liv ${props.card.livello}`
 })
 </script>
 

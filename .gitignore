@@ -11,3 +11,8 @@ build/
 
 run_output.txt
 logs/
+
+# Ignore the cards directory, which contains generated card images
+# regenerate following script.
+cards/*
+!cards/.gitkeep
