@@ -126,8 +126,7 @@ onMounted(() => store.loadCards())
           </template>
           <template v-if="store.selectedAbilities.size">
             <span class="text-[var(--text-dim)]">·</span>
-            <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span>
-            <span class="hidden sm:inline"> {{ t('status.abilities') }}</span>
+            <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span><span class="hidden sm:inline">&nbsp;{{ t('status.abilities') }}</span>
           </template>
         </div>
       </div>

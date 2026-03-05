@@ -583,8 +583,7 @@ onBeforeRouteLeave(async () => {
             </template>
             <template v-if="store.selectedAbilities.size">
               <span class="mx-1">·</span>
-              <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span>
-              <span class="hidden sm:inline"> {{ t('status.abilities') }}</span>
+              <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span><span class="hidden sm:inline">&nbsp;{{ t('status.abilities') }}</span>
             </template>
             <span v-if="!store.className && !store.selectedOrigin && !store.characterName"
                   class="italic opacity-60">{{ t('status.empty') }}</span>
