@@ -28,8 +28,9 @@ export const useCharacterStore = defineStore('character', () => {
   const className         = ref<string | null>(null)
   const selectedSubclass  = ref<string | null>(null)
   const selectedDomains   = ref<Dominio[]>([])
-  const selectedAbilities = ref<Set<string>>(new Set())
-  const selectedOrigin    = ref<string | null>(null)
+  const selectedClassCards = ref<Set<string>>(new Set())
+  const selectedAbilities  = ref<Set<string>>(new Set())
+  const selectedOrigin     = ref<string | null>(null)
   const selectedCommunity = ref<string | null>(null)
 
   // ── Derived: classes (grouped by Italian class name) ─────────────────────────
@@ -67,14 +68,17 @@ export const useCharacterStore = defineStore('character', () => {
     return result
   })
 
-  // All class cards; if a subclass is selected, filtered to its 3 cards only
-  const classCards = computed(() => {
+  // All cards of the selected subclass (for display / selection UI)
+  const subclassCards = computed(() => {
     const all = activeClass.value?.cards ?? []
-    if (selectedSubclass.value) {
-      return all.filter(c => c.nome === selectedSubclass.value)
-    }
-    return all
+    if (!selectedSubclass.value) return []
+    return all.filter(c => c.nome === selectedSubclass.value)
   })
+
+  // Only the class cards the user has explicitly picked
+  const classCards = computed(() =>
+    subclassCards.value.filter(c => selectedClassCards.value.has(c.id))
+  )
 
   const abilityCards = computed(() =>
     allCards.value.filter(
@@ -108,13 +112,15 @@ export const useCharacterStore = defineStore('character', () => {
   // ── Dirty flag (any selection or input made) ────────────────────────────────
   const isDirty = computed(() =>
     !!(characterName.value || className.value || selectedOrigin.value ||
-       selectedCommunity.value || selectedAbilities.value.size)
+       selectedCommunity.value || selectedClassCards.value.size ||
+       selectedAbilities.value.size)
   )
 
   // ── Actions ──────────────────────────────────────────────────────────────────
   function selectClass(nome: string) {
     className.value     = nome
     selectedSubclass.value = null
+    selectedClassCards.value = new Set()
     selectedAbilities.value = new Set()
     // Auto-select the 2 domains for this class
     selectedDomains.value = [...(CLASS_DOMAINS[nome] ?? [])]
@@ -122,6 +128,20 @@ export const useCharacterStore = defineStore('character', () => {
 
   function selectSubclass(nome: string | null) {
     selectedSubclass.value = nome
+    selectedClassCards.value = new Set()
+  }
+
+  function toggleClassCard(id: string) {
+    if (selectedClassCards.value.has(id)) {
+      selectedClassCards.value.delete(id)
+    } else {
+      selectedClassCards.value.add(id)
+    }
+    selectedClassCards.value = new Set(selectedClassCards.value)
+  }
+
+  function isClassCardSelected(id: string) {
+    return selectedClassCards.value.has(id)
   }
 
   function toggleDomain(dominio: Dominio) {
@@ -167,6 +187,7 @@ export const useCharacterStore = defineStore('character', () => {
     characterName.value = ''
     className.value = null
     selectedSubclass.value = null
+    selectedClassCards.value = new Set()
     selectedDomains.value = []
     selectedAbilities.value = new Set()
     selectedOrigin.value = null
@@ -193,6 +214,7 @@ export const useCharacterStore = defineStore('character', () => {
     characterName.value = save.characterName ?? ''
     className.value = save.className
     selectedSubclass.value = save.selectedSubclass ?? null
+    selectedClassCards.value = new Set(save.classCardIds ?? [])
     selectedDomains.value = save.selectedDomains
     selectedAbilities.value = new Set(save.selectedAbilities)
     selectedOrigin.value = save.selectedOrigin ?? null
@@ -201,12 +223,13 @@ export const useCharacterStore = defineStore('character', () => {
 
   return {
     allCards, loading, error, loadCards,
-    classes, activeClass, subclasses, classCards, abilityCards, cardsByLevel, levels,
+    classes, activeClass, subclasses, subclassCards, classCards, abilityCards, cardsByLevel, levels,
     originCards, communityCards, classDomains, isDirty,
     characterName,
-    className, selectedSubclass, selectedDomains, selectedAbilities,
+    className, selectedSubclass, selectedClassCards, selectedDomains, selectedAbilities,
     selectedOrigin, selectedCommunity,
-    selectClass, selectSubclass, toggleDomain, toggleAbility, isSelected,
+    selectClass, selectSubclass, toggleClassCard, isClassCardSelected,
+    toggleDomain, toggleAbility, isSelected,
     selectOrigin, selectCommunity, setCharacterName, reset,
     toSave, fromSave,
   }

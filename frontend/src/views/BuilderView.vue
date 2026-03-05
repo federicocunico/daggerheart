@@ -13,6 +13,21 @@ const store = useCharacterStore()
 const { downloadSet, downloadSave, loadSave } = useDownload()
 const { printCards } = usePrint()
 
+// ── Card grid size ───────────────────────────────────────────────────────────
+const GRID_LEVELS = [
+  'grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3',                   // 0  largest
+  'grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4',                   // 1
+  'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5',                   // 2
+  'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6',    // 3
+  'grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7',    // 4  default
+  'grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 xl:grid-cols-8',    // 5
+  'grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-9',    // 6
+  'grid-cols-4 sm:grid-cols-6 md:grid-cols-7 lg:grid-cols-9 xl:grid-cols-10',   // 7
+  'grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12',  // 8  smallest
+]
+const cardSizeLevel = ref(4) // index into GRID_LEVELS, 4 = default
+const cardGridClass = computed(() => `grid ${GRID_LEVELS[cardSizeLevel.value]} gap-2`)
+
 // ── Class dropdown ────────────────────────────────────────────────────────────
 const allDomains = Object.keys(DOMAIN_META) as Dominio[]
 
@@ -194,16 +209,69 @@ async function onReset() {
 }
 
 // ── Warn before leaving if dirty ─────────────────────────────────────────────
-// Browser tab close / refresh (only native prompt possible here)
+// Browser tab close / refresh — native prompt (browsers block custom UI here)
 function onBeforeUnload(e: BeforeUnloadEvent) {
   if (store.isDirty) {
     e.preventDefault()
   }
 }
-onMounted(() => window.addEventListener('beforeunload', onBeforeUnload))
-onUnmounted(() => window.removeEventListener('beforeunload', onBeforeUnload))
 
-// Vue Router navigation (back button, links to other pages)
+// Push a sentry history entry so pressing Back triggers popstate inside the SPA
+// instead of leaving the page entirely. The popstate handler shows our styled dialog.
+let sentryPushed = false
+function pushSentry() {
+  if (!sentryPushed && store.isDirty) {
+    history.pushState({ sentry: true }, '')
+    sentryPushed = true
+  }
+}
+function removeSentry() {
+  if (sentryPushed) {
+    sentryPushed = false
+  }
+}
+
+async function onPopState() {
+  if (!store.isDirty) {
+    sentryPushed = false
+    history.back()
+    return
+  }
+  const ok = await showConfirm({
+    title: 'Uscire dalla pagina?',
+    message: 'Hai delle selezioni non salvate. Se esci perderai tutte le modifiche.',
+    yes: 'Esci',
+    no: 'Resta',
+  })
+  if (ok) {
+    sentryPushed = false
+    // Remove beforeunload so the native prompt doesn't also fire
+    window.removeEventListener('beforeunload', onBeforeUnload)
+    history.back()
+  } else {
+    // User chose to stay — re-push sentry so Back works again
+    history.pushState({ sentry: true }, '')
+  }
+}
+
+// Keep sentry in sync with dirty state
+watch(() => store.isDirty, (dirty) => {
+  if (dirty) pushSentry()
+  else removeSentry()
+})
+
+onMounted(() => {
+  window.addEventListener('beforeunload', onBeforeUnload)
+  window.addEventListener('popstate', onPopState)
+  if (store.isDirty) pushSentry()
+})
+onUnmounted(() => {
+  window.removeEventListener('beforeunload', onBeforeUnload)
+  window.removeEventListener('popstate', onPopState)
+  removeSentry()
+})
+
+// Vue Router navigation (links to other pages within the SPA)
 onBeforeRouteLeave(async () => {
   if (store.isDirty) {
     const ok = await showConfirm({
@@ -218,7 +286,7 @@ onBeforeRouteLeave(async () => {
 </script>
 
 <template>
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-8 pb-32 space-y-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 pb-32 space-y-12">
 
     <!-- Hero text before any selection -->
     <div v-if="!store.className && !store.selectedOrigin && !store.selectedCommunity" class="text-center py-2">
@@ -236,7 +304,7 @@ onBeforeRouteLeave(async () => {
         Scegli la tua carta Origine (facoltativa).
         <span v-if="store.selectedOrigin" class="text-[var(--gold)] ml-1">✓ Selezionata</span>
       </p>
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2">
+      <div :class="cardGridClass">
         <CardThumbnail
           v-for="card in store.originCards"
           :key="card.id"
@@ -258,7 +326,7 @@ onBeforeRouteLeave(async () => {
         Scegli la tua carta Comunità (facoltativa).
         <span v-if="store.selectedCommunity" class="text-[var(--gold)] ml-1">✓ Selezionata</span>
       </p>
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
+      <div :class="cardGridClass">
         <CardThumbnail
           v-for="card in store.communityCards"
           :key="card.id"
@@ -303,79 +371,61 @@ onBeforeRouteLeave(async () => {
           </select>
         </div>
 
-        <!-- Subclass selection + card hierarchy -->
+        <!-- Subclass selection + individual card picks -->
         <template v-if="store.activeClass">
           <div class="h-px bg-[var(--border)]" />
 
-          <div>
+          <div class="space-y-4">
             <p
-              class="text-[var(--text-dim)] text-xs uppercase tracking-[0.15em] mb-3"
+              class="text-[var(--text-dim)] text-xs uppercase tracking-[0.15em]"
               style="font-family: 'Cinzel', serif"
             >
               Scegli la tua sottoclasse
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div
+            <!-- Subclass tab buttons -->
+            <div class="flex gap-3">
+              <button
                 v-for="sub in subclassData"
                 :key="sub.name"
-                class="rounded-lg border-2 cursor-pointer transition-all duration-200 overflow-hidden"
+                class="flex-1 px-4 py-2.5 rounded-lg border-2 text-xs font-bold tracking-wider transition-all duration-200"
                 :class="sub.selected
-                  ? 'border-[var(--gold)] bg-[var(--gold-glow)]'
-                  : 'border-[var(--border)] hover:border-[var(--gold-dim)] bg-[var(--bg-card)]'"
+                  ? 'border-[var(--gold)] bg-[var(--gold-glow)] text-[var(--gold)]'
+                  : 'border-[var(--border)] hover:border-[var(--gold-dim)] bg-[var(--bg-card)] text-[var(--text-dim)]'"
+                :style="`font-family:'Cinzel',serif`"
                 @click="store.selectSubclass(sub.selected ? null : sub.name)"
               >
-                <!-- Subclass header -->
+                {{ sub.selected ? '✓ ' : '' }}{{ sub.name }}
+              </button>
+            </div>
+
+            <!-- Cards of the selected subclass (individual toggles) -->
+            <template v-if="store.selectedSubclass">
+              <p class="text-[var(--text-dim)] text-xs">
+                Seleziona le carte di <strong class="text-[var(--gold)]">{{ store.selectedSubclass }}</strong> da includere nel mazzo.
+                <span class="text-[var(--gold)] ml-1">{{ store.selectedClassCards.size }}/{{ store.subclassCards.length }}</span>
+              </p>
+
+              <div :class="cardGridClass">
                 <div
-                  class="px-3 py-2 flex items-center justify-between border-b border-[var(--border)]"
-                  :style="`background: ${domainHex(store.activeClass!.dominio)}18`"
+                  v-for="card in subclassData.find(s => s.selected)?.cards ?? []"
+                  :key="card.id"
+                  class="space-y-1"
                 >
-                  <span
-                    class="text-xs font-bold tracking-wider truncate"
-                    :style="`font-family:'Cinzel',serif; color: ${domainHex(store.activeClass!.dominio)}`"
-                  >{{ sub.name }}</span>
-                  <span
-                    v-if="sub.selected"
-                    class="text-[var(--gold)] text-xs ml-2 flex-shrink-0"
-                  >✓</span>
-                </div>
-
-                <!-- Cards in tier order -->
-                <div class="p-3 space-y-2">
-                  <div
-                    v-for="card in sub.cards"
-                    :key="card.id"
-                    class="flex items-center gap-2"
-                    @click.stop="openCard(card, sub.cards)"
-                  >
-                    <CardThumbnail
-                      :card="card"
-                      :selectable="false"
-                      class="w-12 flex-shrink-0 pointer-events-none"
-                    />
-                    <div class="min-w-0">
-                      <p
-                        class="text-[10px] uppercase tracking-wider font-semibold"
-                        :style="`color: ${domainHex(store.activeClass!.dominio)}; font-family:'Cinzel',serif`"
-                      >{{ TIPO_LABEL[card.tipo_carta ?? ''] ?? card.tipo_carta }}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Select button -->
-                <div class="px-3 pb-3">
-                  <div
-                    class="w-full text-center text-xs py-1.5 rounded border transition-all"
-                    :class="sub.selected
-                      ? 'border-[var(--gold)] text-[var(--gold)] bg-[var(--gold-glow)]'
-                      : 'border-[var(--border)] text-[var(--text-dim)]'"
-                    style="font-family:'Cinzel',serif; letter-spacing:0.08em; text-transform:uppercase"
-                  >
-                    {{ sub.selected ? '✓ Selezionata' : 'Scegli' }}
-                  </div>
+                  <CardThumbnail
+                    :card="card"
+                    :selected="store.isClassCardSelected(card.id)"
+                    :selectable="true"
+                    @click="store.toggleClassCard(card.id)"
+                    @preview="openCard(card, store.subclassCards)"
+                  />
+                  <p
+                    class="text-[10px] text-center uppercase tracking-wider font-semibold"
+                    :style="`color: ${domainHex(store.activeClass!.dominio)}; font-family:'Cinzel',serif`"
+                  >{{ TIPO_LABEL[card.tipo_carta ?? ''] ?? card.tipo_carta }}</p>
                 </div>
               </div>
-            </div>
+            </template>
           </div>
         </template>
       </div>
@@ -452,7 +502,7 @@ onBeforeRouteLeave(async () => {
 
         <div
           v-if="groupedByDomain[d]?.length"
-          class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2"
+          :class="cardGridClass"
         >
           <CardThumbnail
             v-for="card in groupedByDomain[d]"
@@ -501,7 +551,7 @@ onBeforeRouteLeave(async () => {
       <div
         class="fixed bottom-0 left-0 right-0 z-30 border-t border-[var(--border)] bg-[var(--bg-panel)]/97 backdrop-blur-sm"
       >
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center gap-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center gap-3">
           <!-- Character summary (shown when there's something to summarise) -->
           <div class="text-xs text-[var(--text-dim)] flex-1 min-w-0 leading-relaxed">
             <template v-if="store.characterName">
@@ -535,6 +585,22 @@ onBeforeRouteLeave(async () => {
             </template>
             <span v-if="!store.className && !store.selectedOrigin && !store.characterName"
                   class="italic opacity-60">Nessun personaggio — carica un file o inizia a costruire</span>
+          </div>
+
+          <!-- Card size controls -->
+          <div class="flex items-center gap-1 flex-shrink-0">
+            <button
+              class="w-7 h-7 rounded flex items-center justify-center border border-[var(--border)] text-[var(--text-dim)] hover:text-[var(--gold)] hover:border-[var(--gold-dim)] transition-colors text-sm disabled:opacity-25 disabled:cursor-not-allowed"
+              :disabled="cardSizeLevel <= 0"
+              @click="cardSizeLevel--"
+              title="Carte più grandi"
+            >+</button>
+            <button
+              class="w-7 h-7 rounded flex items-center justify-center border border-[var(--border)] text-[var(--text-dim)] hover:text-[var(--gold)] hover:border-[var(--gold-dim)] transition-colors text-sm disabled:opacity-25 disabled:cursor-not-allowed"
+              :disabled="cardSizeLevel >= GRID_LEVELS.length - 1"
+              @click="cardSizeLevel++"
+              title="Carte più piccole"
+            >−</button>
           </div>
 
           <div class="flex gap-2 flex-shrink-0 flex-wrap">
