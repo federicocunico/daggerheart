@@ -2,10 +2,6 @@
 import { computed } from 'vue'
 import type { CardIndex } from '@/types/card'
 import { DOMAIN_META } from '@/types/card'
-import { useI18n } from '@/composables/useI18n'
-
-const { t } = useI18n()
-
 const props = defineProps<{
   card: CardIndex
   selected?: boolean
@@ -28,7 +24,7 @@ const domainMeta = computed(() =>
 
 const levelLabel = computed(() => {
   if (props.card.livello == null) return null
-  return `${t('thumb.level')} ${props.card.livello}`
+  return `Liv ${props.card.livello}`
 })
 </script>
 
@@ -88,7 +84,7 @@ const levelLabel = computed(() => {
              flex items-center justify-center text-xs opacity-0 group-hover:opacity-100
              transition-opacity duration-200 z-10"
       @click.stop="emit('preview', card)"
-      :title="t('thumb.inspect')"
+      title="Ispeziona"
     >
       🔍
     </button>

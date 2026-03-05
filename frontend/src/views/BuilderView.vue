@@ -8,10 +8,7 @@ import CardThumbnail from '@/components/CardThumbnail.vue'
 import CardModal from '@/components/CardModal.vue'
 import { useDownload } from '@/composables/useDownload'
 import { usePrint } from '@/composables/usePrint'
-import { useI18n } from '@/composables/useI18n'
-
 const store = useCharacterStore()
-const { t } = useI18n()
 const { downloadSet, downloadSave, loadSave } = useDownload()
 const { printCards } = usePrint()
 
@@ -200,10 +197,10 @@ function onConfirmAnswer(ok: boolean) {
 // ── Reset ────────────────────────────────────────────────────────────────────
 async function onReset() {
   const ok = await showConfirm({
-    title: t('confirm.reset.title'),
-    message: t('confirm.reset.message'),
-    yes: t('confirm.reset.yes'),
-    no: t('confirm.reset.no'),
+    title: 'Conferma Reset',
+    message: 'Tutte le selezioni e i dati del personaggio verranno cancellati. Vuoi continuare?',
+    yes: 'Conferma',
+    no: 'Annulla',
   })
   if (ok) {
     store.reset()
@@ -279,10 +276,10 @@ onUnmounted(() => {
 onBeforeRouteLeave(async () => {
   if (store.isDirty) {
     const ok = await showConfirm({
-      title: t('confirm.leave.title'),
-      message: t('confirm.leave.message'),
-      yes: t('confirm.leave.yes'),
-      no: t('confirm.leave.no'),
+      title: 'Uscire dalla pagina?',
+      message: 'Hai delle selezioni non salvate. Se esci perderai tutte le modifiche.',
+      yes: 'Esci',
+      no: 'Resta',
     })
     if (!ok) return false
   }
@@ -295,7 +292,7 @@ onBeforeRouteLeave(async () => {
     <!-- Hero text before any selection -->
     <div v-if="!store.className && !store.selectedOrigin && !store.selectedCommunity" class="text-center py-2">
       <p class="text-[var(--text-dim)] text-lg italic max-w-lg mx-auto leading-relaxed">
-        {{ t('builder.hero') }}
+        Forgia il tuo destino. Scegli una classe per costruire il mazzo del tuo personaggio.
       </p>
     </div>
 
@@ -303,10 +300,10 @@ onBeforeRouteLeave(async () => {
          I · ORIGINE
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="space-y-4">
-      <div class="ornament">{{ t('section.origin') }}</div>
+      <div class="ornament">I · Origine</div>
       <p class="text-[var(--text-dim)] text-sm">
-        {{ t('section.origin.desc') }}
-        <span v-if="store.selectedOrigin" class="text-[var(--gold)] ml-1">{{ t('section.origin.ok') }}</span>
+        Scegli la tua carta Origine (facoltativa).
+        <span v-if="store.selectedOrigin" class="text-[var(--gold)] ml-1">✓ Selezionata</span>
       </p>
       <div :class="cardGridClass">
         <CardThumbnail
@@ -325,10 +322,10 @@ onBeforeRouteLeave(async () => {
          II · COMUNITÀ
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="space-y-4">
-      <div class="ornament">{{ t('section.community') }}</div>
+      <div class="ornament">II · Comunità</div>
       <p class="text-[var(--text-dim)] text-sm">
-        {{ t('section.community.desc') }}
-        <span v-if="store.selectedCommunity" class="text-[var(--gold)] ml-1">{{ t('section.community.ok') }}</span>
+        Scegli la tua carta Comunità (facoltativa).
+        <span v-if="store.selectedCommunity" class="text-[var(--gold)] ml-1">✓ Selezionata</span>
       </p>
       <div :class="cardGridClass">
         <CardThumbnail
@@ -347,7 +344,7 @@ onBeforeRouteLeave(async () => {
          III · CLASSE
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="space-y-4">
-      <div class="ornament">{{ t('section.class') }}</div>
+      <div class="ornament">III · Classe</div>
 
       <div class="panel-gold p-5 sm:p-6 space-y-6">
 
@@ -357,14 +354,14 @@ onBeforeRouteLeave(async () => {
             class="block text-[var(--text-dim)] text-xs uppercase tracking-[0.15em]"
             style="font-family: 'Cinzel', serif"
           >
-            {{ t('section.class.select') }}
+            Scegli la tua classe
           </label>
           <select
             class="select-gold w-full sm:max-w-md"
             :value="store.className ?? ''"
             @change="onClassChange"
           >
-            <option value="" disabled>{{ t('section.class.placeholder') }}</option>
+            <option value="" disabled>— Seleziona —</option>
             <optgroup
               v-for="{ dominio, nomi } in classesByDomain"
               :key="dominio"
@@ -384,7 +381,7 @@ onBeforeRouteLeave(async () => {
               class="text-[var(--text-dim)] text-xs uppercase tracking-[0.15em]"
               style="font-family: 'Cinzel', serif"
             >
-              {{ t('section.subclass') }}
+              Scegli la tua sottoclasse
             </p>
 
             <!-- Subclass tab buttons -->
@@ -406,7 +403,7 @@ onBeforeRouteLeave(async () => {
             <!-- Cards of the selected subclass (individual toggles) -->
             <template v-if="store.selectedSubclass">
               <p class="text-[var(--text-dim)] text-xs">
-                {{ t('section.subclass.pick', { name: store.selectedSubclass ?? '' }) }}
+                Seleziona le carte di {{ store.selectedSubclass }} da includere nel mazzo.
                 <span class="text-[var(--gold)] ml-1">{{ store.selectedClassCards.size }}/{{ store.subclassCards.length }}</span>
               </p>
 
@@ -439,11 +436,11 @@ onBeforeRouteLeave(async () => {
          IV · DOMINI  (auto-selected from class, shown as info)
          ══════════════════════════════════════════════════════════════════════ -->
     <section v-if="store.className" class="space-y-4">
-      <div class="ornament">{{ t('section.domains') }}</div>
+      <div class="ornament">IV · Domini</div>
 
       <div class="panel p-5 space-y-4">
         <p class="text-[var(--text)] text-sm">
-          {{ t('section.domains.info', { name: store.className ?? '' }) }}
+          La classe {{ store.className }} ha accesso a questi due domini:
         </p>
         <div class="flex flex-wrap gap-3">
           <div
@@ -456,7 +453,7 @@ onBeforeRouteLeave(async () => {
           </div>
         </div>
         <p class="text-[var(--text-dim)] text-xs italic">
-          {{ t('section.domains.hint') }}
+          Le carte abilità disponibili qui sotto provengono da questi due domini.
         </p>
       </div>
     </section>
@@ -465,7 +462,7 @@ onBeforeRouteLeave(async () => {
          V · ABILITÀ
          ══════════════════════════════════════════════════════════════════════ -->
     <section v-if="store.selectedDomains.length" class="space-y-4">
-      <div class="ornament">{{ t('section.abilities') }}</div>
+      <div class="ornament">V · Abilità</div>
 
       <!-- Level filter pills -->
       <div class="flex flex-wrap gap-2 items-center">
@@ -473,16 +470,16 @@ onBeforeRouteLeave(async () => {
           class="domain-chip"
           :class="{ active: filterLevel === 'all' }"
           @click="filterLevel = 'all'"
-        >{{ t('section.abilities.all') }}</button>
+        >Tutte</button>
         <button
           v-for="lvl in store.levels"
           :key="lvl"
           class="domain-chip"
           :class="{ active: filterLevel === lvl }"
           @click="filterLevel = lvl"
-        >{{ t('section.abilities.level') }} {{ lvl }}</button>
+        >Liv. {{ lvl }}</button>
         <span class="text-[var(--text-dim)] text-xs ml-auto">
-          {{ store.selectedAbilities.size }} {{ t('section.abilities.selected') }}
+          {{ store.selectedAbilities.size }} selezionate
         </span>
       </div>
 
@@ -518,7 +515,7 @@ onBeforeRouteLeave(async () => {
           />
         </div>
         <p v-else class="text-[var(--text-dim)] text-sm italic pl-1">
-          {{ t('section.abilities.empty') }}
+          Nessuna carta con i filtri attivi.
         </p>
       </div>
     </section>
@@ -527,20 +524,20 @@ onBeforeRouteLeave(async () => {
          VI · NOME PERSONAGGIO
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="space-y-4">
-      <div class="ornament">{{ t('section.name') }}</div>
+      <div class="ornament">Nome del personaggio</div>
       <div class="panel p-4 space-y-2">
         <input
           type="text"
           :value="store.characterName"
           @input="store.setCharacterName(($event.target as HTMLInputElement).value)"
-          :placeholder="t('section.name.placeholder')"
+          placeholder="Inserisci il nome del personaggio…"
           class="w-full bg-transparent border border-[var(--border)] rounded-lg px-3 py-2.5
                  text-[var(--text)] placeholder-[var(--text-dim)]
                  focus:border-[var(--gold)] focus:outline-none transition-colors"
           style="font-family:'Cinzel',serif"
         />
         <p class="text-[var(--text-dim)] text-xs">
-          {{ t('section.name.hint') }}
+          Usato come nome del file al salvataggio e download.
         </p>
       </div>
     </section>
@@ -583,10 +580,10 @@ onBeforeRouteLeave(async () => {
             </template>
             <template v-if="store.selectedAbilities.size">
               <span class="mx-1">·</span>
-              <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span><span class="hidden sm:inline">&nbsp;{{ t('status.abilities') }}</span>
+              <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span><span class="hidden sm:inline">&nbsp;abilità</span>
             </template>
             <span v-if="!store.className && !store.selectedOrigin && !store.characterName"
-                  class="italic opacity-60">{{ t('status.empty') }}</span>
+                  class="italic opacity-60">Nessun personaggio — carica un file o inizia a costruire</span>
           </div>
 
           <!-- Card size controls -->
@@ -595,13 +592,13 @@ onBeforeRouteLeave(async () => {
               class="w-7 h-7 rounded flex items-center justify-center border border-[var(--border)] text-[var(--text-dim)] hover:text-[var(--gold)] hover:border-[var(--gold-dim)] transition-colors text-sm disabled:opacity-25 disabled:cursor-not-allowed"
               :disabled="cardSizeLevel <= 0"
               @click="cardSizeLevel--"
-              :title="t('size.bigger')"
+              title="Carte più grandi"
             >+</button>
             <button
               class="w-7 h-7 rounded flex items-center justify-center border border-[var(--border)] text-[var(--text-dim)] hover:text-[var(--gold)] hover:border-[var(--gold-dim)] transition-colors text-sm disabled:opacity-25 disabled:cursor-not-allowed"
               :disabled="cardSizeLevel >= GRID_LEVELS.length - 1"
               @click="cardSizeLevel++"
-              :title="t('size.smaller')"
+              title="Carte più piccole"
             >−</button>
           </div>
 
@@ -610,31 +607,31 @@ onBeforeRouteLeave(async () => {
               class="btn-secondary"
               style="font-size:0.75rem; padding:0.4rem 1rem"
               @click="fileInput?.click()"
-            >{{ t('btn.load') }}</button>
+            >Carica</button>
             <button
               class="btn-secondary"
               style="font-size:0.75rem; padding:0.4rem 1rem"
               @click="onReset"
               :disabled="!store.isDirty"
-            >{{ t('btn.reset') }}</button>
+            >Reset</button>
             <button
               class="btn-secondary"
               style="font-size:0.75rem; padding:0.4rem 1rem"
               @click="onDownloadJson"
               :disabled="!store.className"
-            >{{ t('btn.save') }}</button>
+            >Salva</button>
             <button
               class="btn-primary"
               style="font-size:0.75rem; padding:0.4rem 1rem"
               @click="onPrint"
               :disabled="!hasAnyCard"
-            >{{ t('btn.print') }}</button>
+            >Stampa</button>
             <button
               class="btn-primary"
               style="font-size:0.75rem; padding:0.4rem 1rem"
               @click="onDownloadZip"
               :disabled="downloading || !hasAnyCard"
-            >{{ downloading ? '…' : t('btn.download') }}</button>
+            >{{ downloading ? '…' : 'Scarica' }}</button>
           </div>
         </div>
 

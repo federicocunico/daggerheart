@@ -1,27 +1,12 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useCharacterStore } from '@/stores/character'
 import { DOMAIN_META } from '@/types/card'
-import { useI18n } from '@/composables/useI18n'
-import type { Locale } from '@/composables/useI18n'
 
 const route  = useRoute()
 const router = useRouter()
 const store  = useCharacterStore()
-const { locale, t, setLocale } = useI18n()
-
-const langOpen = ref(false)
-const LANGS: { code: Locale; flag: string; label: string }[] = [
-  { code: 'it', flag: '🇮🇹', label: 'Italiano' },
-  { code: 'en', flag: '🇬🇧', label: 'English' },
-]
-const currentLang = () => LANGS.find(l => l.code === locale.value) ?? LANGS[0]
-
-function pickLang(code: Locale) {
-  setLocale(code)
-  langOpen.value = false
-}
 
 onMounted(() => store.loadCards())
 </script>
@@ -62,51 +47,12 @@ onMounted(() => store.loadCards())
             ]"
             style="font-family:'Cinzel',serif"
           >
-            {{ t('header.schema') }}
+            Schema
           </span>
         </router-link>
 
         <!-- Spacer -->
         <div class="flex-1" />
-
-        <!-- Language selector -->
-        <!-- 
-        <div class="relative flex-shrink-0">
-          <button
-            class="flex items-center gap-1.5 px-2 py-1 rounded border border-[var(--border)] text-xs
-                   hover:border-[var(--gold-dim)] transition-colors cursor-pointer"
-            @click="langOpen = !langOpen"
-            @blur="setTimeout(() => langOpen = false, 150)"
-          >
-            <span class="text-base leading-none">{{ currentLang().flag }}</span>
-            <span class="text-[var(--text-dim)] hidden sm:inline">{{ currentLang().label }}</span>
-            <span class="text-[var(--text-dim)] text-[10px]">▾</span>
-          </button>
-          <Transition
-            enter-active-class="transition-all duration-150"
-            enter-from-class="opacity-0 -translate-y-1"
-            leave-active-class="transition-all duration-100"
-            leave-to-class="opacity-0 -translate-y-1"
-          >
-            <div
-              v-if="langOpen"
-              class="absolute right-0 top-full mt-1 bg-[var(--bg-panel)] border border-[var(--gold-dim)] rounded-lg shadow-lg overflow-hidden z-50 min-w-[130px]"
-            >
-              <button
-                v-for="lang in LANGS"
-                :key="lang.code"
-                class="w-full flex items-center gap-2 px-3 py-2 text-xs transition-colors"
-                :class="locale === lang.code
-                  ? 'bg-[var(--gold-glow)] text-[var(--gold)]'
-                  : 'text-[var(--text)] hover:bg-[var(--bg-card)]'"
-                @mousedown.prevent="pickLang(lang.code)"
-              >
-                <span class="text-base leading-none">{{ lang.flag }}</span>
-                {{ lang.label }}
-              </button>
-            </div>
-          </Transition>
-        </div> -->
 
         <!-- Character status (compact) -->
         <div
@@ -126,7 +72,7 @@ onMounted(() => store.loadCards())
           </template>
           <template v-if="store.selectedAbilities.size">
             <span class="text-[var(--text-dim)]">·</span>
-            <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span><span class="hidden sm:inline">&nbsp;{{ t('status.abilities') }}</span>
+            <span class="text-[var(--gold)]">{{ store.selectedAbilities.size }}</span><span class="hidden sm:inline">&nbsp;abilità</span>
           </template>
         </div>
       </div>
@@ -145,7 +91,7 @@ onMounted(() => store.loadCards())
         <p
           class="text-[var(--gold)] uppercase tracking-[0.25em] text-xs"
           style="font-family: 'Cinzel', serif"
-        >{{ t('loading') }}</p>
+        >Caricamento carte…</p>
       </div>
     </div>
 
@@ -158,7 +104,7 @@ onMounted(() => store.loadCards())
         <p
           class="text-red-400 uppercase tracking-widest text-sm"
           style="font-family: 'Cinzel', serif"
-        >{{ t('error.title') }}</p>
+        >Errore nel caricamento</p>
         <p class="text-[var(--text-dim)] text-sm">{{ store.error }}</p>
         <p class="text-[var(--text-dim)] text-xs">
           Esegui <code class="text-[var(--gold)]">uv run python main.py</code>
@@ -177,7 +123,7 @@ onMounted(() => store.loadCards())
       class="border-t border-[var(--border)] py-3 text-center text-[var(--text-dim)] text-xs"
       style="font-family: 'Cinzel', serif; letter-spacing: 0.12em"
     >
-      {{ t('footer') }}
+      Daggerheart © Darrington Press · Interfaccia non ufficiale
     </footer>
   </div>
 </template>
