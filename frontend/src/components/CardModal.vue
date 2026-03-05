@@ -2,6 +2,9 @@
 import { computed, ref, watch, nextTick } from 'vue'
 import type { CardIndex } from '@/types/card'
 import { DOMAIN_META } from '@/types/card'
+import { useI18n } from '@/composables/useI18n'
+
+const { t } = useI18n()
 
 const props = defineProps<{
   card: CardIndex | null
@@ -113,7 +116,7 @@ watch(() => props.card, async (newCard) => {
                  disabled:opacity-25 disabled:cursor-not-allowed hover:enabled:bg-[var(--bg-panel)]"
           :disabled="!hasPrev"
           @click.stop="goTo(-1)"
-          aria-label="Carta precedente"
+          :aria-label="t('modal.prev')"
         >‹</button>
 
         <!-- Card container -->
@@ -153,8 +156,8 @@ watch(() => props.card, async (newCard) => {
                 <p class="font-bold text-[var(--text)]" style="font-family:'Cinzel',serif">{{ card.nome }}</p>
                 <p class="text-[var(--text-dim)] text-sm">
                   {{ card.tipo_carta }}
-                  <span v-if="card.livello != null"> · Livello {{ card.livello }}</span>
-                  <span v-if="card.costo != null"> · Costo {{ card.costo }}</span>
+                  <span v-if="card.livello != null"> · {{ t('modal.level') }} {{ card.livello }}</span>
+                  <span v-if="card.costo != null"> · {{ t('modal.cost') }} {{ card.costo }}</span>
                 </p>
               </div>
             </div>
@@ -171,7 +174,7 @@ watch(() => props.card, async (newCard) => {
               ]"
               style="font-family:'Cinzel',serif; letter-spacing:0.08em; text-transform:uppercase; font-size:0.75rem"
             >
-              {{ selected ? '✓ Selezionata' : '+ Aggiungi al mazzo' }}
+              {{ selected ? t('modal.added') : t('modal.add') }}
             </button>
           </div>
         </div>
@@ -186,7 +189,7 @@ watch(() => props.card, async (newCard) => {
                  disabled:opacity-25 disabled:cursor-not-allowed hover:enabled:bg-[var(--bg-panel)]"
           :disabled="!hasNext"
           @click.stop="goTo(1)"
-          aria-label="Carta successiva"
+          :aria-label="t('modal.next')"
         >›</button>
       </div>
     </Transition>
