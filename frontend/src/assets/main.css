@@ -4,15 +4,15 @@
 @layer base {
   :root {
     color-scheme: dark;
-    --gold:      #c9a84c;
-    --gold-dim:  #7a5f28;
-    --gold-glow: rgba(201,168,76,0.25);
+    --gold:      #d4b45c;
+    --gold-dim:  #9a7a3a;
+    --gold-glow: rgba(212,180,92,0.25);
     --bg:        #09090f;
     --bg-panel:  #111118;
     --bg-card:   #16161f;
-    --border:    rgba(201,168,76,0.18);
-    --text:      #e8dfc8;
-    --text-dim:  #7a7060;
+    --border:    rgba(212,180,92,0.22);
+    --text:      #f0e8d4;
+    --text-dim:  #a89878;
   }
 
   * { box-sizing: border-box; }
@@ -50,7 +50,7 @@
     background: var(--bg-panel);
     border: 1px solid var(--gold-dim);
     border-radius: 0.75rem;
-    box-shadow: 0 0 20px rgba(201,168,76,0.06);
+    box-shadow: 0 0 20px rgba(212,180,92,0.06);
   }
 
   /* Ornamental divider */
@@ -58,18 +58,20 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: var(--gold-dim);
+    color: var(--gold);
     font-family: 'Cinzel', serif;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(212,180,92,0.35);
   }
   .ornament::before,
   .ornament::after {
     content: '';
     flex: 1;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
   }
 
   /* Gold section number */
@@ -87,7 +89,7 @@
   /* Buttons */
   .btn-primary {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    background: linear-gradient(135deg, #b8860b, #c9a84c, #b8860b);
+    background: linear-gradient(135deg, #c49520, #d4b45c, #c49520);
     color: #1a1000;
     font-family: 'Cinzel', serif;
     font-weight: 700;
@@ -95,14 +97,14 @@
     letter-spacing: 0.1em;
     padding: 0.6rem 1.4rem;
     border-radius: 0.375rem;
-    border: 1px solid #c9a84c;
+    border: 1px solid #d4b45c;
     cursor: pointer;
     transition: all 0.2s;
-    box-shadow: 0 2px 12px rgba(201,168,76,0.2);
+    box-shadow: 0 2px 12px rgba(212,180,92,0.2);
     text-transform: uppercase;
   }
   .btn-primary:hover:not(:disabled) {
-    box-shadow: 0 4px 20px rgba(201,168,76,0.4);
+    box-shadow: 0 4px 20px rgba(212,180,92,0.4);
     filter: brightness(1.1);
   }
   .btn-primary:disabled { opacity: 0.35; cursor: not-allowed; }
@@ -123,7 +125,7 @@
   }
   .btn-secondary:hover:not(:disabled) {
     border-color: var(--gold);
-    background: rgba(201,168,76,0.06);
+    background: rgba(212,180,92,0.06);
   }
   .btn-secondary:disabled { opacity: 0.35; cursor: not-allowed; }
 
@@ -139,7 +141,7 @@
     cursor: pointer;
     outline: none;
     appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9a84c' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23d4b45c' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 0.65rem center;
     transition: border-color 0.15s;
@@ -158,12 +160,12 @@
   }
   .card-thumb:hover {
     border-color: var(--gold-dim);
-    box-shadow: 0 0 12px rgba(201,168,76,0.15);
+    box-shadow: 0 0 12px rgba(212,180,92,0.15);
     transform: translateY(-2px);
   }
   .card-thumb.selected {
     border-color: var(--gold);
-    box-shadow: 0 0 20px rgba(201,168,76,0.35);
+    box-shadow: 0 0 20px rgba(212,180,92,0.35);
     transform: translateY(-2px);
   }
 
@@ -182,7 +184,7 @@
     user-select: none;
   }
   .domain-chip:not(.active) {
-    border-color: rgba(201,168,76,0.2);
+    border-color: rgba(212,180,92,0.2);
     color: var(--text-dim);
     background: transparent;
   }
@@ -193,7 +195,7 @@
   .domain-chip.active {
     border-color: var(--gold);
     color: var(--gold);
-    background: rgba(201,168,76,0.12);
+    background: rgba(212,180,92,0.12);
   }
   .domain-chip:disabled {
     opacity: 0.28;
